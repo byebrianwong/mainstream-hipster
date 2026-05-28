@@ -44,3 +44,18 @@ body {
 .dragging {
   cursor: grabbing;
 }
+
+/* Left-to-right reveal for the popularity rail. Pure CSS — Motion's clipPath
+   string animation was unreliable in some HMR / nested-mount contexts. */
+@keyframes reveal-left-to-right {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+.reveal-ltr {
+  animation: reveal-left-to-right 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-ltr {
+    animation: none;
+  }
+}

@@ -1,66 +1,54 @@
-"use client";
-
 // Visual rail showing the mainstream→hipster gradient.
 //
-// 24 vertical bars descending in height from left to right. Tall bars on the
-// left = "lots of attention" (mainstream); short bars on the right = "less
-// attention" (hipster). On mount, bars rise from the baseline in a left-to-right
-// wave to reinforce the directional metaphor.
-
-import { motion, useReducedMotion } from "motion/react";
+// A single smooth curve descends from "tall" on the left (mainstream) to
+// "near-baseline" on the right (hipster). Filled with a horizontal gradient
+// that fades from accent into the background. Labels sit inside the rail.
+//
+// The reveal animation (left-to-right clip) is pure CSS via the
+// `reveal-ltr` utility in globals.css — that combo of clipPath + Motion
+// + HMR + nested mounts was unreliable.
 
 type Props = {
   /** Compact mode (smaller, used in tight spots). */
   size?: "default" | "compact";
 };
 
-const BAR_COUNT = 24;
-
 export default function PopularityRail({ size = "default" }: Props) {
-  const reduceMotion = useReducedMotion();
+  const railHeight = size === "compact" ? "h-12" : "h-20";
 
-  const bars = Array.from({ length: BAR_COUNT }, (_, i) => {
-    const t = i / (BAR_COUNT - 1); // 0 → 1
-    const heightPct = 100 - t * 92;
-    const opacity = 1 - t * 0.75;
-    return { heightPct, opacity };
-  });
-
-  const railHeight = size === "compact" ? "h-6" : "h-12";
+  // Cubic bezier: flat-ish start, steep middle, gentle tail.
+  // viewBox 0..100 x 0..30. preserveAspectRatio="none" stretches horizontally.
+  const curvePath = "M 0 1 C 22 1 55 24 100 27 L 100 30 L 0 30 Z";
 
   return (
-    <div className="mb-6">
-      <div className="flex items-baseline justify-between text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--muted)]">
-        <span>Mainstream</span>
-        <span>Hipster</span>
-      </div>
-      <motion.div
-        className={`mt-2 flex ${railHeight} items-end gap-[3px]`}
+    <div className="mb-6 w-full">
+      <div
+        className={`reveal-ltr relative w-full ${railHeight} overflow-hidden rounded-md`}
         aria-hidden
-        initial={reduceMotion ? false : "hidden"}
-        animate="visible"
-        variants={{
-          hidden: {},
-          visible: { transition: { staggerChildren: 0.025 } },
-        }}
       >
-        {bars.map((b, i) => (
-          <motion.div
-            key={i}
-            className="flex-1 origin-bottom rounded-sm bg-[color:var(--accent)]"
-            style={{ height: `${b.heightPct}%`, opacity: b.opacity }}
-            variants={{
-              hidden: { scaleY: 0 },
-              visible: { scaleY: 1 },
-            }}
-            transition={{
-              duration: 0.45,
-              // Back-out cubic-bezier — quick rise with a touch of overshoot.
-              ease: [0.34, 1.56, 0.64, 1],
-            }}
-          />
-        ))}
-      </motion.div>
+        <svg
+          viewBox="0 0 100 30"
+          preserveAspectRatio="none"
+          className="absolute inset-0 h-full w-full"
+        >
+          <defs>
+            <linearGradient id="popularity-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.95" />
+              <stop offset="100%" stopColor="var(--accent)" stopOpacity="0.15" />
+            </linearGradient>
+          </defs>
+          <path d={curvePath} fill="url(#popularity-grad)" />
+        </svg>
+
+        {/* Labels sit inside the rail. Mainstream: white on the accent area.
+            Hipster: muted/foreground on the dark side where the curve is low. */}
+        <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-xs font-semibold uppercase tracking-[0.2em] text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.25)]">
+          Mainstream
+        </span>
+        <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--muted)]">
+          Hipster
+        </span>
+      </div>
     </div>
   );
 }
