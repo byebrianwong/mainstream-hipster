@@ -14,6 +14,7 @@ import {
   arrayMove,
 } from "@dnd-kit/sortable";
 import SortableCard from "./SortableCard";
+import PopularityRail from "./PopularityRail";
 import type { ScoredItem } from "@/lib/types";
 
 function Board({ initial }: { initial: ScoredItem[] }) {
@@ -39,10 +40,7 @@ function Board({ initial }: { initial: ScoredItem[] }) {
       <p className="mb-6 text-sm text-[color:var(--muted)]">
         Most mainstream on the left, most hipster on the right.
       </p>
-      <div className="mb-6 flex items-center justify-between text-xs uppercase tracking-[0.2em] text-[color:var(--muted)]">
-        <span>mainstream ←</span>
-        <span>→ hipster</span>
-      </div>
+      <PopularityRail />
       <DndContext
         sensors={sensors}
         collisionDetection={closestCenter}

@@ -24,6 +24,7 @@ import type { Category, ScoredItem } from "@/lib/types";
 import SortableCard from "./SortableCard";
 import Card from "./Card";
 import Reveal from "./Reveal";
+import PopularityRail from "./PopularityRail";
 import { buildResult } from "@/lib/game";
 
 type Props = { category: Category | "mixed"; size: number };
@@ -127,10 +128,7 @@ export default function GameClient({ category, size }: Props) {
         Most mainstream on the left, most hipster on the right.
       </p>
 
-      <div className="mb-6 flex items-center justify-between text-xs uppercase tracking-[0.2em] text-[color:var(--muted)]">
-        <span>mainstream ←</span>
-        <span>→ hipster</span>
-      </div>
+      <PopularityRail />
 
       <DndContext
         sensors={sensors}
