@@ -19,7 +19,7 @@ export type SourceFetcher = (item: Item) => Promise<number | null>;
 export type CategoryWeights = Partial<Record<SourceName, number>>;
 
 export const CATEGORY_WEIGHTS: Record<Category, CategoryWeights> = {
-  music:   { spotify: 1 / 3, lastfm: 1 / 3, wikipedia: 1 / 3 },
+  music:   { spotify: 0.5, wikipedia: 0.4, lastfm: 0.1 },
   movies:  { tmdb: 0.5, wikipedia: 0.5 },
   tv:      { tmdb: 0.5, wikipedia: 0.5 },
   books:   { wikipedia: 1 },
