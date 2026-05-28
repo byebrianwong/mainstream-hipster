@@ -8,7 +8,8 @@ const sample: ScoredItem = {
   wiki: "Mitski",
   category: "music",
   emoji: "🎤",
-  views: 626975,
+  signals: { wikipedia: 626975, spotify: 2_800_000 },
+  rank: 0.33,
 };
 
 const meta: Meta<typeof Card> = {

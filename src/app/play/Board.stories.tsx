@@ -16,8 +16,6 @@ import {
 import SortableCard from "./SortableCard";
 import type { ScoredItem } from "@/lib/types";
 
-// Standalone board renderer that doesn't need an API round — so we can showcase
-// the playing state in isolation.
 function Board({ initial }: { initial: ScoredItem[] }) {
   const [items, setItems] = useState(initial);
   const sensors = useSensors(
@@ -80,10 +78,10 @@ export default meta;
 type Story = StoryObj<typeof Board>;
 
 const musicItems: ScoredItem[] = [
-  { id: "alvvays", name: "Alvvays", wiki: "Alvvays", category: "music", emoji: "🎸", views: 142_000 },
-  { id: "mitski", name: "Mitski", wiki: "Mitski", category: "music", emoji: "🎤", views: 627_000 },
-  { id: "frank-ocean", name: "Frank Ocean", wiki: "Frank_Ocean", category: "music", emoji: "🎤", views: 1_354_000 },
-  { id: "taylor-swift", name: "Taylor Swift", wiki: "Taylor_Swift", category: "music", emoji: "🎤", views: 12_300_000 },
+  { id: "alvvays", name: "Alvvays", wiki: "Alvvays", category: "music", emoji: "🎸", signals: { wikipedia: 142_000, spotify: 250_000 }, rank: 0 },
+  { id: "mitski", name: "Mitski", wiki: "Mitski", category: "music", emoji: "🎤", signals: { wikipedia: 627_000, spotify: 2_800_000 }, rank: 0.33 },
+  { id: "frank-ocean", name: "Frank Ocean", wiki: "Frank_Ocean", category: "music", emoji: "🎤", signals: { wikipedia: 1_354_000, spotify: 12_000_000 }, rank: 0.66 },
+  { id: "taylor-swift", name: "Taylor Swift", wiki: "Taylor_Swift", category: "music", emoji: "🎤", signals: { wikipedia: 12_300_000, spotify: 60_000_000 }, rank: 1 },
 ];
 
 export const FourMusicItems: Story = {
@@ -98,7 +96,7 @@ export const FiveItems: Story = {
   args: {
     initial: [
       ...musicItems,
-      { id: "king-gizzard", name: "King Gizzard & the Lizard Wizard", wiki: "King_Gizzard_%26_the_Lizard_Wizard", category: "music", emoji: "🎸", views: 696_000 },
+      { id: "king-gizzard", name: "King Gizzard & the Lizard Wizard", wiki: "King_Gizzard_%26_the_Lizard_Wizard", category: "music", emoji: "🎸", signals: { wikipedia: 696_000, spotify: 1_500_000 }, rank: 0.5 },
     ],
   },
 };
@@ -106,10 +104,10 @@ export const FiveItems: Story = {
 export const Mixed: Story = {
   args: {
     initial: [
-      { id: "kombucha", name: "Kombucha", wiki: "Kombucha", category: "drinks", emoji: "🍵", views: 1_252_000 },
-      { id: "matcha", name: "Matcha", wiki: "Matcha", category: "drinks", emoji: "🍵", views: 1_888_000 },
-      { id: "axolotl", name: "Axolotl", wiki: "Axolotl", category: "animals", emoji: "🦎", views: 800_000 },
-      { id: "portland", name: "Portland, Oregon", wiki: "Portland,_Oregon", category: "cities", emoji: "🌲", views: 1_100_000 },
+      { id: "kombucha", name: "Kombucha", wiki: "Kombucha", category: "drinks", emoji: "🍵", signals: { wikipedia: 1_252_000 }, rank: 0.66 },
+      { id: "matcha", name: "Matcha", wiki: "Matcha", category: "drinks", emoji: "🍵", signals: { wikipedia: 1_888_000 }, rank: 1 },
+      { id: "axolotl", name: "Axolotl", wiki: "Axolotl", category: "animals", emoji: "🦎", signals: { wikipedia: 800_000 }, rank: 0.33 },
+      { id: "portland", name: "Portland, Oregon", wiki: "Portland,_Oregon", category: "cities", emoji: "🌲", signals: { wikipedia: 1_100_000 }, rank: 0 },
     ],
   },
 };
@@ -117,10 +115,10 @@ export const Mixed: Story = {
 export const TVShows: Story = {
   args: {
     initial: [
-      { id: "reservation-dogs", name: "Reservation Dogs", wiki: "Reservation_Dogs", category: "tv", emoji: "🐕", views: 537_000 },
-      { id: "severance", name: "Severance (TV series)", wiki: "Severance_(TV_series)", category: "tv", emoji: "🧠", views: 2_900_000 },
-      { id: "the-bear", name: "The Bear (TV series)", wiki: "The_Bear_(TV_series)", category: "tv", emoji: "🐻", views: 4_100_000 },
-      { id: "friends", name: "Friends", wiki: "Friends", category: "tv", emoji: "📺", views: 9_800_000 },
+      { id: "reservation-dogs", name: "Reservation Dogs", wiki: "Reservation_Dogs", category: "tv", emoji: "🐕", signals: { wikipedia: 537_000, tmdb: 35 }, rank: 0 },
+      { id: "severance", name: "Severance (TV series)", wiki: "Severance_(TV_series)", category: "tv", emoji: "🧠", signals: { wikipedia: 2_900_000, tmdb: 120 }, rank: 0.33 },
+      { id: "the-bear", name: "The Bear (TV series)", wiki: "The_Bear_(TV_series)", category: "tv", emoji: "🐻", signals: { wikipedia: 4_100_000, tmdb: 95 }, rank: 0.66 },
+      { id: "friends", name: "Friends", wiki: "Friends", category: "tv", emoji: "📺", signals: { wikipedia: 9_800_000, tmdb: 180 }, rank: 1 },
     ],
   },
 };
@@ -128,10 +126,10 @@ export const TVShows: Story = {
 export const Books: Story = {
   args: {
     initial: [
-      { id: "normal-people", name: "Normal People (novel)", wiki: "Normal_People", category: "books", emoji: "💔", views: 380_000 },
-      { id: "a-little-life", name: "A Little Life", wiki: "A_Little_Life", category: "books", emoji: "💔", views: 612_000 },
-      { id: "atomic-habits", name: "Atomic Habits", wiki: "Atomic_Habits", category: "books", emoji: "⚛️", views: 1_900_000 },
-      { id: "harry-potter", name: "Harry Potter", wiki: "Harry_Potter", category: "books", emoji: "⚡", views: 14_500_000 },
+      { id: "normal-people", name: "Normal People (novel)", wiki: "Normal_People", category: "books", emoji: "💔", signals: { wikipedia: 380_000 }, rank: 0 },
+      { id: "a-little-life", name: "A Little Life", wiki: "A_Little_Life", category: "books", emoji: "💔", signals: { wikipedia: 612_000 }, rank: 0.33 },
+      { id: "atomic-habits", name: "Atomic Habits", wiki: "Atomic_Habits", category: "books", emoji: "⚛️", signals: { wikipedia: 1_900_000 }, rank: 0.66 },
+      { id: "harry-potter", name: "Harry Potter", wiki: "Harry_Potter", category: "books", emoji: "⚡", signals: { wikipedia: 14_500_000 }, rank: 1 },
     ],
   },
 };

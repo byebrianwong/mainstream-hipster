@@ -1,6 +1,7 @@
 import type { Category, Item, RoundResult, ScoredItem } from "./types";
 import { itemsByCategory } from "./items";
-import { fetchManyViews } from "./pageviews";
+import { CATEGORY_WEIGHTS } from "./popularity/types";
+import { fetchSignals, blendRanks } from "./popularity/blend";
 
 export function pickRandom<T>(arr: T[], n: number): T[] {
   const copy = [...arr];
@@ -11,52 +12,62 @@ export function pickRandom<T>(arr: T[], n: number): T[] {
   return copy.slice(0, n);
 }
 
+/**
+ * Build a round of `size` items from `category`. Each item gets a blended rank
+ * in [0, 1] (lower = more hipster) computed from whatever sources are weighted
+ * for that category.
+ *
+ * Items that come back with no signal data (all sources returned null) are
+ * dropped and the round is refilled from the same pool — keeps the game playable
+ * even if one source is broken or an item lacks IDs for the active sources.
+ */
 export async function buildRound(
   category: Category | "mixed",
   size: number,
 ): Promise<ScoredItem[]> {
   const pool = itemsByCategory(category);
-  const picks = pickRandom(pool, Math.min(size, pool.length));
-  const views = await fetchManyViews(picks.map((p) => p.wiki));
+  const weights =
+    category === "mixed" ? { wikipedia: 1 } : CATEGORY_WEIGHTS[category];
 
-  // Drop items we couldn't get data for and refill if needed.
-  const scored: ScoredItem[] = picks
-    .map((p) => ({ ...p, views: views[p.wiki] ?? 0 }))
-    .filter((s) => s.views > 0);
+  // Slightly oversample so we can drop signal-less items without re-fetching.
+  const oversample = Math.min(size + 2, pool.length);
+  const picks = pickRandom(pool, oversample);
 
-  if (scored.length < size) {
-    const remaining = pool.filter(
-      (p) => !scored.some((s) => s.id === p.id),
-    );
-    const extra = pickRandom(remaining, size - scored.length);
-    const extraViews = await fetchManyViews(extra.map((p) => p.wiki));
-    for (const item of extra) {
-      const v = extraViews[item.wiki] ?? 0;
-      if (v > 0) scored.push({ ...item, views: v });
-      if (scored.length >= size) break;
-    }
-  }
+  const signals = await fetchSignals(picks, weights);
 
-  return scored.slice(0, size);
+  // Items with at least one signal value > 0.
+  const usable = picks.filter((p) => {
+    const s = signals.get(p.id) ?? {};
+    return Object.values(s).some((v) => (v ?? 0) > 0);
+  });
+
+  // Trim to round size, then re-rank within just the final set — gives ranks
+  // a clean 0..1 spread for `size` items rather than gaps from oversample.
+  const final = usable.slice(0, size);
+  const finalRanks = blendRanks(final, signals, weights);
+
+  return final.map((item) => ({
+    ...item,
+    signals: signals.get(item.id) ?? {},
+    rank: finalRanks.get(item.id) ?? 0.5,
+  }));
 }
 
-// Score: count concordant pairs / total pairs (Kendall-tau, normalized).
-// Returns 0..1.
+// Score: concordant pairs / total pairs (Kendall-tau, normalized 0..1).
 export function scoreOrder(
   playerOrder: Item[],
   scoredItems: ScoredItem[],
 ): { score: number; pairsCorrect: number; pairsTotal: number } {
-  const viewsById = new Map(scoredItems.map((s) => [s.id, s.views]));
+  const rankById = new Map(scoredItems.map((s) => [s.id, s.rank]));
   const n = playerOrder.length;
   let correct = 0;
   let total = 0;
   for (let i = 0; i < n; i++) {
     for (let j = i + 1; j < n; j++) {
       total++;
-      const a = viewsById.get(playerOrder[i].id) ?? 0;
-      const b = viewsById.get(playerOrder[j].id) ?? 0;
-      // Player placed playerOrder[i] before playerOrder[j], which means they
-      // ranked it as LESS popular. So this pair is correct when a <= b.
+      const a = rankById.get(playerOrder[i].id) ?? 0.5;
+      const b = rankById.get(playerOrder[j].id) ?? 0.5;
+      // Player placed [i] before [j] → ranked it less mainstream. Correct iff a <= b.
       if (a <= b) correct++;
     }
   }
@@ -72,7 +83,7 @@ export function buildResult(
   playerOrder: Item[],
 ): RoundResult {
   const { score, pairsCorrect, pairsTotal } = scoreOrder(playerOrder, items);
-  const correct = [...items].sort((a, b) => a.views - b.views);
+  const correct = [...items].sort((a, b) => a.rank - b.rank);
   return {
     items,
     playerOrder: playerOrder.map((i) => i.id),

@@ -1,6 +1,8 @@
 "use client";
 
 import type { RoundResult, ScoredItem } from "@/lib/types";
+import { SOURCE_LABEL } from "@/lib/popularity/types";
+import type { SourceName } from "@/lib/popularity/types";
 import clsx from "clsx";
 
 type Props = {
@@ -9,10 +11,12 @@ type Props = {
   onReplay: () => void;
 };
 
-function formatViews(n: number): string {
+function formatNumber(n: number, unit: string): string {
+  // TMDb popularity is a small float; everything else is a count.
+  if (unit === "popularity") return n.toFixed(1);
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
   if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K`;
-  return String(n);
+  return String(Math.round(n));
 }
 
 function verdict(score: number): { label: string; tone: string } {
@@ -21,6 +25,24 @@ function verdict(score: number): { label: string; tone: string } {
   if (score >= 0.6) return { label: "Pretty good read", tone: "text-amber-600" };
   if (score >= 0.4) return { label: "Mixed signals", tone: "text-amber-600" };
   return { label: "Time to recalibrate", tone: "text-rose-600" };
+}
+
+function SignalBadges({ item }: { item: ScoredItem }) {
+  const entries = Object.entries(item.signals) as [SourceName, number][];
+  if (entries.length === 0) return null;
+  return (
+    <div className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-[color:var(--muted)]">
+      {entries.map(([source, value]) => {
+        const meta = SOURCE_LABEL[source];
+        return (
+          <span key={source}>
+            <span className="font-medium text-[color:var(--foreground)]/70">{meta.label}</span>{" "}
+            {formatNumber(value, meta.unit)} {meta.unit}
+          </span>
+        );
+      })}
+    </div>
+  );
 }
 
 export default function Reveal({ result, items, onReplay }: Props) {
@@ -70,9 +92,7 @@ export default function Reveal({ result, items, onReplay }: Props) {
                 <span className="text-2xl">{item.emoji ?? "•"}</span>
                 <div className="min-w-0 flex-1">
                   <p className="truncate font-medium">{item.name}</p>
-                  <p className="text-xs text-[color:var(--muted)]">
-                    {formatViews(item.views)} pageviews · {item.category}
-                  </p>
+                  <SignalBadges item={item} />
                 </div>
                 <span
                   className={clsx(
