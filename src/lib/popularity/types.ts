@@ -19,7 +19,7 @@ export type SourceFetcher = (item: Item) => Promise<number | null>;
 export type CategoryWeights = Partial<Record<SourceName, number>>;
 
 export const CATEGORY_WEIGHTS: Record<Category, CategoryWeights> = {
-  music:   { lastfm: 0.5, wikipedia: 0.5 },
+  music:   { spotify: 1 / 3, lastfm: 1 / 3, wikipedia: 1 / 3 },
   movies:  { tmdb: 0.5, wikipedia: 0.5 },
   tv:      { tmdb: 0.5, wikipedia: 0.5 },
   books:   { wikipedia: 1 },
@@ -41,7 +41,7 @@ export function sourcesFor(category: Category | "mixed"): SourceName[] {
 /** Pretty label + units for each source — used in the reveal UI. */
 export const SOURCE_LABEL: Record<SourceName, { label: string; unit: string }> = {
   wikipedia: { label: "Wikipedia", unit: "pageviews" },
-  spotify:   { label: "Spotify",   unit: "followers" },
+  spotify:   { label: "Spotify",   unit: "monthly listeners" },
   lastfm:    { label: "Last.fm",   unit: "listeners" },
   tmdb:      { label: "TMDb",      unit: "popularity" },
 };
@@ -53,8 +53,8 @@ export const SOURCE_LABEL: Record<SourceName, { label: string; unit: string }> =
  * whatever fetch happened to resolve first.
  */
 export const SIGNAL_DISPLAY_ORDER: SourceName[] = [
-  "lastfm",
-  "tmdb",
   "spotify",
+  "tmdb",
+  "lastfm",
   "wikipedia",
 ];

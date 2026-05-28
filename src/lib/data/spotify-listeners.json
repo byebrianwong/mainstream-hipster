@@ -1,0 +1,263 @@
+{
+  "taylor-swift": {
+    "spotifyId": "06HL4z0CvFAxyc27GXpf02",
+    "name": "Taylor Swift",
+    "monthlyListeners": 101530516
+  },
+  "the-beatles": {
+    "spotifyId": "3WrFJ7ztbogyGnTHbHJFl2",
+    "name": "The Beatles",
+    "monthlyListeners": 36050443
+  },
+  "drake": {
+    "spotifyId": "3TVXtAsR1Inumwj472S9r4",
+    "name": "Drake",
+    "monthlyListeners": 98362893
+  },
+  "billie-eilish": {
+    "spotifyId": "6qqNVTkY8uBg9cP3Jd7DAH",
+    "name": "Billie Eilish",
+    "monthlyListeners": 84419902
+  },
+  "beyonce": {
+    "spotifyId": "6vWDO969PvNqNYHIOW5v0m",
+    "name": "Beyoncé",
+    "monthlyListeners": 61232020
+  },
+  "bad-bunny": {
+    "spotifyId": "4q3ewBCX7sLwd24euuV69X",
+    "name": "Bad Bunny",
+    "monthlyListeners": 100080812
+  },
+  "bts": {
+    "spotifyId": "3Nrfpe0tUJi4K4DXYWgMUX",
+    "name": "BTS",
+    "monthlyListeners": 37818601
+  },
+  "olivia-rodrigo": {
+    "spotifyId": "1McMsnEElThX1knmY4oliG",
+    "name": "Olivia Rodrigo",
+    "monthlyListeners": 60720622
+  },
+  "harry-styles": {
+    "spotifyId": "6KImCVD70vtIoJWnq6nGn3",
+    "name": "Harry Styles",
+    "monthlyListeners": 66367471
+  },
+  "ed-sheeran": {
+    "spotifyId": "6eUKZXaKkcviH0Ku9w2n3V",
+    "name": "Ed Sheeran",
+    "monthlyListeners": 86275811
+  },
+  "adele": {
+    "spotifyId": "4dpARuHxo51G3z768sgnrY",
+    "name": "Adele",
+    "monthlyListeners": 59632968
+  },
+  "the-weeknd": {
+    "spotifyId": "1Xyo4u8uXC1ZmMpatF05PJ",
+    "name": "The Weeknd",
+    "monthlyListeners": 115405242
+  },
+  "bob-dylan": {
+    "spotifyId": "74ASZWbe4lXaubB36ztrGX",
+    "name": "Bob Dylan",
+    "monthlyListeners": 15024220
+  },
+  "david-bowie": {
+    "spotifyId": "0oSGxfWSnnOXhD2fKuz2Gy",
+    "name": "David Bowie",
+    "monthlyListeners": 21138233
+  },
+  "pink-floyd": {
+    "spotifyId": "0k17h0D3J5VfsdmQ1iZtE9",
+    "name": "Pink Floyd",
+    "monthlyListeners": 27654994
+  },
+  "nirvana": {
+    "spotifyId": "6olE6TJLqED3rqDCT0FyPh",
+    "name": "Nirvana",
+    "monthlyListeners": 38928611
+  },
+  "queen": {
+    "spotifyId": "1dfeR4HaWDbWqFHLkxsg1d",
+    "name": "Queen",
+    "monthlyListeners": 54687929
+  },
+  "phoebe-bridgers": {
+    "spotifyId": "1r1uxoy19fzMxunt3ONAkG",
+    "name": "Phoebe Bridgers",
+    "monthlyListeners": 11559001
+  },
+  "mitski": {
+    "spotifyId": "2uYWxilOVlUdk4oV9DvwqK",
+    "name": "Mitski",
+    "monthlyListeners": 20332647
+  },
+  "japanese-breakfast": {
+    "spotifyId": "7MoIc5s9KXolCBH1fy9kkw",
+    "name": "Japanese Breakfast",
+    "monthlyListeners": null,
+    "dailyStreams": 220237
+  },
+  "alvvays": {
+    "spotifyId": "3kzwYV3OCB010YfXMF0Avt",
+    "name": "Alvvays",
+    "monthlyListeners": null,
+    "dailyStreams": 190983
+  },
+  "big-thief": {
+    "spotifyId": "5QdyldG4Fl4TPiOIeMNpBZ",
+    "name": "Big Thief",
+    "monthlyListeners": 5879463
+  },
+  "bon-iver": {
+    "spotifyId": "4LEiUm1SRbFMgfqnQTwUbQ",
+    "name": "Bon Iver",
+    "monthlyListeners": 15584996
+  },
+  "vampire-weekend": {
+    "spotifyId": "5BvJzeQpmsdsFp4HGUYUEx",
+    "name": "Vampire Weekend",
+    "monthlyListeners": null,
+    "dailyStreams": 392935
+  },
+  "arcade-fire": {
+    "spotifyId": "3kjuyTCjPG1WMFCiyc5IuB",
+    "name": "Arcade Fire",
+    "monthlyListeners": null,
+    "dailyStreams": 540161
+  },
+  "radiohead": {
+    "spotifyId": "4Z8W4fKeB5YxbusRsdQVPb",
+    "name": "Radiohead",
+    "monthlyListeners": 44397308
+  },
+  "fleetwood-mac": {
+    "spotifyId": "08GQAI4eElDnROBrJRGE0X",
+    "name": "Fleetwood Mac",
+    "monthlyListeners": 53228049
+  },
+  "kanye-west": {
+    "spotifyId": "5K4W6rqBFWDnAN6FQUkS6x",
+    "name": "Kanye West",
+    "monthlyListeners": 72552173
+  },
+  "frank-ocean": {
+    "spotifyId": "2h93pZq0e7k5yf4dywlkpM",
+    "name": "Frank Ocean",
+    "monthlyListeners": 40820285
+  },
+  "tyler-the-creator": {
+    "spotifyId": "4V8LLVI7PbaPR0K2TGSxFF",
+    "name": "Tyler, The Creator",
+    "monthlyListeners": 39897544
+  },
+  "king-gizzard": {
+    "spotifyId": "6XYvaoDGE0VmRt83Jss9Sn",
+    "name": "King Gizzard & The Lizard Wizard",
+    "monthlyListeners": null,
+    "dailyStreams": 19461
+  },
+  "weyes-blood": {
+    "spotifyId": "3Uqu1mEdkUJxPe7s31n1M9",
+    "name": "Weyes Blood",
+    "monthlyListeners": null,
+    "dailyStreams": 209886
+  },
+  "sufjan-stevens": {
+    "spotifyId": "4MXUO7sVCaFgFjoTI5ox5c",
+    "name": "Sufjan Stevens",
+    "monthlyListeners": 14066292
+  },
+  "soccer-mommy": {
+    "spotifyId": "4wXchxfTTggLtzkoUhO86Q",
+    "name": "Soccer Mommy",
+    "monthlyListeners": null,
+    "dailyStreams": 48872
+  },
+  "snail-mail": {
+    "spotifyId": "4QkSD9TRUnMtI8Fq1jXJJe",
+    "name": "Snail Mail",
+    "monthlyListeners": null,
+    "dailyStreams": 89577
+  },
+  "faye-webster": {
+    "spotifyId": "5szilpXHcwOqnyKLqGco5j",
+    "name": "Faye Webster",
+    "monthlyListeners": 7884933
+  },
+  "black-country-new-road": {
+    "spotifyId": "3PP6ghmOlDl2jaKaH0avUN",
+    "name": "Black Country, New Road",
+    "monthlyListeners": null,
+    "dailyStreams": 193727
+  },
+  "caroline-polachek": {
+    "spotifyId": "4Ge8xMJNwt6EEXOzVXju9a",
+    "name": "Caroline Polachek",
+    "monthlyListeners": null,
+    "dailyStreams": 395654
+  },
+  "cocteau-twins": {
+    "spotifyId": "5Wabl1lPdNOeIn0SQ5A1mp",
+    "name": "Cocteau Twins",
+    "monthlyListeners": null,
+    "dailyStreams": 1082771
+  },
+  "my-bloody-valentine": {
+    "spotifyId": "3G3Gdm0ZRAOxLrbyjfhii5",
+    "name": "my bloody valentine",
+    "monthlyListeners": null,
+    "dailyStreams": 156547
+  },
+  "slowdive": {
+    "spotifyId": "72X6FHxaShda0XeQw3vbeF",
+    "name": "Slowdive",
+    "monthlyListeners": null,
+    "dailyStreams": 612989
+  },
+  "beach-house": {
+    "spotifyId": "56ZTgzPBDge0OvCGgMO3OY",
+    "name": "Beach House",
+    "monthlyListeners": 15600123
+  },
+  "mac-demarco": {
+    "spotifyId": "3Sz7ZnJQBIHsXLUSo0OQtM",
+    "name": "Mac DeMarco",
+    "monthlyListeners": 21399941
+  },
+  "tame-impala": {
+    "spotifyId": "5INjqkS1o8h1imAzPqGZBb",
+    "name": "Tame Impala",
+    "monthlyListeners": 63540422
+  },
+  "father-john-misty": {
+    "spotifyId": "2kGBy2WHvF0VdZyqiVCkDT",
+    "name": "Father John Misty",
+    "monthlyListeners": 9385302
+  },
+  "st-vincent": {
+    "spotifyId": "7bcbShaqKdcyjnmv4Ix8j6",
+    "name": "St. Vincent",
+    "monthlyListeners": null,
+    "dailyStreams": 368752
+  },
+  "daft-punk": {
+    "spotifyId": "4tZwfgrHOc3mvqYlEYSvVi",
+    "name": "Daft Punk",
+    "monthlyListeners": 30266510
+  },
+  "aphex-twin": {
+    "spotifyId": "6kBDZFXuLrZgHnvmPu9NsG",
+    "name": "Aphex Twin",
+    "monthlyListeners": null,
+    "dailyStreams": 644605
+  },
+  "boards-of-canada": {
+    "spotifyId": "2VAvhf61GgLYmC6C8anyX1",
+    "name": "Boards of Canada",
+    "monthlyListeners": null,
+    "dailyStreams": 314658
+  }
+}
