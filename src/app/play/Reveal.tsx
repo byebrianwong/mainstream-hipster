@@ -137,18 +137,23 @@ export default function Reveal({ result, items, onReplay, pinnedPhase }: Props) 
             {orderedItems.map((item, idx) => {
               const correctIdx = correctItems.findIndex((c) => c.id === item.id);
               const playerIdx = playerItems.findIndex((p) => p.id === item.id);
-              // Signed delta: positive = actual position number is greater
-              // (item is further down / more hipster than the player guessed).
-              const signedDelta = correctIdx - playerIdx;
+              // Sign convention from the player's perspective:
+              //   +N  → actual ranking is N positions HIGHER up the list (smaller
+              //         number, more mainstream) than where the player placed it.
+              //   −N  → actual ranking is N positions LOWER (larger number,
+              //         more hipster) than where the player placed it.
+              const signedDelta = playerIdx - correctIdx;
               const absDelta = Math.abs(signedDelta);
               const correctPos = correctIdx + 1;
               const playerPos = playerIdx + 1;
-              const noun = absDelta === 1 ? "position" : "positions";
+              const numWord =
+                ["", "one", "two", "three", "four", "five"][absDelta] ??
+                String(absDelta);
               const direction = signedDelta > 0 ? "higher" : "lower";
               const tooltip =
                 absDelta === 0
                   ? `Exact match — you placed it at #${playerPos}.`
-                  : `The actual ranking #${correctPos} is ${absDelta} ${noun} ${direction} than your ranking of #${playerPos}.`;
+                  : `The ranking of #${correctPos} is ${numWord} ${direction} than your ranking of #${playerPos}.`;
               return (
                 <motion.li
                   key={item.id}
@@ -171,20 +176,27 @@ export default function Reveal({ result, items, onReplay, pinnedPhase }: Props) 
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.25, delay: idx * 0.05 }}
                         className={clsx(
-                          "cursor-help rounded-full px-2 py-1 text-xs font-medium tabular-nums",
+                          "group relative cursor-help rounded-full px-2 py-1 text-xs font-medium tabular-nums",
                           absDelta === 0
                             ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300"
                             : absDelta === 1
                               ? "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300"
                               : "bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300",
                         )}
-                        title={tooltip}
+                        tabIndex={0}
+                        aria-label={tooltip}
                       >
                         {absDelta === 0
                           ? "✓"
                           : signedDelta > 0
                             ? `+${absDelta}`
                             : `−${absDelta}`}
+                        <span
+                          role="tooltip"
+                          className="pointer-events-none invisible absolute bottom-full right-0 z-50 mb-2 w-max max-w-xs rounded-md bg-[color:var(--foreground)] px-2.5 py-1.5 text-xs font-medium normal-case tracking-normal text-[color:var(--background)] opacity-0 shadow-lg transition-opacity duration-100 group-hover:visible group-hover:opacity-100 group-focus:visible group-focus:opacity-100"
+                        >
+                          {tooltip}
+                        </span>
                       </motion.span>
                     )}
                   </AnimatePresence>
