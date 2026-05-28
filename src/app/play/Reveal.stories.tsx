@@ -92,3 +92,39 @@ export const FiveItems: Story = {
     onReplay: () => {},
   },
 };
+
+// --- Category-specific reveals ---
+
+const tvItems: ScoredItem[] = [
+  { id: "reservation-dogs", name: "Reservation Dogs", wiki: "Reservation_Dogs", category: "tv", emoji: "🐕", views: 537_000 },
+  { id: "severance", name: "Severance (TV series)", wiki: "Severance_(TV_series)", category: "tv", emoji: "🧠", views: 2_900_000 },
+  { id: "the-bear", name: "The Bear (TV series)", wiki: "The_Bear_(TV_series)", category: "tv", emoji: "🐻", views: 4_100_000 },
+  { id: "friends", name: "Friends", wiki: "Friends", category: "tv", emoji: "📺", views: 9_800_000 },
+];
+
+export const TVReveal: Story = {
+  name: "TV (sharp instincts)",
+  args: {
+    items: tvItems,
+    // Player swapped Severance ↔ The Bear → one pair off → 5/6.
+    result: buildResult(tvItems, [tvItems[0], tvItems[2], tvItems[1], tvItems[3]]),
+    onReplay: () => {},
+  },
+};
+
+const bookItems: ScoredItem[] = [
+  { id: "normal-people", name: "Normal People (novel)", wiki: "Normal_People", category: "books", emoji: "💔", views: 380_000 },
+  { id: "a-little-life", name: "A Little Life", wiki: "A_Little_Life", category: "books", emoji: "💔", views: 612_000 },
+  { id: "atomic-habits", name: "Atomic Habits", wiki: "Atomic_Habits", category: "books", emoji: "⚛️", views: 1_900_000 },
+  { id: "harry-potter", name: "Harry Potter", wiki: "Harry_Potter", category: "books", emoji: "⚡", views: 14_500_000 },
+];
+
+export const BooksReveal: Story = {
+  name: "Books (mixed signals)",
+  args: {
+    items: bookItems,
+    // Player thought Harry Potter was more hipster than Atomic Habits — gets both wrong pairs.
+    result: buildResult(bookItems, [bookItems[0], bookItems[3], bookItems[1], bookItems[2]]),
+    onReplay: () => {},
+  },
+};
