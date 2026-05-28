@@ -137,7 +137,18 @@ export default function Reveal({ result, items, onReplay, pinnedPhase }: Props) 
             {orderedItems.map((item, idx) => {
               const correctIdx = correctItems.findIndex((c) => c.id === item.id);
               const playerIdx = playerItems.findIndex((p) => p.id === item.id);
-              const delta = Math.abs(playerIdx - correctIdx);
+              // Signed delta: positive = actual position number is greater
+              // (item is further down / more hipster than the player guessed).
+              const signedDelta = correctIdx - playerIdx;
+              const absDelta = Math.abs(signedDelta);
+              const correctPos = correctIdx + 1;
+              const playerPos = playerIdx + 1;
+              const noun = absDelta === 1 ? "position" : "positions";
+              const direction = signedDelta > 0 ? "higher" : "lower";
+              const tooltip =
+                absDelta === 0
+                  ? `Exact match — you placed it at #${playerPos}.`
+                  : `The actual ranking #${correctPos} is ${absDelta} ${noun} ${direction} than your ranking of #${playerPos}.`;
               return (
                 <motion.li
                   key={item.id}
@@ -160,16 +171,20 @@ export default function Reveal({ result, items, onReplay, pinnedPhase }: Props) 
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.25, delay: idx * 0.05 }}
                         className={clsx(
-                          "rounded-full px-2 py-1 text-xs font-medium",
-                          delta === 0
+                          "cursor-help rounded-full px-2 py-1 text-xs font-medium tabular-nums",
+                          absDelta === 0
                             ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300"
-                            : delta === 1
+                            : absDelta === 1
                               ? "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300"
                               : "bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300",
                         )}
-                        title={delta === 0 ? "Exact match" : `Off by ${delta}`}
+                        title={tooltip}
                       >
-                        {delta === 0 ? "✓" : `off by ${delta}`}
+                        {absDelta === 0
+                          ? "✓"
+                          : signedDelta > 0
+                            ? `+${absDelta}`
+                            : `−${absDelta}`}
                       </motion.span>
                     )}
                   </AnimatePresence>
