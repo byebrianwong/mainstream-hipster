@@ -21,6 +21,11 @@ export type Item = {
   spotifyId?: string;
   /** TMDb numeric ID — present on movies/tv items once assigned. */
   tmdbId?: number;
+  /**
+   * MusicBrainz ID — optional unambiguous artist identifier used by Last.fm
+   * to skip name disambiguation. Useful for ambiguous names like "Drake".
+   */
+  musicbrainzId?: string;
 };
 
 import type { Signals } from "./popularity/types";

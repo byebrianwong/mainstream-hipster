@@ -19,11 +19,13 @@ import type {
 } from "./types";
 import { wikipediaSource } from "./wikipedia";
 import { spotifySource } from "./spotify";
+import { lastfmSource } from "./lastfm";
 import { tmdbSource } from "./tmdb";
 
 export const SOURCES: Record<SourceName, SourceFetcher> = {
   wikipedia: wikipediaSource,
   spotify: spotifySource,
+  lastfm: lastfmSource,
   tmdb: tmdbSource,
 };
 

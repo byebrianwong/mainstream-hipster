@@ -7,7 +7,7 @@
 
 import type { Category, Item } from "../types";
 
-export type SourceName = "wikipedia" | "spotify" | "tmdb";
+export type SourceName = "wikipedia" | "spotify" | "lastfm" | "tmdb";
 
 /** Raw values from each source for a single item. */
 export type Signals = Partial<Record<SourceName, number>>;
@@ -19,7 +19,7 @@ export type SourceFetcher = (item: Item) => Promise<number | null>;
 export type CategoryWeights = Partial<Record<SourceName, number>>;
 
 export const CATEGORY_WEIGHTS: Record<Category, CategoryWeights> = {
-  music:   { spotify: 0.5, wikipedia: 0.5 },
+  music:   { lastfm: 0.5, wikipedia: 0.5 },
   movies:  { tmdb: 0.5, wikipedia: 0.5 },
   tv:      { tmdb: 0.5, wikipedia: 0.5 },
   books:   { wikipedia: 1 },
@@ -42,5 +42,6 @@ export function sourcesFor(category: Category | "mixed"): SourceName[] {
 export const SOURCE_LABEL: Record<SourceName, { label: string; unit: string }> = {
   wikipedia: { label: "Wikipedia", unit: "pageviews" },
   spotify:   { label: "Spotify",   unit: "followers" },
+  lastfm:    { label: "Last.fm",   unit: "listeners" },
   tmdb:      { label: "TMDb",      unit: "popularity" },
 };
