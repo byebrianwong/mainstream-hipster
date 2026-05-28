@@ -12,6 +12,8 @@ const VALID: (Category | "mixed")[] = [
   "drinks",
   "cities",
   "movies",
+  "tv",
+  "books",
   "brands",
   "hobbies",
   "tech",

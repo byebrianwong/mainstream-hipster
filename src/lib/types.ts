@@ -3,6 +3,8 @@ export type Category =
   | "food"
   | "cities"
   | "movies"
+  | "tv"
+  | "books"
   | "animals"
   | "drinks"
   | "brands"
