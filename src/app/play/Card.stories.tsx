@@ -8,7 +8,7 @@ const sample: ScoredItem = {
   wiki: "Mitski",
   category: "music",
   emoji: "🎤",
-  signals: { wikipedia: 626975, spotify: 2_800_000 },
+  signals: { wikipedia: 626975, lastfm: 3_307_003 },
   rank: 0.33,
 };
 

@@ -15,9 +15,9 @@ export default function Home() {
             Hipster
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-[color:var(--muted)] sm:text-lg">
-            You&rsquo;ll see a handful of things. Drag them from most hipster
-            (left) to most mainstream (right). Real-world popularity comes from
-            Wikipedia pageviews — score by how many pairs you ordered right.
+            You&rsquo;ll see a handful of things. Drag them from most mainstream
+            (left) to most hipster (right). Score by how many pairs you ordered
+            right against the real-world popularity data.
           </p>
         </header>
 

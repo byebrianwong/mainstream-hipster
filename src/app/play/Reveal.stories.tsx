@@ -15,22 +15,22 @@ function scored(
 const items: ScoredItem[] = [
   scored(
     { id: "arcade-fire", name: "Arcade Fire", wiki: "Arcade_Fire", category: "music", emoji: "🎸" },
-    { wikipedia: 922_000, spotify: 1_300_000 },
+    { wikipedia: 922_000, lastfm: 3_134_495 },
     0,
   ),
   scored(
     { id: "frank-ocean", name: "Frank Ocean", wiki: "Frank_Ocean", category: "music", emoji: "🎤" },
-    { wikipedia: 1_400_000, spotify: 12_000_000 },
+    { wikipedia: 1_400_000, lastfm: 4_301_404 },
     0.33,
   ),
   scored(
     { id: "the-beatles", name: "The Beatles", wiki: "The_Beatles", category: "music", emoji: "🎸" },
-    { wikipedia: 5_200_000, spotify: 26_000_000 },
+    { wikipedia: 5_200_000, lastfm: 6_551_415 },
     0.66,
   ),
   scored(
     { id: "taylor-swift", name: "Taylor Swift", wiki: "Taylor_Swift", category: "music", emoji: "🎤" },
-    { wikipedia: 12_300_000, spotify: 65_000_000 },
+    { wikipedia: 12_300_000, lastfm: 5_981_316 },
     1,
   ),
 ];
@@ -39,18 +39,33 @@ const meta: Meta<typeof Reveal> = {
   title: "Game/Reveal",
   component: Reveal,
   parameters: { layout: "padded" },
+  // Stories render the final "settled" state so Chromatic snapshots are stable.
+  // GuessPhase explicitly pins at "guess" to capture the pre-reveal view.
+  args: { pinnedPhase: "settled" },
 };
 export default meta;
 
 type Story = StoryObj<typeof Reveal>;
 
-const perfectOrder = [...items];
-const goodOrder = [items[0], items[1], items[3], items[2]];
-const mixedOrder = [items[2], items[0], items[3], items[1]];
-const worstOrder = [...items].reverse();
+// New orientation: leftmost / topmost = most MAINSTREAM. items[] is in
+// hipster→mainstream order (rank 0..1), so a perfect player guess is the reverse.
+const perfectOrder = [...items].reverse(); // [TS, Beatles, Frank Ocean, Arcade Fire]
+const goodOrder = [items[3], items[1], items[2], items[0]]; // one adjacent swap
+const mixedOrder = [items[1], items[3], items[0], items[2]];
+const worstOrder = [...items]; // hipster first — fully backwards from correct
 
 export const Perfect: Story = {
   args: { items, result: buildResult(items, perfectOrder), onReplay: () => {} },
+};
+
+export const GuessPhase: Story = {
+  name: "Phase 1 — player guess (pre-reveal)",
+  args: {
+    items,
+    result: buildResult(items, mixedOrder),
+    onReplay: () => {},
+    pinnedPhase: "guess",
+  },
 };
 
 export const SharpInstincts: Story = {
@@ -104,7 +119,8 @@ export const TVReveal: Story = {
   name: "TV (sharp instincts)",
   args: {
     items: tvItems,
-    result: buildResult(tvItems, [tvItems[0], tvItems[2], tvItems[1], tvItems[3]]),
+    // Mainstream-first guess with one adjacent swap (Severance ↔ The Bear).
+    result: buildResult(tvItems, [tvItems[3], tvItems[1], tvItems[2], tvItems[0]]),
     onReplay: () => {},
   },
 };
@@ -136,7 +152,8 @@ export const BooksReveal: Story = {
   name: "Books (mixed signals)",
   args: {
     items: bookItems,
-    result: buildResult(bookItems, [bookItems[0], bookItems[3], bookItems[1], bookItems[2]]),
+    // Mainstream-first guess that gets two pairs wrong.
+    result: buildResult(bookItems, [bookItems[2], bookItems[0], bookItems[3], bookItems[1]]),
     onReplay: () => {},
   },
 };

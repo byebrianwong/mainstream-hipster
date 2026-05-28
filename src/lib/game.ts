@@ -54,6 +54,9 @@ export async function buildRound(
 }
 
 // Score: concordant pairs / total pairs (Kendall-tau, normalized 0..1).
+// Orientation: leftmost / topmost = most MAINSTREAM. rank is in [0,1] where
+// 0 = most hipster, 1 = most mainstream. Player placing [i] before [j] means
+// they think [i] is more mainstream. Correct iff rank(i) >= rank(j).
 export function scoreOrder(
   playerOrder: Item[],
   scoredItems: ScoredItem[],
@@ -67,8 +70,7 @@ export function scoreOrder(
       total++;
       const a = rankById.get(playerOrder[i].id) ?? 0.5;
       const b = rankById.get(playerOrder[j].id) ?? 0.5;
-      // Player placed [i] before [j] → ranked it less mainstream. Correct iff a <= b.
-      if (a <= b) correct++;
+      if (a >= b) correct++;
     }
   }
   return {
@@ -83,7 +85,8 @@ export function buildResult(
   playerOrder: Item[],
 ): RoundResult {
   const { score, pairsCorrect, pairsTotal } = scoreOrder(playerOrder, items);
-  const correct = [...items].sort((a, b) => a.rank - b.rank);
+  // correctOrder: mainstream → hipster (descending rank).
+  const correct = [...items].sort((a, b) => b.rank - a.rank);
   return {
     items,
     playerOrder: playerOrder.map((i) => i.id),

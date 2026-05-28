@@ -37,11 +37,11 @@ function Board({ initial }: { initial: ScoredItem[] }) {
         Drag to rank these
       </h2>
       <p className="mb-6 text-sm text-[color:var(--muted)]">
-        Most hipster on the left, most mainstream on the right.
+        Most mainstream on the left, most hipster on the right.
       </p>
       <div className="mb-6 flex items-center justify-between text-xs uppercase tracking-[0.2em] text-[color:var(--muted)]">
-        <span>← hipster</span>
-        <span>mainstream →</span>
+        <span>mainstream ←</span>
+        <span>→ hipster</span>
       </div>
       <DndContext
         sensors={sensors}
@@ -78,10 +78,10 @@ export default meta;
 type Story = StoryObj<typeof Board>;
 
 const musicItems: ScoredItem[] = [
-  { id: "alvvays", name: "Alvvays", wiki: "Alvvays", category: "music", emoji: "🎸", signals: { wikipedia: 142_000, spotify: 250_000 }, rank: 0 },
-  { id: "mitski", name: "Mitski", wiki: "Mitski", category: "music", emoji: "🎤", signals: { wikipedia: 627_000, spotify: 2_800_000 }, rank: 0.33 },
-  { id: "frank-ocean", name: "Frank Ocean", wiki: "Frank_Ocean", category: "music", emoji: "🎤", signals: { wikipedia: 1_354_000, spotify: 12_000_000 }, rank: 0.66 },
-  { id: "taylor-swift", name: "Taylor Swift", wiki: "Taylor_Swift", category: "music", emoji: "🎤", signals: { wikipedia: 12_300_000, spotify: 60_000_000 }, rank: 1 },
+  { id: "alvvays", name: "Alvvays", wiki: "Alvvays", category: "music", emoji: "🎸", signals: { wikipedia: 142_000, lastfm: 1_215_981 }, rank: 0 },
+  { id: "mitski", name: "Mitski", wiki: "Mitski", category: "music", emoji: "🎤", signals: { wikipedia: 627_000, lastfm: 3_307_003 }, rank: 0.33 },
+  { id: "frank-ocean", name: "Frank Ocean", wiki: "Frank_Ocean", category: "music", emoji: "🎤", signals: { wikipedia: 1_354_000, lastfm: 4_301_404 }, rank: 0.66 },
+  { id: "taylor-swift", name: "Taylor Swift", wiki: "Taylor_Swift", category: "music", emoji: "🎤", signals: { wikipedia: 12_300_000, lastfm: 5_981_316 }, rank: 1 },
 ];
 
 export const FourMusicItems: Story = {
@@ -96,7 +96,7 @@ export const FiveItems: Story = {
   args: {
     initial: [
       ...musicItems,
-      { id: "king-gizzard", name: "King Gizzard & the Lizard Wizard", wiki: "King_Gizzard_%26_the_Lizard_Wizard", category: "music", emoji: "🎸", signals: { wikipedia: 696_000, spotify: 1_500_000 }, rank: 0.5 },
+      { id: "king-gizzard", name: "King Gizzard & the Lizard Wizard", wiki: "King_Gizzard_%26_the_Lizard_Wizard", category: "music", emoji: "🎸", signals: { wikipedia: 696_000, lastfm: 914_178 }, rank: 0.5 },
     ],
   },
 };

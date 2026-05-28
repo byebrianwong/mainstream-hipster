@@ -124,12 +124,12 @@ export default function GameClient({ category, size }: Props) {
         Drag to rank these
       </h2>
       <p className="mb-6 text-sm text-[color:var(--muted)]">
-        Most hipster on the left, most mainstream on the right.
+        Most mainstream on the left, most hipster on the right.
       </p>
 
       <div className="mb-6 flex items-center justify-between text-xs uppercase tracking-[0.2em] text-[color:var(--muted)]">
-        <span>← hipster</span>
-        <span>mainstream →</span>
+        <span>mainstream ←</span>
+        <span>→ hipster</span>
       </div>
 
       <DndContext
