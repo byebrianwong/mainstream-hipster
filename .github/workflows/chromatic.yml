@@ -1,0 +1,36 @@
+name: Chromatic
+
+# Runs on every push. Chromatic builds Storybook, snapshots each story, and
+# diffs against the last accepted baseline so visual regressions surface as
+# PR checks.
+#
+# Setup: create a project at https://www.chromatic.com, then add the project
+# token as a repo secret named CHROMATIC_PROJECT_TOKEN.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  chromatic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Chromatic needs full git history to figure out baselines.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Publish to Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitZeroOnChanges: true
+          onlyChanged: true
