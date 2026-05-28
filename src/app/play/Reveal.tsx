@@ -3,8 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence, LayoutGroup } from "motion/react";
 import type { RoundResult, ScoredItem } from "@/lib/types";
-import { SOURCE_LABEL } from "@/lib/popularity/types";
-import type { SourceName } from "@/lib/popularity/types";
+import { SOURCE_LABEL, SIGNAL_DISPLAY_ORDER } from "@/lib/popularity/types";
 import clsx from "clsx";
 
 type Phase = "guess" | "revealing" | "settled";
@@ -37,7 +36,11 @@ function verdict(score: number): { label: string; tone: string } {
 }
 
 function SignalBadges({ item }: { item: ScoredItem }) {
-  const entries = Object.entries(item.signals) as [SourceName, number][];
+  // Render in canonical order, not whatever order the fetches resolved in.
+  const entries = SIGNAL_DISPLAY_ORDER.flatMap((source) => {
+    const value = item.signals[source];
+    return value != null ? [[source, value] as const] : [];
+  });
   if (entries.length === 0) return null;
   return (
     <div className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-[color:var(--muted)]">

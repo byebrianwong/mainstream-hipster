@@ -45,3 +45,16 @@ export const SOURCE_LABEL: Record<SourceName, { label: string; unit: string }> =
   lastfm:    { label: "Last.fm",   unit: "listeners" },
   tmdb:      { label: "TMDb",      unit: "popularity" },
 };
+
+/**
+ * Canonical display order for signal badges. Category-specific sources
+ * appear first (they're the "interesting" signal for that category),
+ * Wikipedia last as the universal baseline. Without this the order is
+ * whatever fetch happened to resolve first.
+ */
+export const SIGNAL_DISPLAY_ORDER: SourceName[] = [
+  "lastfm",
+  "tmdb",
+  "spotify",
+  "wikipedia",
+];
