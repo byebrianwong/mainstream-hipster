@@ -55,14 +55,17 @@ export async function fetchSignals(
 
 /**
  * Given each item's raw signals and the category's weights, return a Map of
- * itemId → blended rank score (lower = more hipster).
+ * itemId → blended score in [0,1] (lower = more hipster, higher = more
+ * mainstream).
  *
- * For each source actually present on >=2 items in the round, we:
- *   - rank items 0..k-1 by raw value within the round (tie-broken arbitrarily)
- *   - normalize ranks to 0..1 so different roundSizes mix cleanly with weights
- *   - weight by `weights[source]` and sum
+ * Uses min-max normalization per source within the round, then weighted-
+ * averages those normalized values. This preserves *magnitude* gaps between
+ * items (e.g., Billie's 84M Spotify vs Fleetwood's 53M is a real spread)
+ * rather than collapsing everything to ranks 0..n-1, which throws away the
+ * size of each gap and produces frequent ties when sources disagree.
+ *
  * Sources not present for an item don't contribute (and weights renormalize
- * across the sources that *did* contribute to that item).
+ * across the sources that *did* contribute).
  */
 export function blendRanks(
   items: Item[],
@@ -71,22 +74,24 @@ export function blendRanks(
 ): Map<string, number> {
   const sources = (Object.keys(weights) as SourceName[]).filter((s) => {
     const count = items.filter((i) => (signals.get(i.id) ?? {})[s] != null).length;
-    return count >= 2; // need at least 2 to rank
+    return count >= 2; // need at least 2 to normalize
   });
 
-  // For each usable source, compute normalized rank per item.
+  // For each usable source: min-max normalize values to [0, 1] within the round.
   const perSourceNorm: Record<SourceName, Map<string, number>> = {} as never;
   for (const source of sources) {
-    const withValue = items
+    const values = items
       .map((i) => ({ id: i.id, v: signals.get(i.id)?.[source] }))
-      .filter((x): x is { id: string; v: number } => x.v != null)
-      .sort((a, b) => a.v - b.v);
-    const k = withValue.length;
+      .filter((x): x is { id: string; v: number } => x.v != null);
+    const nums = values.map((x) => x.v);
+    const min = Math.min(...nums);
+    const max = Math.max(...nums);
+    const range = max - min;
     const m = new Map<string, number>();
-    withValue.forEach((x, idx) => {
-      // Normalize to [0, 1]. k==1 case skipped above.
-      m.set(x.id, k > 1 ? idx / (k - 1) : 0);
-    });
+    for (const x of values) {
+      // If every item has the same value, everyone gets 0.5 (no signal in this source).
+      m.set(x.id, range > 0 ? (x.v - min) / range : 0.5);
+    }
     perSourceNorm[source] = m;
   }
 
