@@ -1,14 +1,20 @@
-// IMDb source — reads pre-scraped vote counts from src/lib/data/imdb-votes.json.
+// IMDb source (movies + TV) — reads pre-scraped vote counts from
+// src/lib/data/imdb-votes.json.
 //
-// `numVotes` (how many people rated a title on IMDb) is the best free signal of
-// a film's mainstream reach: blockbusters pull millions of votes, arthouse
-// films tens of thousands. Unlike TMDb's recency-weighted `popularity`, it's
-// stable across eras — classics keep accruing votes — which is what we want for
-// a "how mainstream is this" ranking. It's the movie analog of the Spotify/kworb
-// chart: a free bulk source (IMDb's title.ratings.tsv export) scraped once and
-// baked in, so the runtime never calls an API or needs a key.
+// IMDb has no free public search API, but it publishes a free daily dataset
+// (https://datasets.imdbws.com/title.ratings.tsv.gz) listing every title's
+// average rating and *number of votes*. `numVotes` — how many people rated a
+// title — is the best free, stable mainstream-reach proxy: blockbusters and
+// megahits pull millions of votes, arthouse films and cult shows tens of
+// thousands. Unlike TMDb's recency-weighted `popularity`, it holds across eras
+// (classics keep accruing votes).
 //
-// Refresh the data with: scripts/scrape-movie-data.mjs
+// We resolve each movie/show's IMDb id from its Wikipedia slug via Wikidata
+// (no API key), look up numVotes in the dataset, and bake the numbers in. The
+// runtime never calls IMDb — it just reads the JSON, keyed by item id, so the
+// same source serves both the movies and tv categories.
+//
+// Refresh the data with: scripts/scrape-imdb-data.mjs
 
 import type { Item } from "../types";
 import type { SourceFetcher } from "./types";

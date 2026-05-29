@@ -1,0 +1,824 @@
+{
+  "2666": {
+    "workKey": "/works/OL712025W",
+    "title": "2666",
+    "author": "Roberto Bolaño",
+    "readinglogCount": 87
+  },
+  "harry-potter": {
+    "workKey": "/works/OL82563W",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J. K. Rowling",
+    "readinglogCount": 22969
+  },
+  "the-great-gatsby": {
+    "workKey": "/works/OL468431W",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "readinglogCount": 3185
+  },
+  "1984-book": {
+    "workKey": "/works/OL1168083W",
+    "title": "Nineteen Eighty-Four",
+    "author": "George Orwell",
+    "readinglogCount": 8175
+  },
+  "lotr": {
+    "workKey": "/works/OL27482W",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "readinglogCount": 4928
+  },
+  "to-kill-a-mockingbird": {
+    "workKey": "/works/OL3140822W",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "readinglogCount": 6176
+  },
+  "the-hunger-games": {
+    "workKey": "/works/OL5735363W",
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "readinglogCount": 6996
+  },
+  "the-catcher-in-the-rye": {
+    "workKey": "/works/OL3335245W",
+    "title": "The Catcher in the Rye",
+    "author": "J. D. Salinger",
+    "readinglogCount": 2934
+  },
+  "pride-and-prejudice": {
+    "workKey": "/works/OL66554W",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "readinglogCount": 7291
+  },
+  "infinite-jest": {
+    "workKey": "/works/OL2943602W",
+    "title": "Infinite Jest",
+    "author": "David Foster Wallace",
+    "readinglogCount": 377
+  },
+  "normal-people": {
+    "workKey": "/works/OL20150260W",
+    "title": "Normal People",
+    "author": "Sally Rooney",
+    "readinglogCount": 1855
+  },
+  "my-year-of-rest": {
+    "workKey": "/works/OL17889978W",
+    "title": "My Year of Rest and Relaxation",
+    "author": "Ottessa Moshfegh",
+    "readinglogCount": 612
+  },
+  "just-kids": {
+    "workKey": "/works/OL15474046W",
+    "title": "Just Kids",
+    "author": "Patti Smith",
+    "readinglogCount": 374
+  },
+  "crying-in-h-mart": {
+    "workKey": "/works/OL22448002W",
+    "title": "Crying in H Mart",
+    "author": "Michelle Zauner",
+    "readinglogCount": 440
+  },
+  "pachinko": {
+    "workKey": "/works/OL17762217W",
+    "title": "Pachinko",
+    "author": "Min Jin Lee",
+    "readinglogCount": 454
+  },
+  "the-secret-history": {
+    "workKey": "/works/OL4321141W",
+    "title": "The Secret History",
+    "author": "Donna Tartt",
+    "readinglogCount": 1932
+  },
+  "tomorrow-tomorrow": {
+    "workKey": "/works/OL26004554W",
+    "title": "Tomorrow, and Tomorrow, and Tomorrow",
+    "author": "Gabrielle Zevin",
+    "readinglogCount": 377
+  },
+  "beloved": {
+    "workKey": "/works/OL50548W",
+    "title": "Beloved",
+    "author": "Toni Morrison",
+    "readinglogCount": 1644
+  },
+  "the-road": {
+    "workKey": "/works/OL40873W",
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "readinglogCount": 1168
+  },
+  "lincoln-in-the-bardo": {
+    "workKey": "/works/OL17635834W",
+    "title": "Lincoln in the Bardo",
+    "author": "George Saunders",
+    "readinglogCount": 122
+  },
+  "a-little-life": {
+    "workKey": "/works/OL17370186W",
+    "title": "A Little Life",
+    "author": "Hanya Yanagihara",
+    "readinglogCount": 4292
+  },
+  "atomic-habits": {
+    "workKey": "/works/OL17930368W",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "readinglogCount": 60286
+  },
+  "sapiens": {
+    "workKey": "/works/OL17075811W",
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "readinglogCount": 5809
+  },
+  "the-alchemist": {
+    "workKey": "/works/OL796465W",
+    "title": "O Alquimista",
+    "author": "Paulo Coelho",
+    "readinglogCount": 9116
+  },
+  "where-the-crawdads-sing": {
+    "workKey": "/works/OL18766691W",
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "readinglogCount": 2822
+  },
+  "the-da-vinci-code": {
+    "workKey": "/works/OL76837W",
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "readinglogCount": 3392
+  },
+  "angels-and-demons": {
+    "workKey": "/works/OL76833W",
+    "title": "Angels & Demons",
+    "author": "Dan Brown",
+    "readinglogCount": 1818
+  },
+  "the-kite-runner": {
+    "workKey": "/works/OL5781992W",
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "readinglogCount": 2786
+  },
+  "life-of-pi": {
+    "workKey": "/works/OL2827199W",
+    "title": "Life of Pi",
+    "author": "Yann Martel",
+    "readinglogCount": 1104
+  },
+  "twilight-book": {
+    "workKey": "/works/OL5720023W",
+    "title": "Twilight",
+    "author": "Stephenie Meyer",
+    "readinglogCount": 6211
+  },
+  "the-fault-in-our-stars": {
+    "workKey": "/works/OL16444438W",
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "readinglogCount": 4350
+  },
+  "the-maze-runner": {
+    "workKey": "/works/OL6027236W",
+    "title": "The Maze Runner",
+    "author": "James Dashner",
+    "readinglogCount": 2113
+  },
+  "divergent-book": {
+    "workKey": "/works/OL15719630W",
+    "title": "Divergent",
+    "author": "Veronica Roth",
+    "readinglogCount": 2102
+  },
+  "the-lightning-thief": {
+    "workKey": "/works/OL492658W",
+    "title": "The Lightning Thief",
+    "author": "Rick Riordan",
+    "readinglogCount": 6788
+  },
+  "the-hobbit": {
+    "workKey": "/works/OL27482W",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "readinglogCount": 4928
+  },
+  "a-game-of-thrones": {
+    "workKey": "/works/OL257943W",
+    "title": "A Game of Thrones",
+    "author": "George R. R. Martin",
+    "readinglogCount": 13127
+  },
+  "the-lion-the-witch-and-the-wardrobe": {
+    "workKey": "/works/OL71042W",
+    "title": "The Magician's Nephew",
+    "author": "C. S. Lewis",
+    "readinglogCount": 959
+  },
+  "charlottes-web": {
+    "workKey": "/works/OL483391W",
+    "title": "Charlotte's Web",
+    "author": "E. B. White",
+    "readinglogCount": 4240
+  },
+  "the-giver": {
+    "workKey": "/works/OL1846076W",
+    "title": "The Giver",
+    "author": "Lois Lowry",
+    "readinglogCount": 2910
+  },
+  "holes-book": {
+    "workKey": "/works/OL116250W",
+    "title": "Holes",
+    "author": "Louis Sachar",
+    "readinglogCount": 2219
+  },
+  "where-the-wild-things-are": {
+    "workKey": "/works/OL2568879W",
+    "title": "Where the Wild Things Are",
+    "author": "Maurice Sendak",
+    "readinglogCount": 1089
+  },
+  "the-very-hungry-caterpillar": {
+    "workKey": "/works/OL52987W",
+    "title": "The Very Hungry Caterpillar",
+    "author": "Eric Carle",
+    "readinglogCount": 1648
+  },
+  "matilda-book": {
+    "workKey": "/works/OL45846W",
+    "title": "Matilda",
+    "author": "Roald Dahl",
+    "readinglogCount": 3099
+  },
+  "charlie-and-the-chocolate-factory": {
+    "workKey": "/works/OL45790W",
+    "title": "Charlie and the Chocolate Factory",
+    "author": "Roald Dahl",
+    "readinglogCount": 2923
+  },
+  "the-hate-u-give": {
+    "workKey": "/works/OL17714701W",
+    "title": "The Hate U Give",
+    "author": "Angie Thomas",
+    "readinglogCount": 3093
+  },
+  "it-book": {
+    "workKey": "/works/OL81613W",
+    "title": "It",
+    "author": "Stephen King",
+    "readinglogCount": 11642
+  },
+  "the-shining-book": {
+    "workKey": "/works/OL81633W",
+    "title": "The Shining",
+    "author": "Stephen King",
+    "readinglogCount": 3574
+  },
+  "the-stand": {
+    "workKey": "/works/OL81618W",
+    "title": "The Stand",
+    "author": "Stephen King",
+    "readinglogCount": 1447
+  },
+  "the-firm-book": {
+    "workKey": "/works/OL76972W",
+    "title": "The Firm",
+    "author": "John Grisham",
+    "readinglogCount": 441
+  },
+  "a-time-to-kill-book": {
+    "workKey": "/works/OL77001W",
+    "title": "A Time to Kill",
+    "author": "John Grisham",
+    "readinglogCount": 393
+  },
+  "and-then-there-were-none": {
+    "workKey": "/works/OL471565W",
+    "title": "And Then There Were None",
+    "author": "Agatha Christie",
+    "readinglogCount": 2231
+  },
+  "murder-on-the-orient-express": {
+    "workKey": "/works/OL471576W",
+    "title": "Murder on the Orient Express",
+    "author": "Agatha Christie",
+    "readinglogCount": 1759
+  },
+  "the-notebook-book": {
+    "workKey": "/works/OL54797W",
+    "title": "The Notebook",
+    "author": "Nicholas Sparks",
+    "readinglogCount": 800
+  },
+  "it-ends-with-us": {
+    "workKey": "/works/OL18020194W",
+    "title": "It Ends With Us",
+    "author": "Colleen Hoover",
+    "readinglogCount": 44088
+  },
+  "fifty-shades-of-grey": {
+    "workKey": "/works/OL16336633W",
+    "title": "Fifty Shades of Grey",
+    "author": "E. L. James",
+    "readinglogCount": 6860
+  },
+  "outlander-book": {
+    "workKey": "/works/OL3261155W",
+    "title": "Outlander",
+    "author": "Diana Gabaldon",
+    "readinglogCount": 1230
+  },
+  "the-lovely-bones": {
+    "workKey": "/works/OL5962664W",
+    "title": "The Lovely Bones",
+    "author": "Alice Sebold",
+    "readinglogCount": 729
+  },
+  "the-time-travelers-wife": {
+    "workKey": "/works/OL4720160W",
+    "title": "The Time Traveler's Wife",
+    "author": "Audrey Niffenegger",
+    "readinglogCount": 573
+  },
+  "bridget-joness-diary": {
+    "workKey": "/works/OL547745W",
+    "title": "Bridget Jones's Diary",
+    "author": "Helen Fielding",
+    "readinglogCount": 399
+  },
+  "eat-pray-love": {
+    "workKey": "/works/OL41815W",
+    "title": "Eat, Pray, Love",
+    "author": "Elizabeth Gilbert",
+    "readinglogCount": 447
+  },
+  "the-7-habits-of-highly-effective-people": {
+    "workKey": "/works/OL2629977W",
+    "title": "The 7 Habits of Highly Effective People",
+    "author": "Stephen R. Covey",
+    "readinglogCount": 7342
+  },
+  "rich-dad-poor-dad": {
+    "workKey": "/works/OL2010879W",
+    "title": "Rich Dad, Poor Dad",
+    "author": "Robert T. Kiyosaki",
+    "readinglogCount": 35834
+  },
+  "how-to-win-friends-and-influence-people": {
+    "workKey": "/works/OL1063254W",
+    "title": "The Art of Public Speaking",
+    "author": "Dale Carnegie",
+    "readinglogCount": 251
+  },
+  "the-subtle-art-of-not-giving-a-fuck": {
+    "workKey": "/works/OL17590212W",
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "readinglogCount": 34190
+  },
+  "educated-memoir": {
+    "workKey": "/works/OL18139176W",
+    "title": "Educated",
+    "author": "Tara Westover",
+    "readinglogCount": 470
+  },
+  "becoming-book": {
+    "workKey": "/works/OL17930367W",
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "readinglogCount": 66
+  },
+  "thinking-fast-and-slow": {
+    "workKey": "/works/OL15992072W",
+    "title": "Thinking, fast and slow",
+    "author": "Daniel Kahneman",
+    "readinglogCount": 5705
+  },
+  "a-brief-history-of-time": {
+    "workKey": "/works/OL1892617W",
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "readinglogCount": 2846
+  },
+  "of-mice-and-men": {
+    "workKey": "/works/OL23204W",
+    "title": "Of Mice and Men",
+    "author": "John Steinbeck",
+    "readinglogCount": 2258
+  },
+  "the-grapes-of-wrath": {
+    "workKey": "/works/OL23205W",
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "readinglogCount": 1230
+  },
+  "lord-of-the-flies": {
+    "workKey": "/works/OL455327W",
+    "title": "Lord of the Flies",
+    "author": "William Golding",
+    "readinglogCount": 3197
+  },
+  "animal-farm": {
+    "workKey": "/works/OL1168007W",
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "readinglogCount": 4985
+  },
+  "fahrenheit-451": {
+    "workKey": "/works/OL103123W",
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "readinglogCount": 4286
+  },
+  "adventures-of-huckleberry-finn": {
+    "workKey": "/works/OL53908W",
+    "title": "Adventures of Huckleberry Finn",
+    "author": "Mark Twain",
+    "readinglogCount": 1516
+  },
+  "little-women": {
+    "workKey": "/works/OL29983W",
+    "title": "Little Women",
+    "author": "Louisa May Alcott",
+    "readinglogCount": 2879
+  },
+  "jane-eyre": {
+    "workKey": "/works/OL1095427W",
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "readinglogCount": 1728
+  },
+  "slaughterhouse-five": {
+    "workKey": "/works/OL98459W",
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut",
+    "readinglogCount": 1481
+  },
+  "the-girl-on-the-train-book": {
+    "workKey": "/works/OL17112428W",
+    "title": "The Girl on the Train",
+    "author": "Paula Hawkins",
+    "readinglogCount": 795
+  },
+  "the-help-book": {
+    "workKey": "/works/OL11999891W",
+    "title": "The Help",
+    "author": "Kathryn Stockett",
+    "readinglogCount": 1042
+  },
+  "diary-of-a-wimpy-kid-book": {
+    "workKey": "/works/OL8483260W",
+    "title": "Diary of a Wimpy Kid",
+    "author": "Jeff Kinney",
+    "readinglogCount": 7408
+  },
+  "the-wind-up-bird-chronicle": {
+    "workKey": "/works/OL2625412W",
+    "title": "The Wind-Up Bird Chronicle",
+    "author": "Haruki Murakami",
+    "readinglogCount": 308
+  },
+  "my-brilliant-friend": {
+    "workKey": "/works/OL16520879W",
+    "title": "L'amica geniale",
+    "author": "Elena Ferrante",
+    "readinglogCount": 338
+  },
+  "the-vegetarian": {
+    "workKey": "/works/OL17334243W",
+    "title": "채식주의자",
+    "author": "Han Kang",
+    "readinglogCount": 401
+  },
+  "flights-novel": {
+    "workKey": "/works/OL2097670W",
+    "title": "Bieguni",
+    "author": "Olga Tokarczuk",
+    "readinglogCount": 58
+  },
+  "drive-your-plow": {
+    "workKey": "/works/OL17351965W",
+    "title": "Prowadź swój pług przez kości umarłych",
+    "author": "Olga Tokarczuk",
+    "readinglogCount": 63
+  },
+  "the-savage-detectives": {
+    "workKey": "/works/OL712032W",
+    "title": "Los detectives salvajes",
+    "author": "Roberto Bolaño",
+    "readinglogCount": 85
+  },
+  "my-struggle-knausgard": {
+    "workKey": "/works/OL16415706W",
+    "title": "My Struggle: Book One",
+    "author": "Karl Ove Knausgård",
+    "readinglogCount": 11
+  },
+  "the-rings-of-saturn": {
+    "workKey": "/works/OL46611W",
+    "title": "Die Ringe des Saturn",
+    "author": "W. G. Sebald",
+    "readinglogCount": 3
+  },
+  "austerlitz": {
+    "workKey": "/works/OL46615W",
+    "title": "Austerlitz",
+    "author": "W. G. Sebald",
+    "readinglogCount": 40
+  },
+  "the-loser-bernhard": {
+    "workKey": "/works/OL2399772W",
+    "title": "Untergeher",
+    "author": "Thomas Bernhard",
+    "readinglogCount": 21
+  },
+  "kafka-on-the-shore": {
+    "workKey": "/works/OL2625431W",
+    "title": "海辺のカフカ",
+    "author": "村上春樹",
+    "readinglogCount": 1052
+  },
+  "cursed-bunny": {
+    "workKey": "/works/OL24520836W",
+    "title": "저주 토끼 [Jeoju tokki]",
+    "author": "Bora Chung",
+    "readinglogCount": 86
+  },
+  "breasts-and-eggs": {
+    "workKey": "/works/OL20835348W",
+    "title": "Breasts and Eggs",
+    "author": "川上未映子",
+    "readinglogCount": 200
+  },
+  "the-memory-police": {
+    "workKey": "/works/OL11690127W",
+    "title": "The Memory Police",
+    "author": "Yōko Ogawa",
+    "readinglogCount": 145
+  },
+  "convenience-store-woman": {
+    "workKey": "/works/OL19744024W",
+    "title": "Convenience store woman",
+    "author": "村田沙耶香",
+    "readinglogCount": 228
+  },
+  "mrs-dalloway": {
+    "workKey": "/works/OL39349W",
+    "title": "Mrs. Dalloway",
+    "author": "Virginia Woolf",
+    "readinglogCount": 615
+  },
+  "gravitys-rainbow": {
+    "workKey": "/works/OL2636675W",
+    "title": "Gravity's Rainbow",
+    "author": "Thomas Pynchon",
+    "readinglogCount": 336
+  },
+  "the-crying-of-lot-49": {
+    "workKey": "/works/OL2636665W",
+    "title": "The Crying of Lot 49",
+    "author": "Thomas Pynchon",
+    "readinglogCount": 209
+  },
+  "underworld-delillo": {
+    "workKey": "/works/OL1921185W",
+    "title": "Underworld",
+    "author": "Don DeLillo",
+    "readinglogCount": 47
+  },
+  "if-on-a-winters-night": {
+    "workKey": "/works/OL15321W",
+    "title": "Se una notte d'inverno un viaggiatore",
+    "author": "Italo Calvino",
+    "readinglogCount": 133
+  },
+  "invisible-cities": {
+    "workKey": "/works/OL15297W",
+    "title": "Le città invisibili",
+    "author": "Italo Calvino",
+    "readinglogCount": 188
+  },
+  "ficciones": {
+    "workKey": "/works/OL110971W",
+    "title": "Ficciones",
+    "author": "Jorge Luis Borges",
+    "readinglogCount": 435
+  },
+  "labyrinths-borges": {
+    "workKey": "/works/OL110969W",
+    "title": "El Aleph",
+    "author": "Jorge Luis Borges",
+    "readinglogCount": 174
+  },
+  "pale-fire": {
+    "workKey": "/works/OL627081W",
+    "title": "Pale Fire",
+    "author": "Vladimir Nabokov",
+    "readinglogCount": 147
+  },
+  "the-idiot-batuman": {
+    "workKey": "/works/OL17771503W",
+    "title": "The Idiot",
+    "author": "Elif Batuman",
+    "readinglogCount": 131
+  },
+  "bunny-novel": {
+    "workKey": "/works/OL20161633W",
+    "title": "Bunny",
+    "author": "Mona Awad",
+    "readinglogCount": 279
+  },
+  "severance-ma": {
+    "workKey": "/works/OL19748973W",
+    "title": "Severance",
+    "author": "Ling Ma",
+    "readinglogCount": 131
+  },
+  "outline-cusk": {
+    "workKey": "/works/OL17873642W",
+    "title": "Outline",
+    "author": "Rachel Cusk",
+    "readinglogCount": 45
+  },
+  "10-04-lerner": {
+    "workKey": "/works/OL17115245W",
+    "title": "10:04",
+    "author": "Ben Lerner",
+    "readinglogCount": 25
+  },
+  "a-brief-history-of-seven-killings": {
+    "workKey": "/works/OL17187702W",
+    "title": "A Brief History of Seven Killings",
+    "author": "Marlon James",
+    "readinglogCount": 55
+  },
+  "milkman-novel": {
+    "workKey": "/works/OL20805383W",
+    "title": "Milkman",
+    "author": "Anna Burns",
+    "readinglogCount": 18
+  },
+  "shuggie-bain": {
+    "workKey": "/works/OL20645179W",
+    "title": "Shuggie Bain",
+    "author": "Douglas Stuart",
+    "readinglogCount": 114
+  },
+  "a-tale-for-the-time-being": {
+    "workKey": "/works/OL17267887W",
+    "title": "A Tale for the Time Being",
+    "author": "Ruth Ozeki",
+    "readinglogCount": 128
+  },
+  "there-there-orange": {
+    "workKey": "/works/OL18143930W",
+    "title": "There There",
+    "author": "Tommy Orange",
+    "readinglogCount": 174
+  },
+  "a-heartbreaking-work": {
+    "workKey": "/works/OL114661W",
+    "title": "A heartbreaking work of staggering genius",
+    "author": "Dave Eggers",
+    "readinglogCount": 112
+  },
+  "jesus-son": {
+    "workKey": "/works/OL14961795W",
+    "title": "Jesus' Son.",
+    "author": "Denis Johnson",
+    "readinglogCount": 3
+  },
+  "the-hour-of-the-star": {
+    "workKey": "/works/OL1002120W",
+    "title": "A Hora da Estrela",
+    "author": "Clarice Lispector",
+    "readinglogCount": 289
+  },
+  "pedro-paramo": {
+    "workKey": "/works/OL1731119W",
+    "title": "Pedro Páramo",
+    "author": "Juan Rulfo",
+    "readinglogCount": 284
+  },
+  "hunger-hamsun": {
+    "workKey": "/works/OL573193W",
+    "title": "Sult",
+    "author": "Knut Hamsun",
+    "readinglogCount": 141
+  },
+  "zenos-conscience": {
+    "workKey": "/works/OL2276498W",
+    "title": "Confession of Zeno",
+    "author": "Italo Svevo",
+    "readinglogCount": 27
+  },
+  "the-tin-drum": {
+    "workKey": "/works/OL67334W",
+    "title": "The Tin Drum",
+    "author": "Günter Grass",
+    "readinglogCount": 164
+  },
+  "my-name-is-red": {
+    "workKey": "/works/OL1019598W",
+    "title": "Benim Adım Kırmızı",
+    "author": "Orhan Pamuk",
+    "readinglogCount": 108
+  },
+  "the-door-szabo": {
+    "workKey": "/works/OL940076W",
+    "title": "The door",
+    "author": "Magda Szabó",
+    "readinglogCount": 48
+  },
+  "the-lover-duras": {
+    "workKey": "/works/OL159382W",
+    "title": "L'Amant",
+    "author": "Marguerite Duras",
+    "readinglogCount": 47
+  },
+  "the-years-ernaux": {
+    "workKey": "/works/OL102389W",
+    "title": "Les années",
+    "author": "Annie Ernaux",
+    "readinglogCount": 84
+  },
+  "tenth-of-december": {
+    "workKey": "/works/OL16599873W",
+    "title": "Tenth of December",
+    "author": "George Saunders",
+    "readinglogCount": 131
+  },
+  "citizen-an-american-lyric": {
+    "workKey": "/works/OL17062866W",
+    "title": "Citizen",
+    "author": "Claudia Rankine",
+    "readinglogCount": 100
+  },
+  "autobiography-of-red": {
+    "workKey": "/works/OL8026525W",
+    "title": "Autobiography of Red",
+    "author": "Anne Carson",
+    "readinglogCount": 41
+  },
+  "ariel-plath": {
+    "workKey": "/works/OL1865549W",
+    "title": "Ariel",
+    "author": "Sylvia Plath",
+    "readinglogCount": 177
+  },
+  "crush-siken": {
+    "workKey": "/works/OL22150465W",
+    "title": "Crush",
+    "author": "Tracy Wolff",
+    "readinglogCount": 87
+  },
+  "bluets-nelson": {
+    "workKey": "/works/OL5814581W",
+    "title": "Bluets",
+    "author": "Maggie Nelson",
+    "readinglogCount": 64
+  },
+  "the-argonauts": {
+    "workKey": "/works/OL19999589W",
+    "title": "The Argonauts",
+    "author": "Maggie Nelson",
+    "readinglogCount": 80
+  },
+  "the-periodic-table-levi": {
+    "workKey": "/works/OL860022W",
+    "title": "Il sistema periodico",
+    "author": "Primo Levi",
+    "readinglogCount": 97
+  },
+  "trout-fishing-in-america": {
+    "workKey": "/works/OL11295370W",
+    "title": "Trout Fishing in America",
+    "author": "Richard Brautigan",
+    "readinglogCount": 30
+  },
+  "ducks-newburyport": {
+    "workKey": "/works/OL20509686W",
+    "title": "Ducks, Newburyport",
+    "author": "Lucy Ellmann",
+    "readinglogCount": 14
+  },
+  "the-temple-of-the-golden-pavilion": {
+    "workKey": "/works/OL1845333W",
+    "title": "金閣寺",
+    "author": "三島由紀夫",
+    "readinglogCount": 86
+  },
+  "gone-girl-book": {
+    "workKey": "/works/OL16239762W",
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "readinglogCount": 1320
+  }
+}
