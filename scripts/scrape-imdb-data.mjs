@@ -1,13 +1,16 @@
-// Scrape IMDb number-of-votes for every TV item.
+// Scrape IMDb number-of-votes for every movie and TV item.
 //
 // IMDb has no free search API, but it publishes a free daily dataset and every
-// notable show is on Wikidata with its IMDb id. So, no API key required:
+// notable film/show is on Wikidata with its IMDb id. So, no API key required:
 //   1. ONE download of datasets.imdbws.com/title.ratings.tsv.gz — every title's
 //      averageRating + numVotes. Parse into {tconst -> numVotes}.
-//   2. For each TV item, resolve its IMDb id from the Wikipedia slug we already
-//      have:  wiki slug -> Wikidata QID (Wikipedia pageprops API)
-//                       -> IMDb id  (Wikidata P345 claim).
+//   2. For each movie/TV item, resolve its IMDb id from the Wikipedia slug we
+//      already have:  wiki slug -> Wikidata QID (Wikipedia pageprops API)
+//                                -> IMDb id  (Wikidata P345 claim).
 //   3. Look the id up in the ratings table.
+//
+// Movies and TV both rank on IMDb numVotes and share this one data file, so
+// this single script refreshes both categories' entries in one pass.
 //
 // Output: src/lib/data/imdb-votes.json  (keyed by item id)
 //
@@ -118,11 +121,12 @@ async function imdbId(qid) {
 const ratings = await fetchRatings();
 console.log(`✓ IMDb ratings dataset: ${ratings.size} titles\n`);
 
-const tv = ITEMS.filter((i) => i.category === "tv");
+// Both movies and TV rank on IMDb numVotes — same resolution, one data file.
+const targets = ITEMS.filter((i) => i.category === "movies" || i.category === "tv");
 const out = {};
 const failed = [];
 
-for (const item of tv) {
+for (const item of targets) {
   process.stdout.write(`${item.name.slice(0, 40).padEnd(42)} `);
   await sleep(120);
 
@@ -158,7 +162,7 @@ await writeFile(outPath, JSON.stringify(out, null, 2) + "\n");
 
 const withVotes = Object.values(out).filter((v) => v.numVotes != null).length;
 console.log(
-  `\nWrote ${withVotes}/${tv.length} entries with vote counts to ${outPath}`,
+  `\nWrote ${withVotes}/${targets.length} entries with vote counts to ${outPath}`,
 );
 if (failed.length) {
   console.log("\nFailures:");

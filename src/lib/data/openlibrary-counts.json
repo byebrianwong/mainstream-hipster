@@ -161,12 +161,6 @@
     "author": "Dan Brown",
     "readinglogCount": 1818
   },
-  "gone-girl": {
-    "workKey": "/works/OL16239762W",
-    "title": "Gone Girl",
-    "author": "Gillian Flynn",
-    "readinglogCount": 1320
-  },
   "the-kite-runner": {
     "workKey": "/works/OL5781992W",
     "title": "The Kite Runner",
@@ -820,5 +814,11 @@
     "title": "金閣寺",
     "author": "三島由紀夫",
     "readinglogCount": 86
+  },
+  "gone-girl-book": {
+    "workKey": "/works/OL16239762W",
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "readinglogCount": 1320
   }
 }

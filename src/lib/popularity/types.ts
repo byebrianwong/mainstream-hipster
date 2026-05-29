@@ -26,7 +26,7 @@ export type CategoryWeights = Partial<Record<SourceName, number>>;
 
 export const CATEGORY_WEIGHTS: Record<Category, CategoryWeights> = {
   music:   { spotify: 0.5, wikipedia: 0.4, lastfm: 0.1 },
-  movies:  { tmdb: 0.5, wikipedia: 0.5 },
+  movies:  { imdb: 0.6, wikipedia: 0.4 },
   tv:      { imdb: 0.6, wikipedia: 0.4 },
   books:   { openlibrary: 0.6, wikipedia: 0.4 },
   food:    { wikipedia: 1 },
