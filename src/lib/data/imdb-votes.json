@@ -1,0 +1,687 @@
+{
+  "friends": {
+    "imdbId": "tt0108778",
+    "name": "Friends",
+    "numVotes": 1193446
+  },
+  "the-office": {
+    "imdbId": "tt0386676",
+    "name": "The Office (American TV series)",
+    "numVotes": 833897
+  },
+  "game-of-thrones": {
+    "imdbId": "tt0944947",
+    "name": "Game of Thrones",
+    "numVotes": 2619092
+  },
+  "stranger-things": {
+    "imdbId": "tt4574334",
+    "name": "Stranger Things",
+    "numVotes": 1703544
+  },
+  "breaking-bad": {
+    "imdbId": "tt0903747",
+    "name": "Breaking Bad",
+    "numVotes": 2621544
+  },
+  "mad-men": {
+    "imdbId": "tt0804503",
+    "name": "Mad Men",
+    "numVotes": 290327
+  },
+  "succession": {
+    "imdbId": "tt7660850",
+    "name": "Succession (TV series)",
+    "numVotes": 357113
+  },
+  "atlanta-tv": {
+    "imdbId": "tt4288182",
+    "name": "Atlanta (TV series)",
+    "numVotes": 98716
+  },
+  "severance": {
+    "imdbId": "tt11280740",
+    "name": "Severance (TV series)",
+    "numVotes": 390336
+  },
+  "the-bear": {
+    "imdbId": "tt14452776",
+    "name": "The Bear (TV series)",
+    "numVotes": 309730
+  },
+  "fleabag": {
+    "imdbId": "tt5687612",
+    "name": "Fleabag",
+    "numVotes": 246921
+  },
+  "better-call-saul": {
+    "imdbId": "tt3032476",
+    "name": "Better Call Saul",
+    "numVotes": 837707
+  },
+  "bojack-horseman": {
+    "imdbId": "tt3398228",
+    "name": "BoJack Horseman",
+    "numVotes": 233556
+  },
+  "twin-peaks": {
+    "imdbId": "tt0098936",
+    "name": "Twin Peaks",
+    "numVotes": 247007
+  },
+  "the-sopranos": {
+    "imdbId": "tt0141842",
+    "name": "The Sopranos",
+    "numVotes": 580934
+  },
+  "curb-your-enthusiasm": {
+    "imdbId": "tt0264235",
+    "name": "Curb Your Enthusiasm",
+    "numVotes": 166723
+  },
+  "i-think-you-should-leave": {
+    "imdbId": "tt10050772",
+    "name": "I Think You Should Leave with Tim Robinson",
+    "numVotes": 26795
+  },
+  "reservation-dogs": {
+    "imdbId": "tt13623580",
+    "name": "Reservation Dogs",
+    "numVotes": 28352
+  },
+  "mr-robot": {
+    "imdbId": "tt4158110",
+    "name": "Mr. Robot",
+    "numVotes": 468323
+  },
+  "yellowjackets": {
+    "imdbId": "tt11041332",
+    "name": "Yellowjackets (TV series)",
+    "numVotes": 115072
+  },
+  "the-wire": {
+    "imdbId": "tt0306414",
+    "name": "The Wire",
+    "numVotes": 431929
+  },
+  "lost": {
+    "imdbId": "tt0411008",
+    "name": "Lost (TV series)",
+    "numVotes": 672972
+  },
+  "the-mandalorian": {
+    "imdbId": "tt8111088",
+    "name": "The Mandalorian",
+    "numVotes": 656550
+  },
+  "bluey": {
+    "imdbId": "tt7678620",
+    "name": "Bluey",
+    "numVotes": 47654
+  },
+  "greys-anatomy": {
+    "imdbId": "tt0413573",
+    "name": "Grey's Anatomy",
+    "numVotes": 374468
+  },
+  "the-big-bang-theory": {
+    "imdbId": "tt0898266",
+    "name": "The Big Bang Theory",
+    "numVotes": 937384
+  },
+  "how-i-met-your-mother": {
+    "imdbId": "tt0460649",
+    "name": "How I Met Your Mother",
+    "numVotes": 782543
+  },
+  "the-crown": {
+    "imdbId": "tt4786824",
+    "name": "The Crown (TV series)",
+    "numVotes": 281444
+  },
+  "the-walking-dead": {
+    "imdbId": "tt1520211",
+    "name": "The Walking Dead (TV series)",
+    "numVotes": 1197875
+  },
+  "this-is-us": {
+    "imdbId": "tt5555260",
+    "name": "This Is Us",
+    "numVotes": 174559
+  },
+  "modern-family": {
+    "imdbId": "tt1442437",
+    "name": "Modern Family",
+    "numVotes": 540315
+  },
+  "parks-and-recreation": {
+    "imdbId": "tt1266020",
+    "name": "Parks and Recreation",
+    "numVotes": 315306
+  },
+  "brooklyn-nine-nine": {
+    "imdbId": "tt2467372",
+    "name": "Brooklyn Nine-Nine",
+    "numVotes": 417356
+  },
+  "the-simpsons": {
+    "imdbId": "tt0096697",
+    "name": "The Simpsons",
+    "numVotes": 468916
+  },
+  "family-guy": {
+    "imdbId": "tt0182576",
+    "name": "Family Guy",
+    "numVotes": 388978
+  },
+  "south-park": {
+    "imdbId": "tt0121955",
+    "name": "South Park",
+    "numVotes": 444402
+  },
+  "seinfeld": {
+    "imdbId": "tt0098904",
+    "name": "Seinfeld",
+    "numVotes": 384837
+  },
+  "frasier": {
+    "imdbId": "tt0106004",
+    "name": "Frasier",
+    "numVotes": 103182
+  },
+  "house-tv": {
+    "imdbId": "tt0412142",
+    "name": "House (TV series)",
+    "numVotes": 593424
+  },
+  "the-west-wing": {
+    "imdbId": "tt0200276",
+    "name": "The West Wing",
+    "numVotes": 99504
+  },
+  "twenty-four": {
+    "imdbId": "tt0285331",
+    "name": "24 (TV series)",
+    "numVotes": 206999
+  },
+  "desperate-housewives": {
+    "imdbId": "tt0410975",
+    "name": "Desperate Housewives",
+    "numVotes": 154183
+  },
+  "gossip-girl": {
+    "imdbId": "tt0397442",
+    "name": "Gossip Girl",
+    "numVotes": 214970
+  },
+  "supernatural": {
+    "imdbId": "tt0460681",
+    "name": "Supernatural (American TV series)",
+    "numVotes": 539704
+  },
+  "bridgerton": {
+    "imdbId": "tt8740790",
+    "name": "Bridgerton",
+    "numVotes": 228711
+  },
+  "downton-abbey": {
+    "imdbId": "tt1606375",
+    "name": "Downton Abbey",
+    "numVotes": 246569
+  },
+  "the-witcher": {
+    "imdbId": "tt5180504",
+    "name": "The Witcher (TV series)",
+    "numVotes": 620640
+  },
+  "wednesday": {
+    "imdbId": "tt13443470",
+    "name": "Wednesday (TV series)",
+    "numVotes": 497880
+  },
+  "squid-game": {
+    "imdbId": "tt10919420",
+    "name": "Squid Game",
+    "numVotes": 762027
+  },
+  "cobra-kai": {
+    "imdbId": "tt7221388",
+    "name": "Cobra Kai",
+    "numVotes": 243464
+  },
+  "orange-is-the-new-black": {
+    "imdbId": "tt2372162",
+    "name": "Orange Is the New Black",
+    "numVotes": 336503
+  },
+  "the-umbrella-academy": {
+    "imdbId": "tt1312171",
+    "name": "The Umbrella Academy (TV series)",
+    "numVotes": 314953
+  },
+  "you-tv": {
+    "imdbId": "tt7335184",
+    "name": "You (TV series)",
+    "numVotes": 368367
+  },
+  "dexter": {
+    "imdbId": "tt0773262",
+    "name": "Dexter (TV series)",
+    "numVotes": 936796
+  },
+  "prison-break": {
+    "imdbId": "tt0455275",
+    "name": "Prison Break",
+    "numVotes": 669075
+  },
+  "ncis": {
+    "imdbId": "tt0364845",
+    "name": "NCIS (TV series)",
+    "numVotes": 176764
+  },
+  "law-and-order-svu": {
+    "imdbId": "tt0203259",
+    "name": "Law & Order: Special Victims Unit",
+    "numVotes": 144819
+  },
+  "csi": {
+    "imdbId": "tt0247082",
+    "name": "CSI: Crime Scene Investigation",
+    "numVotes": 94234
+  },
+  "the-x-files": {
+    "imdbId": "tt0106179",
+    "name": "The X-Files",
+    "numVotes": 273340
+  },
+  "suits": {
+    "imdbId": "tt1632701",
+    "name": "Suits (American TV series)",
+    "numVotes": 540599
+  },
+  "survivor": {
+    "imdbId": "tt0239195",
+    "name": "Survivor (American TV series)",
+    "numVotes": 30124
+  },
+  "the-amazing-race": {
+    "imdbId": "tt0285335",
+    "name": "The Amazing Race",
+    "numVotes": 16531
+  },
+  "american-idol": {
+    "imdbId": "tt0319931",
+    "name": "American Idol",
+    "numVotes": 22807
+  },
+  "the-voice": {
+    "imdbId": "tt1839337",
+    "name": "The Voice (American TV series)",
+    "numVotes": 14106
+  },
+  "rupauls-drag-race": {
+    "imdbId": "tt1353056",
+    "name": "RuPaul's Drag Race",
+    "numVotes": 25737
+  },
+  "the-bachelor": {
+    "imdbId": "tt0313038",
+    "name": "The Bachelor (American TV series)",
+    "numVotes": 8003
+  },
+  "jeopardy": {
+    "imdbId": "tt0057758",
+    "name": "Jeopardy!",
+    "numVotes": 703
+  },
+  "wheel-of-fortune": {
+    "imdbId": "tt0072584",
+    "name": "Wheel of Fortune (American game show)",
+    "numVotes": 4092
+  },
+  "saturday-night-live": {
+    "imdbId": "tt0072562",
+    "name": "Saturday Night Live",
+    "numVotes": 57781
+  },
+  "the-daily-show": {
+    "imdbId": "tt0115147",
+    "name": "The Daily Show",
+    "numVotes": 49701
+  },
+  "the-tonight-show-fallon": {
+    "imdbId": "tt3444938",
+    "name": "The Tonight Show Starring Jimmy Fallon",
+    "numVotes": 20202
+  },
+  "spongebob-squarepants": {
+    "imdbId": "tt0206512",
+    "name": "SpongeBob SquarePants",
+    "numVotes": 125858
+  },
+  "avatar-the-last-airbender": {
+    "imdbId": "tt0417299",
+    "name": "Avatar: The Last Airbender",
+    "numVotes": 442936
+  },
+  "rick-and-morty": {
+    "imdbId": "tt2861424",
+    "name": "Rick and Morty",
+    "numVotes": 695910
+  },
+  "pokemon-tv": {
+    "imdbId": "tt0168366",
+    "name": "Pokémon (TV series)",
+    "numVotes": 56193
+  },
+  "wandavision": {
+    "imdbId": "tt9140560",
+    "name": "WandaVision",
+    "numVotes": 416617
+  },
+  "the-boys": {
+    "imdbId": "tt1190634",
+    "name": "The Boys (TV series)",
+    "numVotes": 962360
+  },
+  "the-handmaids-tale": {
+    "imdbId": "tt5834204",
+    "name": "The Handmaid's Tale (TV series)",
+    "numVotes": 298758
+  },
+  "westworld": {
+    "imdbId": "tt0475784",
+    "name": "Westworld (TV series)",
+    "numVotes": 558135
+  },
+  "black-mirror": {
+    "imdbId": "tt2085059",
+    "name": "Black Mirror",
+    "numVotes": 738543
+  },
+  "the-white-lotus": {
+    "imdbId": "tt13406094",
+    "name": "The White Lotus",
+    "numVotes": 325840
+  },
+  "fargo": {
+    "imdbId": "tt2802850",
+    "name": "Fargo (TV series)",
+    "numVotes": 469523
+  },
+  "true-detective": {
+    "imdbId": "tt2356777",
+    "name": "True Detective",
+    "numVotes": 756682
+  },
+  "euphoria": {
+    "imdbId": "tt8772296",
+    "name": "Euphoria (American TV series)",
+    "numVotes": 306249
+  },
+  "watchmen": {
+    "imdbId": "tt7049682",
+    "name": "Watchmen (TV series)",
+    "numVotes": 146160
+  },
+  "chernobyl": {
+    "imdbId": "tt7366338",
+    "name": "Chernobyl (miniseries)",
+    "numVotes": 1039608
+  },
+  "mindhunter": {
+    "imdbId": "tt5290382",
+    "name": "Mindhunter (TV series)",
+    "numVotes": 397594
+  },
+  "dark": {
+    "imdbId": "tt5753856",
+    "name": "Dark (TV series)",
+    "numVotes": 546887
+  },
+  "barry": {
+    "imdbId": "tt5348176",
+    "name": "Barry (TV series)",
+    "numVotes": 143085
+  },
+  "deadwood": {
+    "imdbId": "tt0348914",
+    "name": "Deadwood (TV series)",
+    "numVotes": 128767
+  },
+  "boardwalk-empire": {
+    "imdbId": "tt0979432",
+    "name": "Boardwalk Empire",
+    "numVotes": 218168
+  },
+  "six-feet-under": {
+    "imdbId": "tt0248654",
+    "name": "Six Feet Under (TV series)",
+    "numVotes": 168317
+  },
+  "the-americans": {
+    "imdbId": "tt2149175",
+    "name": "The Americans",
+    "numVotes": 124031
+  },
+  "the-leftovers": {
+    "imdbId": "tt2699128",
+    "name": "The Leftovers (TV series)",
+    "numVotes": 131040
+  },
+  "hannibal": {
+    "imdbId": "tt2243973",
+    "name": "Hannibal (TV series)",
+    "numVotes": 309301
+  },
+  "mare-of-easttown": {
+    "imdbId": "tt10155688",
+    "name": "Mare of Easttown",
+    "numVotes": 222298
+  },
+  "the-night-of": {
+    "imdbId": "tt2401256",
+    "name": "The Night Of",
+    "numVotes": 195321
+  },
+  "sharp-objects": {
+    "imdbId": "tt2649356",
+    "name": "Sharp Objects (miniseries)",
+    "numVotes": 138462
+  },
+  "normal-people-tv": {
+    "imdbId": "tt9059760",
+    "name": "Normal People (TV series)",
+    "numVotes": 116156
+  },
+  "i-may-destroy-you": {
+    "imdbId": "tt11204260",
+    "name": "I May Destroy You",
+    "numVotes": 28412
+  },
+  "beef": {
+    "imdbId": "tt14403178",
+    "name": "Beef (TV series)",
+    "numVotes": 173160
+  },
+  "the-jinx": {
+    "imdbId": "tt4299972",
+    "name": "The Jinx (TV series)",
+    "numVotes": 58643
+  },
+  "wild-wild-country": {
+    "imdbId": "tt7768848",
+    "name": "Wild Wild Country",
+    "numVotes": 38652
+  },
+  "babylon-berlin": {
+    "imdbId": "tt4378376",
+    "name": "Babylon Berlin",
+    "numVotes": 33405
+  },
+  "station-eleven": {
+    "imdbId": "tt10574236",
+    "name": "Station Eleven (miniseries)",
+    "numVotes": 42821
+  },
+  "the-knick": {
+    "imdbId": "tt2937900",
+    "name": "The Knick",
+    "numVotes": 56975
+  },
+  "nathan-for-you": {
+    "imdbId": "tt2297757",
+    "name": "Nathan for You",
+    "numVotes": 49980
+  },
+  "the-rehearsal": {
+    "imdbId": "tt10802170",
+    "name": "The Rehearsal (TV series)",
+    "numVotes": 37116
+  },
+  "how-to-with-john-wilson": {
+    "imdbId": "tt10801534",
+    "name": "How To with John Wilson",
+    "numVotes": 17055
+  },
+  "russian-doll": {
+    "imdbId": "tt7520794",
+    "name": "Russian Doll (TV series)",
+    "numVotes": 116302
+  },
+  "its-always-sunny-in-philadelphia": {
+    "imdbId": "tt0472954",
+    "name": "It's Always Sunny in Philadelphia",
+    "numVotes": 281847
+  },
+  "neon-genesis-evangelion": {
+    "imdbId": "tt0112159",
+    "name": "Neon Genesis Evangelion",
+    "numVotes": 110821
+  },
+  "cowboy-bebop": {
+    "imdbId": "tt0213338",
+    "name": "Cowboy Bebop",
+    "numVotes": 169664
+  },
+  "death-note": {
+    "imdbId": "tt0877057",
+    "name": "Death Note (2006 TV series)",
+    "numVotes": 482301
+  },
+  "mob-psycho-100": {
+    "imdbId": "tt5897304",
+    "name": "Mob Psycho 100",
+    "numVotes": 67379
+  },
+  "peep-show": {
+    "imdbId": "tt0387764",
+    "name": "Peep Show (British TV series)",
+    "numVotes": 73833
+  },
+  "rectify": {
+    "imdbId": "tt2183404",
+    "name": "Rectify",
+    "numVotes": 29093
+  },
+  "halt-and-catch-fire": {
+    "imdbId": "tt2543312",
+    "name": "Halt and Catch Fire (TV series)",
+    "numVotes": 38333
+  },
+  "search-party": {
+    "imdbId": "tt5460226",
+    "name": "Search Party (TV series)",
+    "numVotes": 15470
+  },
+  "party-down": {
+    "imdbId": "tt1073507",
+    "name": "Party Down",
+    "numVotes": 39326
+  },
+  "los-espookys": {
+    "imdbId": "tt7721046",
+    "name": "Los Espookys",
+    "numVotes": 3123
+  },
+  "documentary-now": {
+    "imdbId": "tt4677934",
+    "name": "Documentary Now!",
+    "numVotes": 8689
+  },
+  "joe-pera-talks-with-you": {
+    "imdbId": "tt8199790",
+    "name": "Joe Pera Talks with You",
+    "numVotes": 4153
+  },
+  "garth-marenghis-darkplace": {
+    "imdbId": "tt0397150",
+    "name": "Garth Marenghi's Darkplace",
+    "numVotes": 21678
+  },
+  "inside-no-9": {
+    "imdbId": "tt2674806",
+    "name": "Inside No. 9",
+    "numVotes": 23822
+  },
+  "the-mighty-boosh": {
+    "imdbId": "tt0398417",
+    "name": "The Mighty Boosh",
+    "numVotes": 15165
+  },
+  "serial-experiments-lain": {
+    "imdbId": "tt0500092",
+    "name": "Serial Experiments Lain",
+    "numVotes": 22138
+  },
+  "samurai-champloo": {
+    "imdbId": "tt0423731",
+    "name": "Samurai Champloo",
+    "numVotes": 63743
+  },
+  "the-venture-bros": {
+    "imdbId": "tt0417373",
+    "name": "The Venture Bros.",
+    "numVotes": 30242
+  },
+  "the-boondocks": {
+    "imdbId": "tt0373732",
+    "name": "The Boondocks (TV series)",
+    "numVotes": 41966
+  },
+  "smiling-friends": {
+    "imdbId": "tt12074628",
+    "name": "Smiling Friends",
+    "numVotes": 30509
+  },
+  "the-killing-danish": {
+    "imdbId": "tt0826760",
+    "name": "The Killing (Danish TV series)",
+    "numVotes": 32462
+  },
+  "gomorrah": {
+    "imdbId": "tt2049116",
+    "name": "Gomorrah (TV series)",
+    "numVotes": 49881
+  },
+  "my-brilliant-friend-tv": {
+    "imdbId": "tt7278862",
+    "name": "My Brilliant Friend (TV series)",
+    "numVotes": 23157
+  },
+  "giri-haji": {
+    "imdbId": "tt8001106",
+    "name": "Giri/Haji",
+    "numVotes": 19302
+  },
+  "devs": {
+    "imdbId": "tt8134186",
+    "name": "Devs (TV series)",
+    "numVotes": 57734
+  },
+  "ramy": {
+    "imdbId": "tt7649694",
+    "name": "Ramy (TV series)",
+    "numVotes": 17923
+  }
+}
