@@ -21,12 +21,14 @@ import { wikipediaSource } from "./wikipedia";
 import { spotifySource } from "./spotify";
 import { lastfmSource } from "./lastfm";
 import { tmdbSource } from "./tmdb";
+import { imdbSource } from "./imdb";
 
 export const SOURCES: Record<SourceName, SourceFetcher> = {
   wikipedia: wikipediaSource,
   spotify: spotifySource,
   lastfm: lastfmSource,
   tmdb: tmdbSource,
+  imdb: imdbSource,
 };
 
 /** Fetch every signal listed in `weights` for every item, in parallel. */

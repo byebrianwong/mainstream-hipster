@@ -7,7 +7,7 @@
 
 import type { Category, Item } from "../types";
 
-export type SourceName = "wikipedia" | "spotify" | "lastfm" | "tmdb";
+export type SourceName = "wikipedia" | "spotify" | "lastfm" | "tmdb" | "imdb";
 
 /** Raw values from each source for a single item. */
 export type Signals = Partial<Record<SourceName, number>>;
@@ -20,7 +20,7 @@ export type CategoryWeights = Partial<Record<SourceName, number>>;
 
 export const CATEGORY_WEIGHTS: Record<Category, CategoryWeights> = {
   music:   { spotify: 0.5, wikipedia: 0.4, lastfm: 0.1 },
-  movies:  { tmdb: 0.5, wikipedia: 0.5 },
+  movies:  { imdb: 0.6, wikipedia: 0.4 },
   tv:      { tmdb: 0.5, wikipedia: 0.5 },
   books:   { wikipedia: 1 },
   food:    { wikipedia: 1 },
@@ -44,6 +44,7 @@ export const SOURCE_LABEL: Record<SourceName, { label: string; unit: string }> =
   spotify:   { label: "Spotify",   unit: "monthly listeners" },
   lastfm:    { label: "Last.fm",   unit: "listeners" },
   tmdb:      { label: "TMDb",      unit: "popularity" },
+  imdb:      { label: "IMDb",      unit: "ratings" },
 };
 
 /**
@@ -55,6 +56,7 @@ export const SOURCE_LABEL: Record<SourceName, { label: string; unit: string }> =
 export const SIGNAL_DISPLAY_ORDER: SourceName[] = [
   "spotify",
   "tmdb",
+  "imdb",
   "lastfm",
   "wikipedia",
 ];

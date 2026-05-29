@@ -1,0 +1,667 @@
+{
+  "1917": {
+    "imdbId": "tt8579674",
+    "name": "1917 (2019 film)",
+    "numVotes": 772569
+  },
+  "titanic": {
+    "imdbId": "tt0120338",
+    "name": "Titanic (1997 film)",
+    "numVotes": 1394314
+  },
+  "avengers-endgame": {
+    "imdbId": "tt4154796",
+    "name": "Avengers: Endgame",
+    "numVotes": 1449445
+  },
+  "barbie": {
+    "imdbId": "tt1517268",
+    "name": "Barbie (film)",
+    "numVotes": 681239
+  },
+  "oppenheimer": {
+    "imdbId": "tt15398776",
+    "name": "Oppenheimer (film)",
+    "numVotes": 1040356
+  },
+  "parasite": {
+    "imdbId": "tt6751668",
+    "name": "Parasite (2019 film)",
+    "numVotes": 1166562
+  },
+  "everything-everywhere": {
+    "imdbId": "tt6710474",
+    "name": "Everything Everywhere All at Once",
+    "numVotes": 639740
+  },
+  "the-lighthouse": {
+    "imdbId": "tt7984734",
+    "name": "The Lighthouse (2019 film)",
+    "numVotes": 302794
+  },
+  "midsommar": {
+    "imdbId": "tt8772262",
+    "name": "Midsommar (film)",
+    "numVotes": 484974
+  },
+  "moonlight": {
+    "imdbId": "tt4975722",
+    "name": "Moonlight (2016 film)",
+    "numVotes": 352618
+  },
+  "the-favourite": {
+    "imdbId": "tt5083738",
+    "name": "The Favourite",
+    "numVotes": 259016
+  },
+  "frances-ha": {
+    "imdbId": "tt2347569",
+    "name": "Frances Ha",
+    "numVotes": 102540
+  },
+  "lady-bird": {
+    "imdbId": "tt4925292",
+    "name": "Lady Bird (film)",
+    "numVotes": 364355
+  },
+  "inception": {
+    "imdbId": "tt1375666",
+    "name": "Inception",
+    "numVotes": 2820969
+  },
+  "the-dark-knight": {
+    "imdbId": "tt0468569",
+    "name": "The Dark Knight",
+    "numVotes": 3172145
+  },
+  "avatar": {
+    "imdbId": "tt0499549",
+    "name": "Avatar (2009 film)",
+    "numVotes": 1499305
+  },
+  "pulp-fiction": {
+    "imdbId": "tt0110912",
+    "name": "Pulp Fiction",
+    "numVotes": 2437772
+  },
+  "interstellar": {
+    "imdbId": "tt0816692",
+    "name": "Interstellar (film)",
+    "numVotes": 2535417
+  },
+  "the-godfather": {
+    "imdbId": "tt0068646",
+    "name": "The Godfather",
+    "numVotes": 2228516
+  },
+  "forrest-gump": {
+    "imdbId": "tt0109830",
+    "name": "Forrest Gump",
+    "numVotes": 2499353
+  },
+  "aftersun": {
+    "imdbId": "tt19770238",
+    "name": "Aftersun",
+    "numVotes": 129067
+  },
+  "past-lives": {
+    "imdbId": "tt13238346",
+    "name": "Past Lives (film)",
+    "numVotes": 173538
+  },
+  "uncut-gems": {
+    "imdbId": "tt5727208",
+    "name": "Uncut Gems",
+    "numVotes": 356941
+  },
+  "burning": {
+    "imdbId": "tt7282468",
+    "name": "Burning (2018 film)",
+    "numVotes": 86033
+  },
+  "drive-my-car": {
+    "imdbId": "tt14039582",
+    "name": "Drive My Car (film)",
+    "numVotes": 76923
+  },
+  "petite-maman": {
+    "imdbId": "tt13204490",
+    "name": "Petite Maman",
+    "numVotes": 20889
+  },
+  "first-cow": {
+    "imdbId": "tt9231040",
+    "name": "First Cow",
+    "numVotes": 24542
+  },
+  "minari": {
+    "imdbId": "tt10633456",
+    "name": "Minari (film)",
+    "numVotes": 126189
+  },
+  "the-power-of-the-dog": {
+    "imdbId": "tt10293406",
+    "name": "The Power of the Dog (film)",
+    "numVotes": 231892
+  },
+  "nomadland": {
+    "imdbId": "tt9770150",
+    "name": "Nomadland",
+    "numVotes": 219463
+  },
+  "the-florida-project": {
+    "imdbId": "tt5649144",
+    "name": "The Florida Project",
+    "numVotes": 147077
+  },
+  "shawshank-redemption": {
+    "imdbId": "tt0111161",
+    "name": "The Shawshank Redemption",
+    "numVotes": 3192367
+  },
+  "the-matrix": {
+    "imdbId": "tt0133093",
+    "name": "The Matrix",
+    "numVotes": 2250244
+  },
+  "fight-club": {
+    "imdbId": "tt0137523",
+    "name": "Fight Club",
+    "numVotes": 2612592
+  },
+  "lotr-fellowship": {
+    "imdbId": "tt0120737",
+    "name": "The Lord of the Rings: The Fellowship of the Ring",
+    "numVotes": 2208945
+  },
+  "jurassic-park": {
+    "imdbId": "tt0107290",
+    "name": "Jurassic Park",
+    "numVotes": 1179429
+  },
+  "the-lion-king": {
+    "imdbId": "tt0110357",
+    "name": "The Lion King",
+    "numVotes": 1260365
+  },
+  "gladiator": {
+    "imdbId": "tt0172495",
+    "name": "Gladiator (2000 film)",
+    "numVotes": 1852192
+  },
+  "joker": {
+    "imdbId": "tt7286456",
+    "name": "Joker (2019 film)",
+    "numVotes": 1696402
+  },
+  "the-avengers": {
+    "imdbId": "tt0848228",
+    "name": "The Avengers (2012 film)",
+    "numVotes": 1559743
+  },
+  "avengers-infinity-war": {
+    "imdbId": "tt4154756",
+    "name": "Avengers: Infinity War",
+    "numVotes": 1374507
+  },
+  "iron-man": {
+    "imdbId": "tt0371746",
+    "name": "Iron Man (2008 film)",
+    "numVotes": 1226222
+  },
+  "the-wolf-of-wall-street": {
+    "imdbId": "tt0993846",
+    "name": "The Wolf of Wall Street (2013 film)",
+    "numVotes": 1791264
+  },
+  "django-unchained": {
+    "imdbId": "tt1853728",
+    "name": "Django Unchained",
+    "numVotes": 1885372
+  },
+  "the-departed": {
+    "imdbId": "tt0407887",
+    "name": "The Departed",
+    "numVotes": 1556189
+  },
+  "goodfellas": {
+    "imdbId": "tt0099685",
+    "name": "Goodfellas",
+    "numVotes": 1393459
+  },
+  "saving-private-ryan": {
+    "imdbId": "tt0120815",
+    "name": "Saving Private Ryan",
+    "numVotes": 1641230
+  },
+  "schindlers-list": {
+    "imdbId": "tt0108052",
+    "name": "Schindler's List",
+    "numVotes": 1586750
+  },
+  "the-silence-of-the-lambs": {
+    "imdbId": "tt0102926",
+    "name": "The Silence of the Lambs",
+    "numVotes": 1725495
+  },
+  "se7en": {
+    "imdbId": "tt0114369",
+    "name": "Se7en",
+    "numVotes": 2024296
+  },
+  "terminator-2": {
+    "imdbId": "tt0103064",
+    "name": "Terminator 2: Judgment Day",
+    "numVotes": 1285322
+  },
+  "back-to-the-future": {
+    "imdbId": "tt0088763",
+    "name": "Back to the Future",
+    "numVotes": 1454829
+  },
+  "star-wars": {
+    "imdbId": "tt0076759",
+    "name": "Star Wars (film)",
+    "numVotes": 1572101
+  },
+  "the-empire-strikes-back": {
+    "imdbId": "tt0080684",
+    "name": "The Empire Strikes Back",
+    "numVotes": 1506720
+  },
+  "the-prestige": {
+    "imdbId": "tt0482571",
+    "name": "The Prestige (film)",
+    "numVotes": 1590443
+  },
+  "the-green-mile": {
+    "imdbId": "tt0120689",
+    "name": "The Green Mile (film)",
+    "numVotes": 1563134
+  },
+  "gone-girl": {
+    "imdbId": "tt2267998",
+    "name": "Gone Girl (film)",
+    "numVotes": 1170579
+  },
+  "shutter-island": {
+    "imdbId": "tt1130884",
+    "name": "Shutter Island",
+    "numVotes": 1650873
+  },
+  "guardians-of-the-galaxy": {
+    "imdbId": "tt2015381",
+    "name": "Guardians of the Galaxy (film)",
+    "numVotes": 1365384
+  },
+  "deadpool": {
+    "imdbId": "tt1431045",
+    "name": "Deadpool (film)",
+    "numVotes": 1255194
+  },
+  "the-hangover": {
+    "imdbId": "tt1119646",
+    "name": "The Hangover",
+    "numVotes": 931605
+  },
+  "inglourious-basterds": {
+    "imdbId": "tt0361748",
+    "name": "Inglourious Basterds",
+    "numVotes": 1786275
+  },
+  "mad-max-fury-road": {
+    "imdbId": "tt1392190",
+    "name": "Mad Max: Fury Road",
+    "numVotes": 1207564
+  },
+  "la-la-land": {
+    "imdbId": "tt3783958",
+    "name": "La La Land",
+    "numVotes": 764257
+  },
+  "whiplash": {
+    "imdbId": "tt2582802",
+    "name": "Whiplash (2014 film)",
+    "numVotes": 1157190
+  },
+  "get-out": {
+    "imdbId": "tt5052448",
+    "name": "Get Out",
+    "numVotes": 819087
+  },
+  "no-country-for-old-men": {
+    "imdbId": "tt0477348",
+    "name": "No Country for Old Men",
+    "numVotes": 1192229
+  },
+  "there-will-be-blood": {
+    "imdbId": "tt0469494",
+    "name": "There Will Be Blood",
+    "numVotes": 709553
+  },
+  "black-swan": {
+    "imdbId": "tt0947798",
+    "name": "Black Swan (film)",
+    "numVotes": 890064
+  },
+  "arrival": {
+    "imdbId": "tt2543164",
+    "name": "Arrival (film)",
+    "numVotes": 865058
+  },
+  "her": {
+    "imdbId": "tt1798709",
+    "name": "Her (film)",
+    "numVotes": 727367
+  },
+  "blade-runner-2049": {
+    "imdbId": "tt1856101",
+    "name": "Blade Runner 2049",
+    "numVotes": 755377
+  },
+  "the-grand-budapest-hotel": {
+    "imdbId": "tt2278388",
+    "name": "The Grand Budapest Hotel",
+    "numVotes": 972771
+  },
+  "knives-out": {
+    "imdbId": "tt8946378",
+    "name": "Knives Out",
+    "numVotes": 878847
+  },
+  "birdman": {
+    "imdbId": "tt2562232",
+    "name": "Birdman (film)",
+    "numVotes": 699357
+  },
+  "12-years-a-slave": {
+    "imdbId": "tt2024544",
+    "name": "12 Years a Slave (film)",
+    "numVotes": 787505
+  },
+  "dunkirk": {
+    "imdbId": "tt5013056",
+    "name": "Dunkirk (2017 film)",
+    "numVotes": 808427
+  },
+  "drive-2011": {
+    "imdbId": "tt0780504",
+    "name": "Drive (2011 film)",
+    "numVotes": 764359
+  },
+  "500-days-of-summer": {
+    "imdbId": "tt1022603",
+    "name": "500 Days of Summer",
+    "numVotes": 619388
+  },
+  "juno": {
+    "imdbId": "tt0467406",
+    "name": "Juno (film)",
+    "numVotes": 572717
+  },
+  "little-miss-sunshine": {
+    "imdbId": "tt0449059",
+    "name": "Little Miss Sunshine",
+    "numVotes": 559021
+  },
+  "eternal-sunshine": {
+    "imdbId": "tt0338013",
+    "name": "Eternal Sunshine of the Spotless Mind",
+    "numVotes": 1183738
+  },
+  "memento": {
+    "imdbId": "tt0209144",
+    "name": "Memento (film)",
+    "numVotes": 1436416
+  },
+  "requiem-for-a-dream": {
+    "imdbId": "tt0180093",
+    "name": "Requiem for a Dream",
+    "numVotes": 974522
+  },
+  "donnie-darko": {
+    "imdbId": "tt0246578",
+    "name": "Donnie Darko",
+    "numVotes": 912508
+  },
+  "trainspotting": {
+    "imdbId": "tt0117951",
+    "name": "Trainspotting (film)",
+    "numVotes": 769281
+  },
+  "american-psycho": {
+    "imdbId": "tt0144084",
+    "name": "American Psycho (film)",
+    "numVotes": 839717
+  },
+  "prisoners": {
+    "imdbId": "tt1392214",
+    "name": "Prisoners (2013 film)",
+    "numVotes": 937135
+  },
+  "nightcrawler": {
+    "imdbId": "tt2872718",
+    "name": "Nightcrawler (film)",
+    "numVotes": 670590
+  },
+  "ex-machina": {
+    "imdbId": "tt0470752",
+    "name": "Ex Machina (film)",
+    "numVotes": 640023
+  },
+  "moonrise-kingdom": {
+    "imdbId": "tt1748122",
+    "name": "Moonrise Kingdom",
+    "numVotes": 383212
+  },
+  "the-social-network": {
+    "imdbId": "tt1285016",
+    "name": "The Social Network",
+    "numVotes": 820457
+  },
+  "gravity": {
+    "imdbId": "tt1454468",
+    "name": "Gravity (2013 film)",
+    "numVotes": 900726
+  },
+  "slumdog-millionaire": {
+    "imdbId": "tt1010048",
+    "name": "Slumdog Millionaire",
+    "numVotes": 910788
+  },
+  "spotlight": {
+    "imdbId": "tt1895587",
+    "name": "Spotlight (film)",
+    "numVotes": 535865
+  },
+  "the-truman-show": {
+    "imdbId": "tt0120382",
+    "name": "The Truman Show",
+    "numVotes": 1376402
+  },
+  "groundhog-day": {
+    "imdbId": "tt0107048",
+    "name": "Groundhog Day (film)",
+    "numVotes": 737249
+  },
+  "amelie": {
+    "imdbId": "tt0211915",
+    "name": "Amélie",
+    "numVotes": 840566
+  },
+  "pans-labyrinth": {
+    "imdbId": "tt0457430",
+    "name": "Pan's Labyrinth",
+    "numVotes": 747320
+  },
+  "city-of-god": {
+    "imdbId": "tt0317248",
+    "name": "City of God (2002 film)",
+    "numVotes": 871868
+  },
+  "oldboy": {
+    "imdbId": "tt0364569",
+    "name": "Oldboy (2003 film)",
+    "numVotes": 720041
+  },
+  "spirited-away": {
+    "imdbId": "tt0245429",
+    "name": "Spirited Away",
+    "numVotes": 968668
+  },
+  "your-name": {
+    "imdbId": "tt5311514",
+    "name": "Your Name",
+    "numVotes": 393535
+  },
+  "hereditary": {
+    "imdbId": "tt7784604",
+    "name": "Hereditary (film)",
+    "numVotes": 456857
+  },
+  "the-witch": {
+    "imdbId": "tt4263482",
+    "name": "The Witch (2015 film)",
+    "numVotes": 352588
+  },
+  "portrait-of-a-lady-on-fire": {
+    "imdbId": "tt8613070",
+    "name": "Portrait of a Lady on Fire",
+    "numVotes": 127685
+  },
+  "shoplifters": {
+    "imdbId": "tt8075192",
+    "name": "Shoplifters (film)",
+    "numVotes": 95364
+  },
+  "cold-war": {
+    "imdbId": "tt6543652",
+    "name": "Cold War (2018 film)",
+    "numVotes": 65531
+  },
+  "the-worst-person-in-the-world": {
+    "imdbId": "tt10370710",
+    "name": "The Worst Person in the World (film)",
+    "numVotes": 128164
+  },
+  "tar": {
+    "imdbId": "tt14444726",
+    "name": "Tár",
+    "numVotes": 109743
+  },
+  "anatomy-of-a-fall": {
+    "imdbId": "tt17009710",
+    "name": "Anatomy of a Fall",
+    "numVotes": 220808
+  },
+  "decision-to-leave": {
+    "imdbId": "tt12477480",
+    "name": "Decision to Leave",
+    "numVotes": 69501
+  },
+  "the-lobster": {
+    "imdbId": "tt3464902",
+    "name": "The Lobster",
+    "numVotes": 334284
+  },
+  "paterson": {
+    "imdbId": "tt5247022",
+    "name": "Paterson (film)",
+    "numVotes": 95705
+  },
+  "a-ghost-story": {
+    "imdbId": "tt6265828",
+    "name": "A Ghost Story",
+    "numVotes": 86732
+  },
+  "good-time": {
+    "imdbId": "tt4846232",
+    "name": "Good Time (film)",
+    "numVotes": 156487
+  },
+  "the-souvenir": {
+    "imdbId": "tt6920356",
+    "name": "The Souvenir",
+    "numVotes": 15698
+  },
+  "columbus": {
+    "imdbId": "tt5990474",
+    "name": "Columbus (2017 film)",
+    "numVotes": 24309
+  },
+  "mid90s": {
+    "imdbId": "tt5613484",
+    "name": "Mid90s",
+    "numVotes": 88198
+  },
+  "under-the-skin": {
+    "imdbId": "tt1441395",
+    "name": "Under the Skin (2013 film)",
+    "numVotes": 171107
+  },
+  "the-master": {
+    "imdbId": "tt1560747",
+    "name": "The Master (2012 film)",
+    "numVotes": 201378
+  },
+  "phantom-thread": {
+    "imdbId": "tt5776858",
+    "name": "Phantom Thread",
+    "numVotes": 162393
+  },
+  "inside-llewyn-davis": {
+    "imdbId": "tt2042568",
+    "name": "Inside Llewyn Davis",
+    "numVotes": 172154
+  },
+  "synecdoche-new-york": {
+    "imdbId": "tt0383028",
+    "name": "Synecdoche, New York",
+    "numVotes": 104944
+  },
+  "enter-the-void": {
+    "imdbId": "tt1191111",
+    "name": "Enter the Void",
+    "numVotes": 94690
+  },
+  "only-lovers-left-alive": {
+    "imdbId": "tt1714915",
+    "name": "Only Lovers Left Alive",
+    "numVotes": 115758
+  },
+  "saint-maud": {
+    "imdbId": "tt7557108",
+    "name": "Saint Maud",
+    "numVotes": 55933
+  },
+  "we-need-to-talk-about-kevin": {
+    "imdbId": "tt1242460",
+    "name": "We Need to Talk About Kevin (film)",
+    "numVotes": 181670
+  },
+  "eo": {
+    "imdbId": "tt19652910",
+    "name": "EO (film)",
+    "numVotes": 17080
+  },
+  "close-2022": {
+    "imdbId": "tt9660502",
+    "name": "Close (2022 film)",
+    "numVotes": 48002
+  },
+  "the-zone-of-interest": {
+    "imdbId": "tt7160372",
+    "name": "The Zone of Interest (film)",
+    "numVotes": 177327
+  },
+  "triangle-of-sadness": {
+    "imdbId": "tt7322224",
+    "name": "Triangle of Sadness",
+    "numVotes": 216997
+  },
+  "the-banshees-of-inisherin": {
+    "imdbId": "tt11813216",
+    "name": "The Banshees of Inisherin",
+    "numVotes": 296353
+  }
+}
