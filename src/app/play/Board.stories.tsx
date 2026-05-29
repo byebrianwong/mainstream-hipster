@@ -113,10 +113,10 @@ export const Mixed: Story = {
 export const TVShows: Story = {
   args: {
     initial: [
-      { id: "reservation-dogs", name: "Reservation Dogs", wiki: "Reservation_Dogs", category: "tv", emoji: "🐕", signals: { wikipedia: 537_000, tmdb: 35 }, rank: 0 },
-      { id: "severance", name: "Severance (TV series)", wiki: "Severance_(TV_series)", category: "tv", emoji: "🧠", signals: { wikipedia: 2_900_000, tmdb: 120 }, rank: 0.33 },
-      { id: "the-bear", name: "The Bear (TV series)", wiki: "The_Bear_(TV_series)", category: "tv", emoji: "🐻", signals: { wikipedia: 4_100_000, tmdb: 95 }, rank: 0.66 },
-      { id: "friends", name: "Friends", wiki: "Friends", category: "tv", emoji: "📺", signals: { wikipedia: 9_800_000, tmdb: 180 }, rank: 1 },
+      { id: "reservation-dogs", name: "Reservation Dogs", wiki: "Reservation_Dogs", category: "tv", emoji: "🐕", signals: { wikipedia: 537_000, imdb: 28_352 }, rank: 0 },
+      { id: "severance", name: "Severance (TV series)", wiki: "Severance_(TV_series)", category: "tv", emoji: "🧠", signals: { wikipedia: 2_900_000, imdb: 390_336 }, rank: 0.33 },
+      { id: "the-bear", name: "The Bear (TV series)", wiki: "The_Bear_(TV_series)", category: "tv", emoji: "🐻", signals: { wikipedia: 4_100_000, imdb: 309_730 }, rank: 0.66 },
+      { id: "friends", name: "Friends", wiki: "Friends", category: "tv", emoji: "📺", signals: { wikipedia: 9_800_000, imdb: 1_193_446 }, rank: 1 },
     ],
   },
 };
@@ -124,10 +124,10 @@ export const TVShows: Story = {
 export const Books: Story = {
   args: {
     initial: [
-      { id: "normal-people", name: "Normal People (novel)", wiki: "Normal_People", category: "books", emoji: "💔", signals: { wikipedia: 380_000 }, rank: 0 },
-      { id: "a-little-life", name: "A Little Life", wiki: "A_Little_Life", category: "books", emoji: "💔", signals: { wikipedia: 612_000 }, rank: 0.33 },
-      { id: "atomic-habits", name: "Atomic Habits", wiki: "Atomic_Habits", category: "books", emoji: "⚛️", signals: { wikipedia: 1_900_000 }, rank: 0.66 },
-      { id: "harry-potter", name: "Harry Potter", wiki: "Harry_Potter", category: "books", emoji: "⚡", signals: { wikipedia: 14_500_000 }, rank: 1 },
+      { id: "normal-people", name: "Normal People (novel)", wiki: "Normal_People", category: "books", emoji: "💔", signals: { wikipedia: 380_000, openlibrary: 1_855 }, rank: 0 },
+      { id: "a-little-life", name: "A Little Life", wiki: "A_Little_Life", category: "books", emoji: "💔", signals: { wikipedia: 612_000, openlibrary: 4_292 }, rank: 0.33 },
+      { id: "atomic-habits", name: "Atomic Habits", wiki: "Atomic_Habits", category: "books", emoji: "⚛️", signals: { wikipedia: 1_900_000, openlibrary: 60_286 }, rank: 0.66 },
+      { id: "harry-potter", name: "Harry Potter", wiki: "Harry_Potter", category: "books", emoji: "⚡", signals: { wikipedia: 14_500_000, openlibrary: 22_969 }, rank: 1 },
     ],
   },
 };

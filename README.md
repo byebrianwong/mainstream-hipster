@@ -1,6 +1,6 @@
 # Mainstream / Hipster
 
-A ranking game: drag 2–5 things from most hipster to most mainstream. Real popularity comes from English Wikipedia pageviews over the trailing 12 months.
+A ranking game: drag 2–5 things from most hipster to most mainstream. Real popularity comes from a per-category blend of public signals — English Wikipedia pageviews plus a category-specific source (Spotify, Last.fm, TMDb, IMDb, or Open Library).
 
 ## Run it
 
@@ -16,10 +16,14 @@ Open [http://localhost:3000](http://localhost:3000).
 ```
 src/
   lib/
-    items.ts       # Curated item bank — names + Wikipedia article slugs
-    pageviews.ts   # Wikipedia Pageviews API client (cached 24h via fetch)
-    game.ts        # Round generation + Kendall-tau pair scoring
+    items.ts            # Curated item bank — names + Wikipedia article slugs
+    game.ts             # Round generation + Kendall-tau pair scoring
     types.ts
+    popularity/         # Pluggable popularity sources + weighted blending
+      wikipedia.ts spotify.ts lastfm.ts tmdb.ts imdb.ts openlibrary.ts
+      blend.ts          #   min-max normalize per source, then weighted-average
+      types.ts          #   SourceName, per-category weights, display labels
+    data/               # Pre-scraped numbers baked in (spotify / imdb / openlibrary)
   app/
     page.tsx           # Landing: category picker
     play/page.tsx      # Game shell (reads ?category=&size=)
@@ -29,7 +33,30 @@ src/
 
 ## How scoring works
 
-Concordant-pair fraction (a Kendall-tau variant, normalized to 0–1). For *n* items there are *C(n,2)* pairs; you get credit for every pair you ordered correctly relative to the actual pageview ranking. So in a 4-item round, perfect is 6/6 = 100%; swapping two adjacent items is 5/6 ≈ 83%.
+Concordant-pair fraction (a Kendall-tau variant, normalized to 0–1). For *n* items there are *C(n,2)* pairs; you get credit for every pair you ordered correctly relative to the actual popularity ranking. So in a 4-item round, perfect is 6/6 = 100%; swapping two adjacent items is 5/6 ≈ 83%.
+
+## Popularity sources
+
+The "actual" ranking is a weighted blend of public popularity signals, chosen per category. Each source returns a raw number on its own scale; within a round we min-max normalize each source to [0, 1] and take a weighted average (see [src/lib/popularity/blend.ts](src/lib/popularity/blend.ts)). Weights live in [src/lib/popularity/types.ts](src/lib/popularity/types.ts):
+
+| Category | Source (weight) | + Wikipedia |
+| --- | --- | --- |
+| Music | Spotify monthly listeners (0.5), Last.fm listeners (0.1) | 0.4 |
+| Movies | TMDb popularity (0.5) | 0.5 |
+| **TV** | **IMDb number of ratings (0.6)** | **0.4** |
+| **Books** | **Open Library reading-log count (0.6)** | **0.4** |
+| Everything else | — | 1.0 |
+
+**TV → IMDb** and **Books → Open Library** are both free and need no API key. IMDb publishes a [daily ratings dataset](https://datasets.imdbws.com/) (`numVotes` is a great mainstream proxy); we resolve each show's IMDb id from its Wikipedia slug via Wikidata, then look up its vote count. Open Library's [search API](https://openlibrary.org/dev/docs/api/search) returns `readinglog_count` (how many people have shelved a book) — the best free Goodreads-shelf-like signal.
+
+Both are pre-scraped and baked into `src/lib/data/` so the runtime makes no extra calls. Refresh them with:
+
+```bash
+node --experimental-strip-types scripts/scrape-imdb-data.mjs        # → data/imdb-votes.json
+node --experimental-strip-types scripts/scrape-openlibrary-data.mjs # → data/openlibrary-counts.json
+```
+
+Music's Spotify numbers come from `scripts/scrape-spotify-data.mjs` (kworb). Last.fm and TMDb are live API calls gated on `LASTFM_API_KEY` / `TMDB_API_KEY` (see [.env.example](.env.example)); a source with no data for an item simply drops out and the remaining weights renormalize.
 
 ## Adding items
 

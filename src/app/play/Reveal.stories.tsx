@@ -95,22 +95,22 @@ export const TwoItems: Story = {
 const tvItems: ScoredItem[] = [
   scored(
     { id: "reservation-dogs", name: "Reservation Dogs", wiki: "Reservation_Dogs", category: "tv", emoji: "🐕" },
-    { wikipedia: 537_000, tmdb: 35.2 },
+    { wikipedia: 537_000, imdb: 28_352 },
     0,
   ),
   scored(
     { id: "severance", name: "Severance (TV series)", wiki: "Severance_(TV_series)", category: "tv", emoji: "🧠" },
-    { wikipedia: 2_900_000, tmdb: 120.4 },
+    { wikipedia: 2_900_000, imdb: 390_336 },
     0.33,
   ),
   scored(
     { id: "the-bear", name: "The Bear (TV series)", wiki: "The_Bear_(TV_series)", category: "tv", emoji: "🐻" },
-    { wikipedia: 4_100_000, tmdb: 95.1 },
+    { wikipedia: 4_100_000, imdb: 309_730 },
     0.66,
   ),
   scored(
     { id: "friends", name: "Friends", wiki: "Friends", category: "tv", emoji: "📺" },
-    { wikipedia: 9_800_000, tmdb: 180.8 },
+    { wikipedia: 9_800_000, imdb: 1_193_446 },
     1,
   ),
 ];
@@ -128,22 +128,22 @@ export const TVReveal: Story = {
 const bookItems: ScoredItem[] = [
   scored(
     { id: "normal-people", name: "Normal People (novel)", wiki: "Normal_People", category: "books", emoji: "💔" },
-    { wikipedia: 380_000 },
+    { wikipedia: 380_000, openlibrary: 1_855 },
     0,
   ),
   scored(
     { id: "a-little-life", name: "A Little Life", wiki: "A_Little_Life", category: "books", emoji: "💔" },
-    { wikipedia: 612_000 },
+    { wikipedia: 612_000, openlibrary: 4_292 },
     0.33,
   ),
   scored(
     { id: "atomic-habits", name: "Atomic Habits", wiki: "Atomic_Habits", category: "books", emoji: "⚛️" },
-    { wikipedia: 1_900_000 },
+    { wikipedia: 1_900_000, openlibrary: 60_286 },
     0.66,
   ),
   scored(
     { id: "harry-potter", name: "Harry Potter", wiki: "Harry_Potter", category: "books", emoji: "⚡" },
-    { wikipedia: 14_500_000 },
+    { wikipedia: 14_500_000, openlibrary: 22_969 },
     1,
   ),
 ];
