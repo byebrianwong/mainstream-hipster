@@ -10,15 +10,19 @@ import {
 } from "@dnd-kit/core";
 import {
   SortableContext,
-  horizontalListSortingStrategy,
+  rectSortingStrategy,
   arrayMove,
 } from "@dnd-kit/sortable";
 import SortableCard from "./SortableCard";
 import PopularityRail from "./PopularityRail";
+import GameBackground from "./GameBackground";
 import type { ScoredItem } from "@/lib/types";
+import { stopsFor, type CategoryKey } from "@/lib/categoryTheme";
 
 function Board({ initial }: { initial: ScoredItem[] }) {
   const [items, setItems] = useState(initial);
+  const category = (initial[0]?.category ?? "mixed") as CategoryKey;
+  const stops = stopsFor(category);
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
   );
@@ -33,35 +37,38 @@ function Board({ initial }: { initial: ScoredItem[] }) {
   };
 
   return (
-    <div className="w-full max-w-3xl">
-      <h2 className="mb-1 text-2xl font-semibold tracking-tight sm:text-3xl">
-        Drag to rank these
-      </h2>
-      <p className="mb-6 text-sm text-[color:var(--muted)]">
-        Most mainstream on the left, most hipster on the right.
-      </p>
-      <PopularityRail />
-      <DndContext
-        sensors={sensors}
-        collisionDetection={closestCenter}
-        onDragEnd={onDragEnd}
-      >
-        <SortableContext
-          items={items.map((i) => i.id)}
-          strategy={horizontalListSortingStrategy}
+    <div className="relative min-h-[460px] overflow-hidden rounded-2xl">
+      <div className="absolute inset-0">
+        <GameBackground category={category} />
+      </div>
+      <div className="relative z-10 mx-auto w-full max-w-3xl p-6">
+        <p className="mb-5 text-center font-mono text-xs uppercase tracking-[0.25em] text-white mix-blend-difference">
+          drag to rank · mainstream → hipster
+        </p>
+        <PopularityRail stops={stops} />
+        <DndContext
+          sensors={sensors}
+          collisionDetection={closestCenter}
+          onDragEnd={onDragEnd}
         >
-          <div className="grid auto-cols-fr grid-flow-col gap-3 overflow-x-auto pb-2">
-            {items.map((item, idx) => (
-              <SortableCard
-                key={item.id}
-                item={item}
-                position={idx + 1}
-                total={items.length}
-              />
-            ))}
-          </div>
-        </SortableContext>
-      </DndContext>
+          <SortableContext
+            items={items.map((i) => i.id)}
+            strategy={rectSortingStrategy}
+          >
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row">
+              {items.map((item, idx) => (
+                <SortableCard
+                  key={item.id}
+                  item={item}
+                  position={idx + 1}
+                  total={items.length}
+                  stops={stops}
+                />
+              ))}
+            </div>
+          </SortableContext>
+        </DndContext>
+      </div>
     </div>
   );
 }
@@ -69,7 +76,7 @@ function Board({ initial }: { initial: ScoredItem[] }) {
 const meta: Meta<typeof Board> = {
   title: "Game/Board",
   component: Board,
-  parameters: { layout: "padded" },
+  parameters: { layout: "fullscreen" },
 };
 export default meta;
 

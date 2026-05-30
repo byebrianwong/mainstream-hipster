@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence, LayoutGroup } from "motion/react";
 import type { RoundResult, ScoredItem } from "@/lib/types";
 import { SOURCE_LABEL, SIGNAL_DISPLAY_ORDER } from "@/lib/popularity/types";
+import { sample, readableText } from "@/lib/spectrum";
+import { CATEGORY_STOPS } from "@/lib/categoryTheme";
 import clsx from "clsx";
 
 type Phase = "guess" | "revealing" | "settled";
@@ -12,6 +14,8 @@ type Props = {
   result: RoundResult;
   items: ScoredItem[];
   onReplay: () => void;
+  /** Per-category gradient stops, used to tint the ranking badges. */
+  stops?: string[];
   /**
    * Pin to a specific phase and skip auto-advance. Used by Storybook so
    * Chromatic snapshots are deterministic; production leaves this undefined
@@ -57,11 +61,21 @@ function SignalBadges({ item }: { item: ScoredItem }) {
   );
 }
 
-export default function Reveal({ result, items, onReplay, pinnedPhase }: Props) {
+export default function Reveal({
+  result,
+  items,
+  onReplay,
+  stops,
+  pinnedPhase,
+}: Props) {
+  const ramp = stops ?? CATEGORY_STOPS.mixed;
+  const accent = sample(ramp, 0);
+  const accentInk = readableText(accent);
   const byId = new Map(items.map((i) => [i.id, i]));
   const correctItems = result.correctOrder.map((id) => byId.get(id)!).filter(Boolean);
   const playerItems = result.playerOrder.map((id) => byId.get(id)!).filter(Boolean);
   const v = verdict(result.score);
+  const n = correctItems.length;
 
   const [phase, setPhase] = useState<Phase>(pinnedPhase ?? "guess");
 
@@ -79,7 +93,7 @@ export default function Reveal({ result, items, onReplay, pinnedPhase }: Props) 
   const orderedItems = phase === "guess" ? playerItems : correctItems;
 
   return (
-    <div>
+    <div className="rounded-3xl border border-white/20 bg-[color:var(--background)]/85 p-5 backdrop-blur-md sm:p-7">
       <div className="mb-8 grid gap-2 sm:grid-cols-[1fr_auto] sm:items-end sm:gap-6">
         <div className="min-w-0">
           <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--muted)]">
@@ -161,9 +175,18 @@ export default function Reveal({ result, items, onReplay, pinnedPhase }: Props) 
                   transition={{ type: "spring", damping: 30, stiffness: 220 }}
                   className="flex items-center gap-4 rounded-2xl border border-[color:var(--border)] bg-[color:var(--card)] p-4"
                 >
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[color:var(--accent-soft)] text-sm font-semibold text-[color:var(--accent)]">
-                    {phase === "guess" ? idx + 1 : correctIdx + 1}
-                  </span>
+                  {(() => {
+                    const badgePos = phase === "guess" ? idx : correctIdx;
+                    const badgeColor = sample(ramp, n > 1 ? badgePos / (n - 1) : 0);
+                    return (
+                      <span
+                        className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-sm font-semibold"
+                        style={{ background: `${badgeColor}26`, color: badgeColor }}
+                      >
+                        {badgePos + 1}
+                      </span>
+                    );
+                  })()}
                   <span className="text-2xl" aria-hidden>{item.emoji ?? "•"}</span>
                   <div className="min-w-0 flex-1">
                     <p className="truncate font-medium">{item.name}</p>
@@ -217,13 +240,14 @@ export default function Reveal({ result, items, onReplay, pinnedPhase }: Props) 
           >
             <button
               onClick={onReplay}
-              className="rounded-full bg-[color:var(--accent)] px-6 py-3 text-base font-medium text-white shadow-[0_8px_24px_-8px_rgba(242,92,84,0.6)] transition hover:brightness-110"
+              className="rounded-full px-6 py-3 text-base font-bold uppercase tracking-wide shadow-xl transition hover:scale-105"
+              style={{ background: accent, color: accentInk, boxShadow: `0 0 30px -8px ${accent}` }}
             >
               New round
             </button>
             <a
               href="/"
-              className="rounded-full border border-[color:var(--border)] px-6 py-3 text-center text-base font-medium transition hover:border-[color:var(--accent)]"
+              className="rounded-full border border-[color:var(--border)] px-6 py-3 text-center text-base font-medium transition hover:border-[color:var(--foreground)]"
             >
               Change category
             </a>

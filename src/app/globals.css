@@ -34,6 +34,189 @@
   }
 }
 
+/* ============================================================
+   Spectrum mockups (/designs): a flowing full-spectrum gradient
+   with a churning, animated middle so the two aesthetics blend
+   continuously instead of splitting hard left/right.
+   ============================================================ */
+
+/* The base gradient slowly flows sideways. backgroundSize must be
+   >100% for the position shift to read as motion. */
+@keyframes spectrum-drift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.spectrum-drift {
+  background-size: 220% 100%;
+  animation: spectrum-drift 18s ease-in-out infinite;
+}
+
+/* Two big blurred blobs wander through the middle, mixing the
+   two ends together as they drift. */
+@keyframes spectrum-blob-a {
+  0%, 100% { transform: translate(-18%, -12%) scale(1); }
+  50% { transform: translate(20%, 14%) scale(1.35); }
+}
+@keyframes spectrum-blob-b {
+  0%, 100% { transform: translate(16%, 12%) scale(1.2); }
+  50% { transform: translate(-20%, -14%) scale(0.85); }
+}
+.spectrum-blob-a { animation: spectrum-blob-a 14s ease-in-out infinite; }
+.spectrum-blob-b { animation: spectrum-blob-b 17s ease-in-out infinite; }
+
+/* A soft light band sweeps back and forth across the blend zone. */
+@keyframes spectrum-shimmer {
+  0% { transform: translateX(-40%); opacity: 0.25; }
+  50% { opacity: 0.7; }
+  100% { transform: translateX(40%); opacity: 0.25; }
+}
+.spectrum-shimmer { animation: spectrum-shimmer 9s ease-in-out infinite; }
+
+/* A thin moving marker that rides along the spectrum rail. */
+@keyframes spectrum-rail-sweep {
+  0% { left: 4%; }
+  50% { left: 96%; }
+  100% { left: 4%; }
+}
+.spectrum-rail-sweep { animation: spectrum-rail-sweep 11s ease-in-out infinite; }
+
+/* Halftone dots gently crawl (magazine motif). */
+@keyframes spectrum-halftone {
+  0% { background-position: 0 0; }
+  100% { background-position: 14px 14px; }
+}
+.spectrum-halftone { animation: spectrum-halftone 6s linear infinite; }
+
+/* Equalizer bars bounce (analog motif). */
+@keyframes spectrum-eq {
+  0%, 100% { transform: scaleY(0.35); }
+  50% { transform: scaleY(1); }
+}
+.spectrum-eq { transform-origin: bottom; }
+
+@media (prefers-reduced-motion: reduce) {
+  .spectrum-drift,
+  .spectrum-blob-a,
+  .spectrum-blob-b,
+  .spectrum-shimmer,
+  .spectrum-rail-sweep,
+  .spectrum-halftone,
+  .spectrum-eq {
+    animation: none !important;
+  }
+}
+
+/* ============================================================
+   Per-category press motifs (/designs/press): a newspaper-print
+   base with a different animation for every category.
+   ============================================================ */
+
+/* movies — film strip scrolls sideways */
+@keyframes press-film { from { background-position: 0 0; } to { background-position: -80px 0; } }
+.press-film { animation: press-film 2.2s linear infinite; }
+
+/* tv — a bright scan band sweeps down, plus static flicker */
+@keyframes press-scan { from { transform: translateY(-120%); } to { transform: translateY(220%); } }
+.press-scan { animation: press-scan 4.5s linear infinite; }
+@keyframes press-flicker { 0%,100% { opacity: 0.05; } 45% { opacity: 0.13; } 50% { opacity: 0.22; } 55% { opacity: 0.08; } }
+.press-flicker { animation: press-flicker 2.4s linear infinite; }
+
+/* food — steam wisps rise and dissipate */
+@keyframes press-steam {
+  0% { transform: translateY(10px) scaleX(0.9); opacity: 0; }
+  25% { opacity: 0.5; }
+  100% { transform: translateY(-130px) scaleX(1.7); opacity: 0; }
+}
+.press-steam { animation: press-steam 4s ease-out infinite; }
+
+/* drinks — bubbles float up */
+@keyframes press-bubble {
+  0% { transform: translateY(10px); opacity: 0; }
+  18% { opacity: 0.8; }
+  100% { transform: translateY(-150px); opacity: 0; }
+}
+.press-bubble { animation: press-bubble 3.6s ease-in infinite; }
+
+/* tech — binary rain falls */
+@keyframes press-binary { from { transform: translateY(-110%); } to { transform: translateY(120%); } }
+.press-binary { animation: press-binary 3s linear infinite; }
+
+/* cities — windows blink on and off */
+@keyframes press-blink { 0%,100% { opacity: 0.12; } 50% { opacity: 1; } }
+.press-blink { animation: press-blink 2s ease-in-out infinite; }
+
+/* books — a reading highlight sweeps down the lines */
+@keyframes press-read {
+  0% { transform: translateY(-40%); opacity: 0; }
+  30% { opacity: 0.7; }
+  100% { transform: translateY(160%); opacity: 0; }
+}
+.press-read { animation: press-read 3.6s ease-in-out infinite; }
+
+/* animals — paw prints appear in a walking trail */
+@keyframes press-paw {
+  0% { opacity: 0; transform: scale(0.7) rotate(var(--paw-rot, 0deg)); }
+  12% { opacity: 1; transform: scale(1) rotate(var(--paw-rot, 0deg)); }
+  55% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.press-paw { animation: press-paw 3s ease-in-out infinite; }
+
+/* music/movies — vinyl record + film reel spin */
+@keyframes press-spin { to { transform: rotate(360deg); } }
+.press-spin { animation: press-spin 6s linear infinite; }
+
+/* books — a page flips over */
+@keyframes press-flip {
+  0% { transform: rotateY(0deg); opacity: 0.85; }
+  50% { transform: rotateY(-150deg); opacity: 0.5; }
+  100% { transform: rotateY(0deg); opacity: 0.85; }
+}
+.press-flip { transform-origin: left center; animation: press-flip 3.4s ease-in-out infinite; }
+
+/* food — steam wisp rises while swaying */
+@keyframes press-wisp {
+  0% { transform: translateY(0) translateX(0) scaleY(0.7); opacity: 0; }
+  20% { opacity: 0.55; }
+  60% { transform: translateY(-70px) translateX(8px) scaleY(1); }
+  100% { transform: translateY(-140px) translateX(-6px) scaleY(1.1); opacity: 0; }
+}
+.press-wisp { animation: press-wisp 4.2s ease-in-out infinite; }
+
+/* movies — projector flicker layered over the moving film strips */
+@keyframes press-projector {
+  0% { opacity: 0.05; }
+  20% { opacity: 0.12; }
+  22% { opacity: 0.04; }
+  48% { opacity: 0.10; }
+  52% { opacity: 0.16; }
+  55% { opacity: 0.06; }
+  80% { opacity: 0.13; }
+  100% { opacity: 0.08; }
+}
+.press-projector { animation: press-projector 1.8s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .press-film,
+  .press-scan,
+  .press-flicker,
+  .press-steam,
+  .press-bubble,
+  .press-binary,
+  .press-blink,
+  .press-read,
+  .press-paw,
+  .press-spin,
+  .press-flip,
+  .press-wisp,
+  .press-projector {
+    animation: none !important;
+  }
+  /* SMIL-animated rail shimmer can't be stopped via CSS — just hide it */
+  .rail-shimmer { display: none; }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
