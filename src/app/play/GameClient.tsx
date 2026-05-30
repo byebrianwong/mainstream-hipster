@@ -16,11 +16,13 @@ import {
 } from "@dnd-kit/core";
 import {
   SortableContext,
-  horizontalListSortingStrategy,
+  rectSortingStrategy,
   sortableKeyboardCoordinates,
   arrayMove,
 } from "@dnd-kit/sortable";
 import type { Category, ScoredItem } from "@/lib/types";
+import { stopsFor } from "@/lib/categoryTheme";
+import { sample, readableText } from "@/lib/spectrum";
 import SortableCard from "./SortableCard";
 import Card from "./Card";
 import Reveal from "./Reveal";
@@ -36,6 +38,10 @@ export default function GameClient({ category, size }: Props) {
   const [phase, setPhase] = useState<Phase>("loading");
   const [error, setError] = useState<string | null>(null);
   const [dragId, setDragId] = useState<string | null>(null);
+
+  const stops = stopsFor(category);
+  const accent = sample(stops, 0); // vivid mainstream-end colour for buttons
+  const accentInk = readableText(accent);
 
   const loadRound = useCallback(async () => {
     setPhase("loading");
@@ -84,8 +90,8 @@ export default function GameClient({ category, size }: Props) {
 
   if (phase === "loading") {
     return (
-      <div className="py-16 text-center text-[color:var(--muted)]">
-        <div className="mx-auto mb-3 h-2 w-24 animate-pulse rounded-full bg-[color:var(--accent-soft)]" />
+      <div className="py-16 text-center text-white mix-blend-difference">
+        <div className="mx-auto mb-3 h-2 w-24 animate-pulse rounded-full bg-white/60" />
         Loading round…
       </div>
     );
@@ -93,13 +99,12 @@ export default function GameClient({ category, size }: Props) {
 
   if (phase === "error") {
     return (
-      <div className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--card)] p-6 text-center">
-        <p className="mb-3 text-sm text-[color:var(--muted)]">
-          Something went wrong: {error}
-        </p>
+      <div className="rounded-2xl border border-white/20 bg-black/55 p-6 text-center text-white backdrop-blur-md">
+        <p className="mb-3 text-sm text-white/70">Something went wrong: {error}</p>
         <button
           onClick={loadRound}
-          className="rounded-full bg-[color:var(--accent)] px-4 py-2 text-sm font-medium text-white"
+          className="rounded-full px-4 py-2 text-sm font-bold"
+          style={{ background: accent, color: accentInk }}
         >
           Try again
         </button>
@@ -112,6 +117,7 @@ export default function GameClient({ category, size }: Props) {
       <Reveal
         result={buildResult(items, items)}
         items={items}
+        stops={stops}
         onReplay={loadRound}
       />
     );
@@ -121,14 +127,11 @@ export default function GameClient({ category, size }: Props) {
 
   return (
     <div>
-      <h2 className="mb-1 text-2xl font-semibold tracking-tight sm:text-3xl">
-        Drag to rank these
-      </h2>
-      <p className="mb-6 text-sm text-[color:var(--muted)]">
-        Most mainstream on the left, most hipster on the right.
+      <p className="mb-5 text-center font-mono text-xs uppercase tracking-[0.25em] text-white mix-blend-difference">
+        drag to rank · mainstream → hipster
       </p>
 
-      <PopularityRail />
+      <PopularityRail stops={stops} />
 
       <DndContext
         sensors={sensors}
@@ -138,37 +141,43 @@ export default function GameClient({ category, size }: Props) {
       >
         <SortableContext
           items={items.map((i) => i.id)}
-          strategy={horizontalListSortingStrategy}
+          strategy={rectSortingStrategy}
         >
-          <div className="grid grid-flow-col gap-3 overflow-x-auto pb-2 sm:auto-cols-fr">
+          <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row">
             {items.map((item, idx) => (
               <SortableCard
                 key={item.id}
                 item={item}
                 position={idx + 1}
                 total={items.length}
+                stops={stops}
               />
             ))}
           </div>
         </SortableContext>
 
         <DragOverlay>
-          {dragItem ? <Card item={dragItem} dragging /> : null}
+          {dragItem ? <Card item={dragItem} stops={stops} dragging /> : null}
         </DragOverlay>
       </DndContext>
 
-      <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-8 flex flex-col-reverse items-center gap-3 sm:flex-row sm:justify-between">
         <Link
           href="/"
-          className="text-sm text-[color:var(--muted)] underline-offset-4 hover:underline"
+          className="text-sm text-white underline-offset-4 mix-blend-difference hover:underline"
         >
           Change category
         </Link>
         <button
           onClick={() => setPhase("revealed")}
-          className="rounded-full bg-[color:var(--accent)] px-6 py-3 text-base font-medium text-white shadow-[0_8px_24px_-8px_rgba(242,92,84,0.6)] transition hover:brightness-110"
+          className="rounded-full px-7 py-3 text-sm font-bold uppercase tracking-wide shadow-xl transition hover:scale-105"
+          style={{
+            background: accent,
+            color: accentInk,
+            boxShadow: `0 0 30px -6px ${accent}`,
+          }}
         >
-          Lock in & reveal
+          Lock in &amp; reveal
         </button>
       </div>
     </div>

@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import GameClient from "./GameClient";
+import GameBackground from "./GameBackground";
 import type { Category } from "@/lib/types";
+import { CATEGORIES } from "@/lib/items";
 
 type SP = { category?: string; size?: string };
 
@@ -29,19 +31,25 @@ export default async function PlayPage({
   const rawCat = (sp.category ?? "mixed") as Category | "mixed";
   const category = VALID.includes(rawCat) ? rawCat : "mixed";
   const size = Math.min(Math.max(Number(sp.size ?? 4), 2), 5);
+  const meta = CATEGORIES.find((c) => c.id === category);
 
   return (
-    <div className="flex flex-1 flex-col items-center px-6 py-10">
-      <div className="w-full max-w-3xl">
+    <div className="relative flex flex-1 flex-col items-center px-6 py-10">
+      {/* Full-bleed animated, per-category backdrop. */}
+      <div className="fixed inset-0 -z-10">
+        <GameBackground category={category} />
+      </div>
+
+      <div className="relative z-10 w-full max-w-3xl">
         <nav className="mb-8 flex items-center justify-between text-sm">
           <Link
             href="/"
-            className="text-[color:var(--muted)] transition hover:text-[color:var(--foreground)]"
+            className="text-white mix-blend-difference transition hover:underline"
           >
             ← back
           </Link>
-          <span className="rounded-full bg-[color:var(--accent-soft)] px-3 py-1 text-xs font-medium uppercase tracking-wider text-[color:var(--accent)]">
-            {category}
+          <span className="rounded-full border border-white/20 bg-black/45 px-3 py-1 text-xs font-medium uppercase tracking-wider text-white backdrop-blur">
+            {meta?.emoji} {meta?.label ?? category}
           </span>
         </nav>
 
@@ -55,7 +63,7 @@ export default async function PlayPage({
 
 function LoadingState() {
   return (
-    <div className="text-center text-[color:var(--muted)]">
+    <div className="py-16 text-center text-white mix-blend-difference">
       Loading round…
     </div>
   );

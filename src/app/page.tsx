@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { CATEGORIES } from "@/lib/items";
+import { stopsFor, type CategoryKey } from "@/lib/categoryTheme";
+import { gradientCss } from "@/lib/spectrum";
 
 export default function Home() {
   return (
@@ -30,13 +32,22 @@ export default function Home() {
               <Link
                 key={cat.id}
                 href={`/play?category=${cat.id}`}
-                className="group flex items-center gap-3 rounded-2xl border border-[color:var(--border)] bg-[color:var(--card)] px-4 py-4 transition hover:-translate-y-0.5 hover:border-[color:var(--accent)] hover:shadow-[0_8px_24px_-12px_rgba(0,0,0,0.15)]"
+                className="group overflow-hidden rounded-2xl border border-[color:var(--border)] bg-[color:var(--card)] transition hover:-translate-y-0.5 hover:border-[color:var(--accent)] hover:shadow-[0_8px_24px_-12px_rgba(0,0,0,0.15)]"
               >
-                <span className="text-2xl" aria-hidden>{cat.emoji}</span>
-                <span className="text-base font-medium">{cat.label}</span>
-                <span className="ml-auto text-[color:var(--muted)] transition group-hover:translate-x-0.5 group-hover:text-[color:var(--accent)]">
-                  →
-                </span>
+                {/* per-category spectrum swatch (mainstream → hipster) */}
+                <div
+                  className="h-1.5 w-full"
+                  style={{ backgroundImage: gradientCss(stopsFor(cat.id as CategoryKey), 90) }}
+                />
+                <div className="flex items-center gap-3 px-4 py-4">
+                  <span className="text-2xl" aria-hidden>
+                    {cat.emoji}
+                  </span>
+                  <span className="text-base font-medium">{cat.label}</span>
+                  <span className="ml-auto text-[color:var(--muted)] transition group-hover:translate-x-0.5 group-hover:text-[color:var(--accent)]">
+                    →
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
@@ -44,8 +55,9 @@ export default function Home() {
 
         <footer className="mt-16 text-xs text-[color:var(--muted)]">
           <p>
-            Popularity = total English Wikipedia pageviews over the last 12 months.
-            Multiplayer with friends is coming.
+            Popularity is a per-category blend of public signals — Wikipedia
+            pageviews plus a category source (Spotify, IMDb, Open Library, and
+            more). Multiplayer with friends is coming.
           </p>
         </footer>
       </main>
