@@ -1759,5 +1759,1505 @@
     "spotifyId": "7iETGaxJ4crz3qaljDPCKC",
     "name": "Brooke Ligertwood",
     "monthlyListeners": 5841380
+  },
+  "madonna": {
+    "spotifyId": "6tbjWDEIzxoDsBA1FuhfPW",
+    "name": "Madonna",
+    "monthlyListeners": 55596614
+  },
+  "led-zeppelin": {
+    "spotifyId": "36QJpDe2go2KgaRleHCDTp",
+    "name": "Led Zeppelin",
+    "monthlyListeners": 22474481
+  },
+  "the-clash": {
+    "spotifyId": "3RGLhK1IP9jnYFH4BRFJBS",
+    "name": "The Clash",
+    "monthlyListeners": 15171587
+  },
+  "red-hot-chili-peppers": {
+    "spotifyId": "0L8ExT028jH3ddEcZwqJJ5",
+    "name": "Red Hot Chili Peppers",
+    "monthlyListeners": 46382212
+  },
+  "green-day": {
+    "spotifyId": "7oPftvlwr6VrsViSDV7fJY",
+    "name": "Green Day",
+    "monthlyListeners": 42593124
+  },
+  "eminem": {
+    "spotifyId": "7dGJo4pcD2V6oG8kP0tJRR",
+    "name": "Eminem",
+    "monthlyListeners": 75626974
+  },
+  "stevie-wonder": {
+    "spotifyId": "7guDJrEfX3qb6FEbdPA5qi",
+    "name": "Stevie Wonder",
+    "monthlyListeners": 21584701
+  },
+  "johnny-cash": {
+    "spotifyId": "6kACVPfCOnqzgfEF5ryl0x",
+    "name": "Johnny Cash",
+    "monthlyListeners": 12765957
+  },
+  "calvin-harris": {
+    "spotifyId": "7CajNmpbOovFoOoasH2HaY",
+    "name": "Calvin Harris",
+    "monthlyListeners": 79972329
+  },
+  "shakira": {
+    "spotifyId": "0EmeFodog0BfCgMzAIvKQp",
+    "name": "Shakira",
+    "monthlyListeners": 87944280
+  },
+  "blackpink": {
+    "spotifyId": "41MozSoPIsD1dJM0CLPjZF",
+    "name": "BLACKPINK",
+    "monthlyListeners": 21888086
+  },
+  "elvis-presley": {
+    "spotifyId": "43ZHCT0cAZBISjO8DG9PnE",
+    "name": "Elvis Presley",
+    "monthlyListeners": 23078774
+  },
+  "michael-jackson": {
+    "spotifyId": "3fMbdgg4jU18AjLCKBhRSm",
+    "name": "Michael Jackson",
+    "monthlyListeners": 111076797
+  },
+  "the-rolling-stones": {
+    "spotifyId": "22bE4uQ6baNwSHPVcDxLCe",
+    "name": "The Rolling Stones",
+    "monthlyListeners": 30096085
+  },
+  "foo-fighters": {
+    "spotifyId": "7jy3rLJdDQY21OgRLCZ9sD",
+    "name": "Foo Fighters",
+    "monthlyListeners": 22745426
+  },
+  "blink-182": {
+    "spotifyId": "6FBDaR13swtiWwGhX1WQsP",
+    "name": "blink-182",
+    "monthlyListeners": 19815540
+  },
+  "kendrick-lamar": {
+    "spotifyId": "2YZyLoL8N0Wb9xBt1NhZWg",
+    "name": "Kendrick Lamar",
+    "monthlyListeners": 71090979
+  },
+  "whitney-houston": {
+    "spotifyId": "6XpaIBNiVzIetEPCWDvAFP",
+    "name": "Whitney Houston",
+    "monthlyListeners": 29718983
+  },
+  "dolly-parton": {
+    "spotifyId": "32vWCbZh0xZ4o9gkz4PsEU",
+    "name": "Dolly Parton",
+    "monthlyListeners": 16416007
+  },
+  "avicii": {
+    "spotifyId": "1vCWHaC5f2uS3yhpwWbIA6",
+    "name": "Avicii",
+    "monthlyListeners": 40500099
+  },
+  "karol-g": {
+    "spotifyId": "790FomKkXshlbRYZFtlgla",
+    "name": "KAROL G",
+    "monthlyListeners": 53205006
+  },
+  "twice": {
+    "spotifyId": "7n2Ycct7Beij7Dj7meI4X0",
+    "name": "TWICE",
+    "monthlyListeners": 15781369
+  },
+  "frank-sinatra": {
+    "spotifyId": "1Mxqyy3pSjf8kZZL4QVxS0",
+    "name": "Frank Sinatra",
+    "monthlyListeners": 18376952
+  },
+  "lady-gaga": {
+    "spotifyId": "1HY2Jd0NmPuamShAr6KMms",
+    "name": "Lady Gaga",
+    "monthlyListeners": 104184391
+  },
+  "metallica": {
+    "spotifyId": "2ye2Wgw4gimLv2eAKyk1NB",
+    "name": "Metallica",
+    "monthlyListeners": 33344293
+  },
+  "coldplay": {
+    "spotifyId": "4gzpq5DPGxSnKTe4SA8HAU",
+    "name": "Coldplay",
+    "monthlyListeners": 91888995
+  },
+  "my-chemical-romance": {
+    "spotifyId": "7FBcuc1gsnv6Y1nwFtNRCb",
+    "name": "My Chemical Romance",
+    "monthlyListeners": 18916746
+  },
+  "snoop-dogg": {
+    "spotifyId": "7hJcb9fa4alzcOq3EaNPoG",
+    "name": "Snoop Dogg",
+    "monthlyListeners": 33184833
+  },
+  "ray-charles": {
+    "spotifyId": "1eYhYunlNJlDoQhtYBvPsi",
+    "name": "Ray Charles",
+    "monthlyListeners": 10839942
+  },
+  "willie-nelson": {
+    "spotifyId": "5W5bDNCqJ1jbCgTxDD0Cb3",
+    "name": "Willie Nelson",
+    "monthlyListeners": 8519625
+  },
+  "skrillex": {
+    "spotifyId": "5he5w2lnU9x7JFhnwcekXX",
+    "name": "Skrillex",
+    "monthlyListeners": 24491933
+  },
+  "daddy-yankee": {
+    "spotifyId": "4VMYDCV2IEDYJArk749S6m",
+    "name": "Daddy Yankee",
+    "monthlyListeners": 65064182
+  },
+  "stray-kids": {
+    "spotifyId": "2dIgFjalVxs4ThymZ67YCE",
+    "name": "Stray Kids",
+    "monthlyListeners": 10067581
+  },
+  "elton-john": {
+    "spotifyId": "3PhoLpVuITZKcymswpck5b",
+    "name": "Elton John",
+    "monthlyListeners": 51946250
+  },
+  "rihanna": {
+    "spotifyId": "5pKCCKE2ajJHZ9KAiaK11H",
+    "name": "Rihanna",
+    "monthlyListeners": 111731647
+  },
+  "u2": {
+    "spotifyId": "51Blml2LZPmy7TTiAg47vQ",
+    "name": "U2",
+    "monthlyListeners": 21944951
+  },
+  "the-cure": {
+    "spotifyId": "7bu3H8JO7d0UbMoVzbo70s",
+    "name": "The Cure",
+    "monthlyListeners": 24859412
+  },
+  "pearl-jam": {
+    "spotifyId": "1w5Kfo2jwwIPruYS2UWh56",
+    "name": "Pearl Jam",
+    "monthlyListeners": 18109594
+  },
+  "paramore": {
+    "spotifyId": "74XFHRwlV6OrjEM0A2NCMF",
+    "name": "Paramore",
+    "monthlyListeners": 33986010
+  },
+  "j-cole": {
+    "spotifyId": "6l3HvQ5sa6mXTsMTB19rO5",
+    "name": "J. Cole",
+    "monthlyListeners": 39309702
+  },
+  "marvin-gaye": {
+    "spotifyId": "3koiLjNrgRTNbOwViDipeA",
+    "name": "Marvin Gaye",
+    "monthlyListeners": 24085656
+  },
+  "marshmello": {
+    "spotifyId": "64KEffDW9EtZ1y2vBYgq8T",
+    "name": "Marshmello",
+    "monthlyListeners": 52985190
+  },
+  "peso-pluma": {
+    "spotifyId": "12GqGscKJx3aE4t07u7eVZ",
+    "name": "Peso Pluma",
+    "monthlyListeners": 47056887
+  },
+  "seventeen": {
+    "spotifyId": "5uUb3J6HqLhBWwzuh84LUZ",
+    "name": "Seventeen",
+    "monthlyListeners": 7183539
+  },
+  "prince": {
+    "spotifyId": "5a2EaR3hamoenG9rDuVn8j",
+    "name": "Prince",
+    "monthlyListeners": 22131305
+  },
+  "ariana-grande": {
+    "spotifyId": "66CXWjxzNUsdJxJ2JdwvnR",
+    "name": "Ariana Grande",
+    "monthlyListeners": 84967529
+  },
+  "bruce-springsteen": {
+    "spotifyId": "3eqjTLE0HfPfh78zjh6TqT",
+    "name": "Bruce Springsteen",
+    "monthlyListeners": 21846407
+  },
+  "the-smiths": {
+    "spotifyId": "3yY2gUcIsjMr8hjo51PoJ8",
+    "name": "The Smiths",
+    "monthlyListeners": 22944910
+  },
+  "arctic-monkeys": {
+    "spotifyId": "7Ln80lUS6He07XvHI8qqHH",
+    "name": "Arctic Monkeys",
+    "monthlyListeners": 55877432
+  },
+  "fall-out-boy": {
+    "spotifyId": "4UXqAaa6dQYAk18Lv7PEgX",
+    "name": "Fall Out Boy",
+    "monthlyListeners": 25718125
+  },
+  "travis-scott": {
+    "spotifyId": "0Y5tJX1MQlPlqiwlOH1tJY",
+    "name": "Travis Scott",
+    "monthlyListeners": 61083798
+  },
+  "shania-twain": {
+    "spotifyId": "5e4Dhzv426EvQe3aDb64jL",
+    "name": "Shania Twain",
+    "monthlyListeners": 16967301
+  },
+  "the-chainsmokers": {
+    "spotifyId": "69GGBxA162lTqCwzJG5jLp",
+    "name": "The Chainsmokers",
+    "monthlyListeners": 52743697
+  },
+  "rauw-alejandro": {
+    "spotifyId": "1mcTU81TzQhprhouKaTkpq",
+    "name": "Rauw Alejandro",
+    "monthlyListeners": 53328790
+  },
+  "newjeans": {
+    "spotifyId": "6HvZYsbFfjnjFrWF950C9d",
+    "name": "NewJeans",
+    "monthlyListeners": 13657261
+  },
+  "billy-joel": {
+    "spotifyId": "6zFYqv1mOsgBRQbae3JJ9e",
+    "name": "Billy Joel",
+    "monthlyListeners": 35623449
+  },
+  "katy-perry": {
+    "spotifyId": "6jJ0s89eD6GaHleKKya26X",
+    "name": "Katy Perry",
+    "monthlyListeners": 86939334
+  },
+  "aerosmith": {
+    "spotifyId": "7Ey4PD4MYsKc5I2dolUwbH",
+    "name": "Aerosmith",
+    "monthlyListeners": 26661923
+  },
+  "talking-heads": {
+    "spotifyId": "2x9SpqnPi8rlE9pjHBwmSC",
+    "name": "Talking Heads",
+    "monthlyListeners": 10978107
+  },
+  "the-strokes": {
+    "spotifyId": "0epOFNiUfyON9EYx7Tpr6V",
+    "name": "The Strokes",
+    "monthlyListeners": 19124135
+  },
+  "weezer": {
+    "spotifyId": "3jOstUTkEu2JkjvRdBA5Gu",
+    "name": "Weezer",
+    "monthlyListeners": 22907234
+  },
+  "nicki-minaj": {
+    "spotifyId": "0hCNtLu0JehylgoiP8L4Gh",
+    "name": "Nicki Minaj",
+    "monthlyListeners": 48963425
+  },
+  "usher": {
+    "spotifyId": "23zg3TcAtWQy7J6upgbUnj",
+    "name": "USHER",
+    "monthlyListeners": 48721021
+  },
+  "carrie-underwood": {
+    "spotifyId": "4xFUf1FHVy696Q1JQZMTRj",
+    "name": "Carrie Underwood",
+    "monthlyListeners": 9877150
+  },
+  "tiesto": {
+    "spotifyId": "2o5jDhtHVPhrJdv3cEQ99Z",
+    "name": "Tiësto",
+    "monthlyListeners": 35147006
+  },
+  "maluma": {
+    "spotifyId": "1r4hJ1h58CWwUQe3MxPuau",
+    "name": "Maluma",
+    "monthlyListeners": 49347351
+  },
+  "the-police": {
+    "spotifyId": "5NGO30tJxFlKixkPSgXcFE",
+    "name": "The Police",
+    "monthlyListeners": 38992424
+  },
+  "miley-cyrus": {
+    "spotifyId": "5YGY8feqx7naU7z4HrwZM6",
+    "name": "Miley Cyrus",
+    "monthlyListeners": 60365593
+  },
+  "guns-n-roses": {
+    "spotifyId": "3qm84nBOXUEQ2vnTfUTTFC",
+    "name": "Guns N' Roses",
+    "monthlyListeners": 38749657
+  },
+  "muse": {
+    "spotifyId": "12Chz98pHFMPJEknJQMWvI",
+    "name": "Muse",
+    "monthlyListeners": 21497758
+  },
+  "panic-at-the-disco": {
+    "spotifyId": "20JZFwl6HVl6yg8a4H3ZqK",
+    "name": "Panic! At The Disco",
+    "monthlyListeners": 27035729
+  },
+  "lil-wayne": {
+    "spotifyId": "55Aa2cqylxrFIXC767Z865",
+    "name": "Lil Wayne",
+    "monthlyListeners": 47859268
+  },
+  "alicia-keys": {
+    "spotifyId": "3DiDSECUqqY1AuBP8qtaIa",
+    "name": "Alicia Keys",
+    "monthlyListeners": 38697088
+  },
+  "tim-mcgraw": {
+    "spotifyId": "6roFdX1y5BYSbp60OTJWMd",
+    "name": "Tim McGraw",
+    "monthlyListeners": 10445698
+  },
+  "zedd": {
+    "spotifyId": "2qxJFvFYMEDqd7ui6kSAcq",
+    "name": "Zedd",
+    "monthlyListeners": 19821762
+  },
+  "ozuna": {
+    "spotifyId": "1i8SpTcr7yvPOmcqrbnVXY",
+    "name": "Ozuna",
+    "monthlyListeners": 51023103
+  },
+  "jimin": {
+    "spotifyId": "1oSPZhvZMIrWW5I41kPkkY",
+    "name": "Jimin",
+    "monthlyListeners": 6536730
+  },
+  "sting": {
+    "spotifyId": "0Ty63ceoRnnJKVEYP0VQpk",
+    "name": "Sting",
+    "monthlyListeners": 14821812
+  },
+  "dua-lipa": {
+    "spotifyId": "6M2wZ9GZgrQXHCFfjv46we",
+    "name": "Dua Lipa",
+    "monthlyListeners": 67544866
+  },
+  "black-sabbath": {
+    "spotifyId": "5M52tdBnJaKSvOpJGz8mfZ",
+    "name": "Black Sabbath",
+    "monthlyListeners": 19160326
+  },
+  "new-order": {
+    "spotifyId": "0yNLKJebCb8Aueb54LYya3",
+    "name": "New Order",
+    "monthlyListeners": 8508601
+  },
+  "kings-of-leon": {
+    "spotifyId": "2qk9voo8llSGYcZ6xrBzKx",
+    "name": "Kings of Leon",
+    "monthlyListeners": 26005280
+  },
+  "the-offspring": {
+    "spotifyId": "5LfGQac0EIXyAN8aUwmNAQ",
+    "name": "The Offspring",
+    "monthlyListeners": 21627145
+  },
+  "cardi-b": {
+    "spotifyId": "4kYSro6naA4h99UJvo89HB",
+    "name": "Cardi B",
+    "monthlyListeners": 33776185
+  },
+  "john-legend": {
+    "spotifyId": "5y2Xq6xcjJb2jVM54GHK3t",
+    "name": "John Legend",
+    "monthlyListeners": 22064786
+  },
+  "keith-urban": {
+    "spotifyId": "0u2FHSq3ln94y5Q57xazwf",
+    "name": "Keith Urban",
+    "monthlyListeners": 6859139
+  },
+  "kygo": {
+    "spotifyId": "23fqKkggKUBHNkbKtXEls4",
+    "name": "Kygo",
+    "monthlyListeners": 29913065
+  },
+  "anuel-aa": {
+    "spotifyId": "2R21vXR83lH98kGeO99Y66",
+    "name": "Anuel AA",
+    "monthlyListeners": 44535933
+  },
+  "phil-collins": {
+    "spotifyId": "4lxfqrEsLX6N1N4OCSkILp",
+    "name": "Phil Collins",
+    "monthlyListeners": 30086443
+  },
+  "britney-spears": {
+    "spotifyId": "26dSoYclwsYLMAKD3tpOr4",
+    "name": "Britney Spears",
+    "monthlyListeners": 48897947
+  },
+  "bon-jovi": {
+    "spotifyId": "58lV9VcRSjABbAbfWS6skp",
+    "name": "Bon Jovi",
+    "monthlyListeners": 34397893
+  },
+  "the-black-keys": {
+    "spotifyId": "7mnBLXK823vNxN3UWB7Gfz",
+    "name": "The Black Keys",
+    "monthlyListeners": 9692660
+  },
+  "sum-41": {
+    "spotifyId": "0qT79UgT5tY4yudH9VfsdT",
+    "name": "Sum 41",
+    "monthlyListeners": 10337223
+  },
+  "50-cent": {
+    "spotifyId": "3q7HBObVc0L8jNeTe5Gofh",
+    "name": "50 Cent",
+    "monthlyListeners": 45106823
+  },
+  "diana-ross": {
+    "spotifyId": "3MdG05syQeRYPPcClLaUGl",
+    "name": "Diana Ross",
+    "monthlyListeners": 10302161
+  },
+  "kenny-rogers": {
+    "spotifyId": "4tw2Lmn9tTPUv7Gy7mVPI4",
+    "name": "Kenny Rogers",
+    "monthlyListeners": 11589989
+  },
+  "don-omar": {
+    "spotifyId": "33ScadVnbm2X8kkUqOkC6Z",
+    "name": "Don Omar",
+    "monthlyListeners": 48255263
+  },
+  "tina-turner": {
+    "spotifyId": "1zuJe6b1roixEKMOtyrEak",
+    "name": "Tina Turner",
+    "monthlyListeners": 13122059
+  },
+  "lana-del-rey": {
+    "spotifyId": "00FQb4jTyendYWaN8pK0wa",
+    "name": "Lana Del Rey",
+    "monthlyListeners": 63415468
+  },
+  "the-who": {
+    "spotifyId": "67ea9eGLXYMsO2eYQRui3w",
+    "name": "The Who",
+    "monthlyListeners": 8474227
+  },
+  "pixies": {
+    "spotifyId": "6zvul52xwTWzilBZl6BUbT",
+    "name": "Pixies",
+    "monthlyListeners": 10458580
+  },
+  "tool": {
+    "spotifyId": "2yEwvVSSSUkcLeSTNyHKh8",
+    "name": "TOOL",
+    "monthlyListeners": 6517425
+  },
+  "bring-me-the-horizon": {
+    "spotifyId": "1Ffb6ejR6Fe5IamqA5oRUF",
+    "name": "Bring Me The Horizon",
+    "monthlyListeners": 13861665
+  },
+  "jay-z": {
+    "spotifyId": "3nFkdlSjzX9mRTtwJOzDYB",
+    "name": "JAŸ-Z",
+    "monthlyListeners": 45408298
+  },
+  "sam-cooke": {
+    "spotifyId": "6hnWRPzGGKiapVX1UCdEAC",
+    "name": "Sam Cooke",
+    "monthlyListeners": 7035333
+  },
+  "zach-bryan": {
+    "spotifyId": "40ZNYROS4zLfyyBSs2PGe2",
+    "name": "Zach Bryan",
+    "monthlyListeners": 25813196
+  },
+  "swedish-house-mafia": {
+    "spotifyId": "1h6Cn3P4NGzXbaXidqURXs",
+    "name": "Swedish House Mafia",
+    "monthlyListeners": 27042107
+  },
+  "nicky-jam": {
+    "spotifyId": "1SupJlEpv7RS2tPNRaHViT",
+    "name": "Nicky Jam",
+    "monthlyListeners": 36536287
+  },
+  "exo": {
+    "spotifyId": "3cjEqqelV9zb4BYE3qDQ4O",
+    "name": "EXO",
+    "monthlyListeners": 5863302
+  },
+  "george-michael": {
+    "spotifyId": "19ra5tSw0tWufvUp8GotLo",
+    "name": "George Michael",
+    "monthlyListeners": 21802532
+  },
+  "doja-cat": {
+    "spotifyId": "5cj0lLjcoR7YOSnhnX0Po5",
+    "name": "Doja Cat",
+    "monthlyListeners": 56391410
+  },
+  "the-beach-boys": {
+    "spotifyId": "3oDbviiivRWhXwIE8hxkVV",
+    "name": "The Beach Boys",
+    "monthlyListeners": 12407884
+  },
+  "rage-against-the-machine": {
+    "spotifyId": "2d0hyoQ5ynDBnkvAbJKORj",
+    "name": "Rage Against The Machine",
+    "monthlyListeners": 10454675
+  },
+  "thirty-seconds-to-mars": {
+    "spotifyId": "0RqtSIYZmd4fiBKVFqyIqD",
+    "name": "Thirty Seconds To Mars",
+    "monthlyListeners": 10224431
+  },
+  "dr-dre": {
+    "spotifyId": "6DPYiyq5kWVQS4RGwxzPC7",
+    "name": "Dr. Dre",
+    "monthlyListeners": 23456933
+  },
+  "al-green": {
+    "spotifyId": "3dkbV4qihUeMsqN4vBGg93",
+    "name": "Al Green",
+    "monthlyListeners": 7240665
+  },
+  "kacey-musgraves": {
+    "spotifyId": "70kkdajctXSbqSMJbQO424",
+    "name": "Kacey Musgraves",
+    "monthlyListeners": 18558477
+  },
+  "armin-van-buuren": {
+    "spotifyId": "0SfsnGyD8FpIN4U4WCkBZ5",
+    "name": "Armin van Buuren",
+    "monthlyListeners": 14814926
+  },
+  "rosalia": {
+    "spotifyId": "7ltDVBr6mKbRvohxheJ9h1",
+    "name": "ROSALÍA",
+    "monthlyListeners": 28404359
+  },
+  "neil-young": {
+    "spotifyId": "6v8FB84lnmJs434UJf2Mrm",
+    "name": "Neil Young",
+    "monthlyListeners": 11620528
+  },
+  "sza": {
+    "spotifyId": "7tYKF4w9nC0nq9CsPZTHyP",
+    "name": "SZA",
+    "monthlyListeners": 69426953
+  },
+  "iron-maiden": {
+    "spotifyId": "6mdiAmATAx73kdxrNrnlao",
+    "name": "Iron Maiden",
+    "monthlyListeners": 9521056
+  },
+  "system-of-a-down": {
+    "spotifyId": "5eAWCfyUhZtHHtBdNk56l1",
+    "name": "System Of A Down",
+    "monthlyListeners": 26167196
+  },
+  "jimmy-eat-world": {
+    "spotifyId": "3Ayl7mCk0nScecqOzvNp6s",
+    "name": "Jimmy Eat World",
+    "monthlyListeners": 10453237
+  },
+  "future": {
+    "spotifyId": "1RyvyyTE3xzB2ZywiAwp0i",
+    "name": "Future",
+    "monthlyListeners": 58514707
+  },
+  "mary-j-blige": {
+    "spotifyId": "1XkoF8ryArs86LZvFOkbyr",
+    "name": "Mary J. Blige",
+    "monthlyListeners": 17769872
+  },
+  "tyler-childers": {
+    "spotifyId": "13ZEDW6vyBF12HYcZRr4EV",
+    "name": "Tyler Childers",
+    "monthlyListeners": 11611500
+  },
+  "flume": {
+    "spotifyId": "6nxWCVXbOlEVRexSbLsTer",
+    "name": "Flume",
+    "monthlyListeners": 11914224
+  },
+  "myke-towers": {
+    "spotifyId": "7iK8PXO48WeuP03g8YR51W",
+    "name": "Myke Towers",
+    "monthlyListeners": 40963162
+  },
+  "sabrina-carpenter": {
+    "spotifyId": "74KM79TiuVKeVCqs8QtB0B",
+    "name": "Sabrina Carpenter",
+    "monthlyListeners": 65809044
+  },
+  "journey": {
+    "spotifyId": "0rvjqX7ttXeg3mTy8Xscbt",
+    "name": "Journey",
+    "monthlyListeners": 23088231
+  },
+  "alice-in-chains": {
+    "spotifyId": "64tNsm6TnZe2zpcMVMOoHL",
+    "name": "Alice In Chains",
+    "monthlyListeners": 12375412
+  },
+  "all-time-low": {
+    "spotifyId": "46gyXjRIvN1NL1eCB8GBxo",
+    "name": "All Time Low",
+    "monthlyListeners": 8816818
+  },
+  "21-savage": {
+    "spotifyId": "1URnnhqYAYcrqrcwql10ft",
+    "name": "21 Savage",
+    "monthlyListeners": 44442650
+  },
+  "lainey-wilson": {
+    "spotifyId": "6tPHARSq45lQ8BSALCfkFC",
+    "name": "Lainey Wilson",
+    "monthlyListeners": 11523721
+  },
+  "manuel-turizo": {
+    "spotifyId": "0tmwSHipWxN12fsoLcFU3B",
+    "name": "Manuel Turizo",
+    "monthlyListeners": 37669001
+  },
+  "simon-garfunkel": {
+    "spotifyId": "70cRZdQywnSFp9pnc2WTCE",
+    "name": "Simon & Garfunkel",
+    "monthlyListeners": 9910109
+  },
+  "christina-aguilera": {
+    "spotifyId": "1l7ZsJRRS8wlW3WfJfPfNS",
+    "name": "Christina Aguilera",
+    "monthlyListeners": 32612316
+  },
+  "the-white-stripes": {
+    "spotifyId": "4F84IBURUo98rz4r61KF70",
+    "name": "The White Stripes",
+    "monthlyListeners": 15261437
+  },
+  "good-charlotte": {
+    "spotifyId": "5aYyPjAsLj7UzANzdupwnS",
+    "name": "Good Charlotte",
+    "monthlyListeners": 5914377
+  },
+  "megan-thee-stallion": {
+    "spotifyId": "181bsRPaVXVlUKXrxwZfHK",
+    "name": "Megan Thee Stallion",
+    "monthlyListeners": 25821470
+  },
+  "ne-yo": {
+    "spotifyId": "21E3waRsmPlU7jZsS13rcj",
+    "name": "Ne-Yo",
+    "monthlyListeners": 49370743
+  },
+  "cody-johnson": {
+    "spotifyId": "6zLBxLdl60ekBLpawtT63I",
+    "name": "Cody Johnson",
+    "monthlyListeners": 12554365
+  },
+  "disclosure": {
+    "spotifyId": "6nS5roXSAGhTGr34W6n7Et",
+    "name": "Disclosure",
+    "monthlyListeners": 25084074
+  },
+  "sebastian-yatra": {
+    "spotifyId": "07YUOmWljBTXwIseAUd9TW",
+    "name": "Sebastian Yatra",
+    "monthlyListeners": 24385477
+  },
+  "selena-gomez": {
+    "spotifyId": "0C8ZW7ezQVs4URX5aX7Kqx",
+    "name": "Selena Gomez",
+    "monthlyListeners": 43908619
+  },
+  "tom-petty": {
+    "spotifyId": "2UZMlIwnkgAEDBsw1Rejkn",
+    "name": "Tom Petty",
+    "monthlyListeners": 12085471
+  },
+  "simple-plan": {
+    "spotifyId": "2p4FqHnazRucYQHyDCdBrJ",
+    "name": "Simple Plan",
+    "monthlyListeners": 9842123
+  },
+  "lil-nas-x": {
+    "spotifyId": "7jVv8c5Fj3E9VhNjxT4snq",
+    "name": "Lil Nas X",
+    "monthlyListeners": 19744237
+  },
+  "miguel": {
+    "spotifyId": "360IAlyVv4PCEVjgyMZrxK",
+    "name": "Miguel",
+    "monthlyListeners": 30685040
+  },
+  "camilo": {
+    "spotifyId": "28gNT5KBp7IjEOQoevXf9N",
+    "name": "Camilo",
+    "monthlyListeners": 22555100
+  },
+  "dire-straits": {
+    "spotifyId": "0WwSkZ7LtFUFjGjMZBMt6T",
+    "name": "Dire Straits",
+    "monthlyListeners": 26587849
+  },
+  "demi-lovato": {
+    "spotifyId": "6S2OmqARrzebs0tKUEyXyp",
+    "name": "Demi Lovato",
+    "monthlyListeners": 38016046
+  },
+  "creedence-clearwater-revival": {
+    "spotifyId": "3IYUhFvPQItj6xySrBmZkd",
+    "name": "Creedence Clearwater Revival",
+    "monthlyListeners": 32192415
+  },
+  "slipknot": {
+    "spotifyId": "05fG473iIaoy82BF1aGhL8",
+    "name": "Slipknot",
+    "monthlyListeners": 16728912
+  },
+  "lil-uzi-vert": {
+    "spotifyId": "4O15NlyKLIASxsJ0PrXPfz",
+    "name": "Lil Uzi Vert",
+    "monthlyListeners": 31464389
+  },
+  "h-e-r": {
+    "spotifyId": "3Y7RZ31TRPVadSFVy1o8os",
+    "name": "H.E.R.",
+    "monthlyListeners": 8985048
+  },
+  "rufus-du-sol": {
+    "spotifyId": "5Pb27ujIyYb33zBqVysBkj",
+    "name": "RÜFÜS DU SOL",
+    "monthlyListeners": 12604114
+  },
+  "quevedo": {
+    "spotifyId": "52iwsT98xCoGgiGntTiR7K",
+    "name": "Quevedo",
+    "monthlyListeners": 29622085
+  },
+  "camila-cabello": {
+    "spotifyId": "4nDoRrQiYLoBzwC5BhVJzF",
+    "name": "Camila Cabello",
+    "monthlyListeners": 47758833
+  },
+  "def-leppard": {
+    "spotifyId": "6H1RjVyNruCmrBEWRbD0VZ",
+    "name": "Def Leppard",
+    "monthlyListeners": 10326199
+  },
+  "korn": {
+    "spotifyId": "3RNrq3jvMZxD9ZyoOZbQOD",
+    "name": "Korn",
+    "monthlyListeners": 14067746
+  },
+  "young-thug": {
+    "spotifyId": "50co4Is1HCEo8bhOyUWKpn",
+    "name": "Young Thug",
+    "monthlyListeners": 29816584
+  },
+  "the-xx": {
+    "spotifyId": "3iOvXCl6edW5Um0fXEBRXy",
+    "name": "The xx",
+    "monthlyListeners": 5883447
+  },
+  "junior-h": {
+    "spotifyId": "7Gi6gjaWy3DxyilpF1a8Is",
+    "name": "Junior H",
+    "monthlyListeners": 30200530
+  },
+  "sam-smith": {
+    "spotifyId": "2wY79sveU1sp5g7SokKOiI",
+    "name": "Sam Smith",
+    "monthlyListeners": 54220580
+  },
+  "motley-crue": {
+    "spotifyId": "0cc6vw3VN8YlIcvr1v7tBL",
+    "name": "Mötley Crüe",
+    "monthlyListeners": 11115090
+  },
+  "deftones": {
+    "spotifyId": "6Ghvu1VvMGScGpOUJBAHNH",
+    "name": "Deftones",
+    "monthlyListeners": 17775637
+  },
+  "childish-gambino": {
+    "spotifyId": "73sIBHcqh3Z3NyqHKZ7FOL",
+    "name": "Childish Gambino",
+    "monthlyListeners": 33018526
+  },
+  "fred-again": {
+    "spotifyId": "4oLeXFyACqeem2VImYeBFe",
+    "name": "Fred again..",
+    "monthlyListeners": 18079203
+  },
+  "natanael-cano": {
+    "spotifyId": "0elWFr7TW8piilVRYJUe4P",
+    "name": "Natanael Cano",
+    "monthlyListeners": 24933700
+  },
+  "avril-lavigne": {
+    "spotifyId": "0p4nmQO2msCgU4IF37Wi3j",
+    "name": "Avril Lavigne",
+    "monthlyListeners": 28430053
+  },
+  "the-kinks": {
+    "spotifyId": "1SQRv42e4PjEYfPhS0Tk9E",
+    "name": "The Kinks",
+    "monthlyListeners": 7728126
+  },
+  "pantera": {
+    "spotifyId": "14pVkFUHDL207LzLHtSA18",
+    "name": "Pantera",
+    "monthlyListeners": 9001852
+  },
+  "mac-miller": {
+    "spotifyId": "4LLpKhyESsyAXpc4laK94U",
+    "name": "Mac Miller",
+    "monthlyListeners": 35816396
+  },
+  "aaliyah": {
+    "spotifyId": "0urTpYCsixqZwgNTkPJOJ4",
+    "name": "Aaliyah",
+    "monthlyListeners": 6759011
+  },
+  "george-strait": {
+    "spotifyId": "5vngPClqofybhPERIqQMYd",
+    "name": "George Strait",
+    "monthlyListeners": 9820600
+  },
+  "steve-aoki": {
+    "spotifyId": "77AiFEVeAVj2ORpC85QVJs",
+    "name": "Steve Aoki",
+    "monthlyListeners": 16820843
+  },
+  "luis-miguel": {
+    "spotifyId": "2nszmSgqreHSdJA3zWPyrW",
+    "name": "Luis Miguel",
+    "monthlyListeners": 22024467
+  },
+  "anitta": {
+    "spotifyId": "7FNnA9vBm6EKceENgCGRMb",
+    "name": "Anitta",
+    "monthlyListeners": 39146982
+  },
+  "burna-boy": {
+    "spotifyId": "3wcj11K77LjEY1PkEazffa",
+    "name": "Burna Boy",
+    "monthlyListeners": 31677508
+  },
+  "red-velvet": {
+    "spotifyId": "1z4g3DjTBBZKhvAroFlhOM",
+    "name": "Red Velvet",
+    "monthlyListeners": 5944587
+  },
+  "hans-zimmer": {
+    "spotifyId": "0YC192cP3KPCRWx8zr8MfZ",
+    "name": "Hans Zimmer",
+    "monthlyListeners": 13174411
+  },
+  "arijit-singh": {
+    "spotifyId": "4YRxDV8wJFPHPTeXepOstw",
+    "name": "Arijit Singh",
+    "monthlyListeners": 54663821
+  },
+  "aya-nakamura": {
+    "spotifyId": "7IlRNXHjoOCgEAWN5qYksg",
+    "name": "Aya Nakamura",
+    "monthlyListeners": 14076362
+  },
+  "gwen-stefani": {
+    "spotifyId": "4yiQZ8tQPux8cPriYMWUFP",
+    "name": "Gwen Stefani",
+    "monthlyListeners": 26688827
+  },
+  "the-neighbourhood": {
+    "spotifyId": "77SW9BnxLY8rJ0RciFqkHh",
+    "name": "The Neighbourhood",
+    "monthlyListeners": 47596032
+  },
+  "wiz-khalifa": {
+    "spotifyId": "137W8MRPWKqSmrBGDBFSop",
+    "name": "Wiz Khalifa",
+    "monthlyListeners": 47148438
+  },
+  "destiny-s-child": {
+    "spotifyId": "1Y8cdNmUJH7yBTd9yOvr5i",
+    "name": "Destiny's Child",
+    "monthlyListeners": 17867026
+  },
+  "alan-jackson": {
+    "spotifyId": "4mxWe1mtYIYfP040G38yvS",
+    "name": "Alan Jackson",
+    "monthlyListeners": 10398924
+  },
+  "alesso": {
+    "spotifyId": "4AVFqumd2ogHFlRbKIjp1t",
+    "name": "Alesso",
+    "monthlyListeners": 17567712
+  },
+  "marc-anthony": {
+    "spotifyId": "4wLXwxDeWQ8mtUIRPxGiD6",
+    "name": "Marc Anthony",
+    "monthlyListeners": 18889117
+  },
+  "alok": {
+    "spotifyId": "0NGAZxHanS9e0iNHpR8f2W",
+    "name": "Alok",
+    "monthlyListeners": 25359202
+  },
+  "wizkid": {
+    "spotifyId": "3tVQdUvClmAT7URs9V3rsp",
+    "name": "Wizkid",
+    "monthlyListeners": 16961077
+  },
+  "shreya-ghoshal": {
+    "spotifyId": "0oOet2f43PA68X5RxKobEy",
+    "name": "Shreya Ghoshal",
+    "monthlyListeners": 52139949
+  },
+  "angele": {
+    "spotifyId": "3QVolfxko2UyCOtexhVTli",
+    "name": "Angèle",
+    "monthlyListeners": 6076366
+  },
+  "no-doubt": {
+    "spotifyId": "0cQbJU1aAzvbEmTuljWLlF",
+    "name": "No Doubt",
+    "monthlyListeners": 14937619
+  },
+  "cigarettes-after-sex": {
+    "spotifyId": "1QAJqy2dA3ihHBFIHRphZj",
+    "name": "Cigarettes After Sex",
+    "monthlyListeners": 30371338
+  },
+  "big-sean": {
+    "spotifyId": "0c173mlxpT3dSFRgMO8XPh",
+    "name": "Big Sean",
+    "monthlyListeners": 22363725
+  },
+  "boyz-ii-men": {
+    "spotifyId": "6O74knDqdv3XaWtkII7Xjp",
+    "name": "Boyz II Men",
+    "monthlyListeners": 8236394
+  },
+  "afrojack": {
+    "spotifyId": "4D75GcNG95ebPtNvoNVXhz",
+    "name": "AFROJACK",
+    "monthlyListeners": 27589122
+  },
+  "juanes": {
+    "spotifyId": "0UWZUmn7sybxMCqrw9tGa7",
+    "name": "Juanes",
+    "monthlyListeners": 20196669
+  },
+  "ludmilla": {
+    "spotifyId": "3CDoRporvSjdzTrm99a3gi",
+    "name": "LUDMILLA",
+    "monthlyListeners": 10165089
+  },
+  "davido": {
+    "spotifyId": "0Y3agQaa6g2r0YmHPOO9rh",
+    "name": "Davido",
+    "monthlyListeners": 9886771
+  },
+  "louis-armstrong": {
+    "spotifyId": "19eLuQmk9aCobbVDHc6eek",
+    "name": "Louis Armstrong",
+    "monthlyListeners": 8063069
+  },
+  "ludovico-einaudi": {
+    "spotifyId": "2uFUBdaVGtyMqckSeCl0Qj",
+    "name": "Ludovico Einaudi",
+    "monthlyListeners": 7861183
+  },
+  "sonu-nigam": {
+    "spotifyId": "1dVygo6tRFXC8CSWURQJq2",
+    "name": "Sonu Nigam",
+    "monthlyListeners": 28033771
+  },
+  "indila": {
+    "spotifyId": "0FEJqmeLRzsXj8hgcZaAyB",
+    "name": "Indila",
+    "monthlyListeners": 12453403
+  },
+  "amy-winehouse": {
+    "spotifyId": "6Q192DXotxtaysaqNPy5yR",
+    "name": "Amy Winehouse",
+    "monthlyListeners": 22606927
+  },
+  "clairo": {
+    "spotifyId": "3l0CmX0FuQjFxr8SK7Vqag",
+    "name": "Clairo",
+    "monthlyListeners": 17255131
+  },
+  "rick-ross": {
+    "spotifyId": "1sBkRIssrMs1AbVkOJbc7a",
+    "name": "Rick Ross",
+    "monthlyListeners": 17436695
+  },
+  "tlc": {
+    "spotifyId": "0TImkz4nPqjegtVSMZnMRq",
+    "name": "TLC",
+    "monthlyListeners": 17895053
+  },
+  "hardwell": {
+    "spotifyId": "6BrvowZBreEkXzJQMpL174",
+    "name": "Hardwell",
+    "monthlyListeners": 5805604
+  },
+  "mana": {
+    "spotifyId": "7okwEbXzyT2VffBmyQBWLz",
+    "name": "Maná",
+    "monthlyListeners": 26316912
+  },
+  "gusttavo-lima": {
+    "spotifyId": "7MiDcPa6UiV3In7lIM71IN",
+    "name": "Gusttavo Lima",
+    "monthlyListeners": 14311707
+  },
+  "rema": {
+    "spotifyId": "46pWGuE3dSwY3bMMXGBvVS",
+    "name": "Rema",
+    "monthlyListeners": 27900797
+  },
+  "ive": {
+    "spotifyId": "6RHTUrRF63xao58xh9FXYJ",
+    "name": "IVE",
+    "monthlyListeners": 6649945
+  },
+  "atif-aslam": {
+    "spotifyId": "2oSONSC9zQ4UonDKnLqksx",
+    "name": "Atif Aslam",
+    "monthlyListeners": 28635076
+  },
+  "michael-buble": {
+    "spotifyId": "1GxkXlMwML1oSg5eLPiAz3",
+    "name": "Michael Bublé",
+    "monthlyListeners": 13552208
+  },
+  "zz-top": {
+    "spotifyId": "2AM4ilv6UzW0uMRuqKtDgN",
+    "name": "ZZ Top",
+    "monthlyListeners": 11247496
+  },
+  "rex-orange-county": {
+    "spotifyId": "7pbDxGE6nQSZVfiFdq9lOL",
+    "name": "Rex Orange County",
+    "monthlyListeners": 19653493
+  },
+  "2-chainz": {
+    "spotifyId": "17lzZA2AlOHwCwFALHttmp",
+    "name": "2 Chainz",
+    "monthlyListeners": 10623296
+  },
+  "brandy": {
+    "spotifyId": "05oH07COxkXKIMt6mIPRee",
+    "name": "Brandy",
+    "monthlyListeners": 10124955
+  },
+  "kenny-chesney": {
+    "spotifyId": "3grHWM9bx2E9vwJCdlRv9O",
+    "name": "Kenny Chesney",
+    "monthlyListeners": 9370052
+  },
+  "dimitri-vegas-like-mike": {
+    "spotifyId": "73jBynjsVtofjRpdpRAJGk",
+    "name": "Dimitri Vegas & Like Mike",
+    "monthlyListeners": 14373496
+  },
+  "ricky-martin": {
+    "spotifyId": "7slfeZO9LsJbWgpkIoXBUJ",
+    "name": "Ricky Martin",
+    "monthlyListeners": 19507099
+  },
+  "luan-santana": {
+    "spotifyId": "3qvcCP2J0fWi0m0uQDUf6r",
+    "name": "Luan Santana",
+    "monthlyListeners": 11346892
+  },
+  "asake": {
+    "spotifyId": "3a1tBryiczPAZpgoZN9Rzg",
+    "name": "Asake",
+    "monthlyListeners": 8938496
+  },
+  "le-sserafim": {
+    "spotifyId": "4SpbR6yFEvexJuaBpgAU5p",
+    "name": "LE SSERAFIM",
+    "monthlyListeners": 16072941
+  },
+  "ub40": {
+    "spotifyId": "69MEO1AADKg1IZrq2XLzo5",
+    "name": "UB40",
+    "monthlyListeners": 9273733
+  },
+  "neha-kakkar": {
+    "spotifyId": "5f4QpKfy7ptCHwTqspnSJI",
+    "name": "Neha Kakkar",
+    "monthlyListeners": 14153306
+  },
+  "jason-mraz": {
+    "spotifyId": "4phGZZrJZRo4ElhRtViYdl",
+    "name": "Jason Mraz",
+    "monthlyListeners": 17811990
+  },
+  "deep-purple": {
+    "spotifyId": "568ZhdwyaiCyOGJRtNYhWf",
+    "name": "Deep Purple",
+    "monthlyListeners": 7121227
+  },
+  "dominic-fike": {
+    "spotifyId": "6USv9qhCn6zfxlBQIYJ9qs",
+    "name": "Dominic Fike",
+    "monthlyListeners": 61071234
+  },
+  "ludacris": {
+    "spotifyId": "3ipn9JLAPI5GUEo4y4jcoi",
+    "name": "Ludacris",
+    "monthlyListeners": 8981600
+  },
+  "monica": {
+    "spotifyId": "6nzxy2wXs6tLgzEtqOkEi2",
+    "name": "Monica",
+    "monthlyListeners": 7044735
+  },
+  "toby-keith": {
+    "spotifyId": "2bA6fzP0lMAQ4kz6CF61w8",
+    "name": "Toby Keith",
+    "monthlyListeners": 10196891
+  },
+  "eric-prydz": {
+    "spotifyId": "5sm0jQ1mq0dusiLtDJ2b4R",
+    "name": "Eric Prydz",
+    "monthlyListeners": 9556242
+  },
+  "enrique-iglesias": {
+    "spotifyId": "7qG3b048QCHVRO5Pv1T5lw",
+    "name": "Enrique Iglesias",
+    "monthlyListeners": 35646945
+  },
+  "matue": {
+    "spotifyId": "5nP8x4uEFjAAmDzwOEc9b8",
+    "name": "Matuê",
+    "monthlyListeners": 7962840
+  },
+  "ayra-starr": {
+    "spotifyId": "3ZpEKRjHaHANcpk10u6Ntq",
+    "name": "Ayra Starr",
+    "monthlyListeners": 15639870
+  },
+  "shaggy": {
+    "spotifyId": "5EvFsr3kj42KNv97ZEnqij",
+    "name": "Shaggy",
+    "monthlyListeners": 25461199
+  },
+  "nat-king-cole": {
+    "spotifyId": "7v4imS0moSyGdXyLgVTIV7",
+    "name": "Nat King Cole",
+    "monthlyListeners": 6382421
+  },
+  "andrea-bocelli": {
+    "spotifyId": "3EA9hVIzKfFiQI0Kikz2wo",
+    "name": "Andrea Bocelli",
+    "monthlyListeners": 7564191
+  },
+  "jubin-nautiyal": {
+    "spotifyId": "1tqysapcCh1lWEAc9dIFpa",
+    "name": "Jubin Nautiyal",
+    "monthlyListeners": 20603531
+  },
+  "nelly-furtado": {
+    "spotifyId": "2jw70GZXlAI8QzWeY2bgRc",
+    "name": "Nelly Furtado",
+    "monthlyListeners": 34876709
+  },
+  "avenged-sevenfold": {
+    "spotifyId": "0nmQIMXWTXfhgOBdNzhGOs",
+    "name": "Avenged Sevenfold",
+    "monthlyListeners": 12243622
+  },
+  "omar-apollo": {
+    "spotifyId": "5FxD8fkQZ6KcsSYupDVoSO",
+    "name": "Omar Apollo",
+    "monthlyListeners": 12350771
+  },
+  "trey-songz": {
+    "spotifyId": "2iojnBLj0qIMiKPvVhLnsH",
+    "name": "Trey Songz",
+    "monthlyListeners": 9873046
+  },
+  "miranda-lambert": {
+    "spotifyId": "66lH4jAE7pqPlOlzUKbwA0",
+    "name": "Miranda Lambert",
+    "monthlyListeners": 9933711
+  },
+  "illenium": {
+    "spotifyId": "45eNHdiiabvmbp4erw26rg",
+    "name": "ILLENIUM",
+    "monthlyListeners": 10227012
+  },
+  "gloria-estefan": {
+    "spotifyId": "5IFCkqu9J6xdWeYMk5I889",
+    "name": "Gloria Estefan",
+    "monthlyListeners": 7305403
+  },
+  "tyla": {
+    "spotifyId": "3SozjO3Lat463tQICI9LcE",
+    "name": "Tyla",
+    "monthlyListeners": 32254227
+  },
+  "sean-paul": {
+    "spotifyId": "3Isy6kedDrgPYoTS1dazA9",
+    "name": "Sean Paul",
+    "monthlyListeners": 62331761
+  },
+  "armaan-malik": {
+    "spotifyId": "4IKVDbCSBTxBeAsMKjAuTs",
+    "name": "Armaan Malik",
+    "monthlyListeners": 15673500
+  },
+  "jul": {
+    "spotifyId": "3IW7ScrzXmPvZhB27hmfgy",
+    "name": "Jul",
+    "monthlyListeners": 10428586
+  },
+  "backstreet-boys": {
+    "spotifyId": "5rSXSAkZ67PYJSvpUpkOr7",
+    "name": "Backstreet Boys",
+    "monthlyListeners": 30718081
+  },
+  "disturbed": {
+    "spotifyId": "3TOqt5oJwL9BE2NG9MEwDa",
+    "name": "Disturbed",
+    "monthlyListeners": 18542215
+  },
+  "girl-in-red": {
+    "spotifyId": "3uwAm6vQy7kWPS2bciKWx9",
+    "name": "girl in red",
+    "monthlyListeners": 14208196
+  },
+  "nf": {
+    "spotifyId": "6fOMl44jA4Sp5b9PpYCkzz",
+    "name": "NF",
+    "monthlyListeners": 13695886
+  },
+  "bryson-tiller": {
+    "spotifyId": "2EMAnMvWE2eb56ToJVfCWs",
+    "name": "Bryson Tiller",
+    "monthlyListeners": 21256757
+  },
+  "luke-combs": {
+    "spotifyId": "718COspgdWOnwOFpJHRZHS",
+    "name": "Luke Combs",
+    "monthlyListeners": 26780360
+  },
+  "gryffin": {
+    "spotifyId": "2ZRQcIgzPCVaT9XKhXZIzh",
+    "name": "Gryffin",
+    "monthlyListeners": 9281975
+  },
+  "selena": {
+    "spotifyId": "6IE6z7DcZIT4Ml3Fh5Ivch",
+    "name": "Selena",
+    "monthlyListeners": 10970300
+  },
+  "omah-lay": {
+    "spotifyId": "5yOvAmpIR7hVxiS6Ls5DPO",
+    "name": "OMAH LAY",
+    "monthlyListeners": 11644899
+  },
+  "darshan-raval": {
+    "spotifyId": "2GoeZ0qOTt6kjsWW4eA6LS",
+    "name": "Darshan Raval",
+    "monthlyListeners": 14363437
+  },
+  "ninho": {
+    "spotifyId": "6Te49r3A6f5BiIgBRxH7FH",
+    "name": "Ninho",
+    "monthlyListeners": 8292005
+  },
+  "nsync": {
+    "spotifyId": "6Ff53KvcvAj5U7Z1vojB5o",
+    "name": "*NSYNC",
+    "monthlyListeners": 14072355
+  },
+  "godsmack": {
+    "spotifyId": "6gZq1Q6bdOxsUPUG1TaFbF",
+    "name": "Godsmack",
+    "monthlyListeners": 5920352
+  },
+  "logic": {
+    "spotifyId": "4xRYI6VqpkE3UwrDrAZL8L",
+    "name": "Logic",
+    "monthlyListeners": 8706882
+  },
+  "partynextdoor": {
+    "spotifyId": "2HPaUgqeutzr3jx5a9WyDV",
+    "name": "PARTYNEXTDOOR",
+    "monthlyListeners": 31181018
+  },
+  "jason-aldean": {
+    "spotifyId": "3FfvYsEGaIb52QPXhg4DcH",
+    "name": "Jason Aldean",
+    "monthlyListeners": 12034929
+  },
+  "christian-nodal": {
+    "spotifyId": "0XwVARXT135rw8lyw1EeWP",
+    "name": "Christian Nodal",
+    "monthlyListeners": 20715110
+  },
+  "seu-jorge": {
+    "spotifyId": "0i1s9WcIu0PrUvHzALgofo",
+    "name": "Seu Jorge",
+    "monthlyListeners": 5898154
+  },
+  "fireboy-dml": {
+    "spotifyId": "75VKfyoBlkmrJFDqo1o2VY",
+    "name": "Fireboy DML",
+    "monthlyListeners": 9045504
+  },
+  "diljit-dosanjh": {
+    "spotifyId": "2FKWNmZWDBZR4dE5KX4plR",
+    "name": "Diljit Dosanjh",
+    "monthlyListeners": 19649525
+  },
+  "spice-girls": {
+    "spotifyId": "0uq5PttqEjj3IH1bzwcrXF",
+    "name": "Spice Girls",
+    "monthlyListeners": 13089206
+  },
+  "three-days-grace": {
+    "spotifyId": "2xiIXseIJcq3nG7C8fHeBj",
+    "name": "Three Days Grace",
+    "monthlyListeners": 18897915
+  },
+  "lil-durk": {
+    "spotifyId": "3hcs9uc56yIGFCSy9leWe7",
+    "name": "Lil Durk",
+    "monthlyListeners": 19423466
+  },
+  "khalid": {
+    "spotifyId": "6LuN9FCkKOj5PcnpouEgny",
+    "name": "Khalid",
+    "monthlyListeners": 54697657
+  },
+  "eric-church": {
+    "spotifyId": "2IvkS5MXK0vPGnwyJsrEyV",
+    "name": "Eric Church",
+    "monthlyListeners": 10088734
+  },
+  "eslabon-armado": {
+    "spotifyId": "0XeEobZplHxzM9QzFQWLiR",
+    "name": "Eslabon Armado",
+    "monthlyListeners": 16629624
+  },
+  "anavitoria": {
+    "spotifyId": "1sPg5EHuQXTMElpZ4iUgXe",
+    "name": "ANAVITÓRIA",
+    "monthlyListeners": 6579559
+  },
+  "ap-dhillon": {
+    "spotifyId": "6LEG9Ld1aLImEFEVHdWNSB",
+    "name": "AP Dhillon",
+    "monthlyListeners": 16948387
+  },
+  "jonas-brothers": {
+    "spotifyId": "7gOdHgIoIKoe4i9Tta6qdD",
+    "name": "Jonas Brothers",
+    "monthlyListeners": 17874151
+  },
+  "papa-roach": {
+    "spotifyId": "4RddZ3iHvSpGV4dvATac9X",
+    "name": "Papa Roach",
+    "monthlyListeners": 16154213
+  },
+  "polo-g": {
+    "spotifyId": "6AgTAQt8XS6jRWi4sX7w49",
+    "name": "Polo G",
+    "monthlyListeners": 15112538
+  },
+  "brent-faiyaz": {
+    "spotifyId": "3tlXnStJ1fFhdScmQeLpuG",
+    "name": "Brent Faiyaz",
+    "monthlyListeners": 22724058
+  },
+  "sam-hunt": {
+    "spotifyId": "2kucQ9jQwuD8jWdtR9Ef38",
+    "name": "Sam Hunt",
+    "monthlyListeners": 7078027
+  },
+  "carin-leon": {
+    "spotifyId": "66ihevNkSYNzRAl44dx6jJ",
+    "name": "Carín León",
+    "monthlyListeners": 30194945
+  },
+  "enhypen": {
+    "spotifyId": "5t5FqBwTcgKTaWmfEbwQY9",
+    "name": "ENHYPEN",
+    "monthlyListeners": 9429878
+  },
+  "norah-jones": {
+    "spotifyId": "2Kx7MNY7cI1ENniW7vT30N",
+    "name": "Norah Jones",
+    "monthlyListeners": 8132273
+  },
+  "sidhu-moose-wala": {
+    "spotifyId": "4PULA4EFzYTrxYvOVlwpiQ",
+    "name": "Sidhu Moose Wala",
+    "monthlyListeners": 9661257
+  },
+  "robbie-williams": {
+    "spotifyId": "2HcwFjNelS49kFbfvMxQYw",
+    "name": "Robbie Williams",
+    "monthlyListeners": 13231596
+  },
+  "rod-wave": {
+    "spotifyId": "45TgXXqMDdF8BkjA83OM7z",
+    "name": "Rod Wave",
+    "monthlyListeners": 6557288
+  },
+  "jhene-aiko": {
+    "spotifyId": "5ZS223C6JyBfXasXxrRqOk",
+    "name": "Jhené Aiko",
+    "monthlyListeners": 13392834
+  },
+  "thomas-rhett": {
+    "spotifyId": "6x2LnllRG5uGarZMsD4iO8",
+    "name": "Thomas Rhett",
+    "monthlyListeners": 14215681
+  },
+  "justice": {
+    "spotifyId": "1gR0gsQYfi6joyO1dlp76N",
+    "name": "Justice",
+    "monthlyListeners": 7822741
+  },
+  "bizarrap": {
+    "spotifyId": "716NhGYqD1jl2wI1Qkgq36",
+    "name": "Bizarrap",
+    "monthlyListeners": 28840184
+  },
+  "tomorrow-x-together": {
+    "spotifyId": "0ghlgldX5Dd6720Q3qFyQB",
+    "name": "TOMORROW X TOGETHER",
+    "monthlyListeners": 6839682
   }
 }
