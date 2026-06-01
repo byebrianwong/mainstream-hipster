@@ -3259,5 +3259,10 @@
     "spotifyId": "0ghlgldX5Dd6720Q3qFyQB",
     "name": "TOMORROW X TOGETHER",
     "monthlyListeners": 6839682
+  },
+  "bob-marley": {
+    "spotifyId": "2QsynagSdAqZj3U9HgDzjD",
+    "name": "Bob Marley & The Wailers",
+    "monthlyListeners": 28479075
   }
 }
