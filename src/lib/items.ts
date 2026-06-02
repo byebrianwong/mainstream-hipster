@@ -674,7 +674,7 @@ const MUSIC: Item[] = [
   { id: "avenged-sevenfold", name: "Avenged Sevenfold", wiki: "Avenged_Sevenfold", category: "music", emoji: "🎸" },
   { id: "social-distortion", name: "Social Distortion", wiki: "Social_Distortion", category: "music", emoji: "🎸" },
   { id: "omar-apollo", name: "Omar Apollo", wiki: "Omar_Apollo", category: "music", emoji: "🎤" },
-  { id: "machine-gun-kelly", name: "Machine Gun Kelly", wiki: "Machine_Gun_Kelly", category: "music", emoji: "🎤" },
+  { id: "machine-gun-kelly", name: "Machine Gun Kelly", wiki: "Machine_Gun_Kelly_(musician)", category: "music", emoji: "🎤" },
   { id: "trey-songz", name: "Trey Songz", wiki: "Trey_Songz", category: "music", emoji: "🎤" },
   { id: "miranda-lambert", name: "Miranda Lambert", wiki: "Miranda_Lambert", category: "music", emoji: "🎤" },
   { id: "illenium", name: "Illenium", wiki: "Illenium", category: "music", emoji: "🎛️" },

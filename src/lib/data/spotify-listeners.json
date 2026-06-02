@@ -3264,5 +3264,598 @@
     "spotifyId": "2QsynagSdAqZj3U9HgDzjD",
     "name": "Bob Marley & The Wailers",
     "monthlyListeners": 28479075
+  },
+  "ramones": {
+    "spotifyId": "1co4F2pPNH8JjTutZkmgSm",
+    "name": "Ramones",
+    "monthlyListeners": null,
+    "dailyStreams": 660013
+  },
+  "sex-pistols": {
+    "spotifyId": "1u7kkVrr14iBvrpYnZILJR",
+    "name": "Sex Pistols",
+    "monthlyListeners": null,
+    "dailyStreams": 164357
+  },
+  "garth-brooks": {
+    "spotifyId": "4BclNkZtAUq1YrYNzye3N7",
+    "name": "Garth Brooks",
+    "monthlyListeners": null,
+    "dailyStreams": 81317
+  },
+  "james-brown": {
+    "spotifyId": "7GaxyUddsPok8BuhxN6OUW",
+    "name": "James Brown",
+    "monthlyListeners": null,
+    "dailyStreams": 936839
+  },
+  "joy-division": {
+    "spotifyId": "432R46LaYsJZV2Gmc4jUV5",
+    "name": "Joy Division",
+    "monthlyListeners": null,
+    "dailyStreams": 501953
+  },
+  "iu": {
+    "spotifyId": "3HqSLMAZ3g3d5poNaI7GOU",
+    "name": "IU",
+    "monthlyListeners": null,
+    "dailyStreams": 790296
+  },
+  "the-velvet-underground": {
+    "spotifyId": "1nJvji2KIlWSseXRSlNYsC",
+    "name": "The Velvet Underground",
+    "monthlyListeners": null,
+    "dailyStreams": 449900
+  },
+  "deadmau5": {
+    "spotifyId": "2CIMQHirSU0MQqyYHq0eOx",
+    "name": "deadmau5",
+    "monthlyListeners": null,
+    "dailyStreams": 833195
+  },
+  "g-dragon": {
+    "spotifyId": "30b9WulBM8sFuBo17nNq9c",
+    "name": "G-DRAGON",
+    "monthlyListeners": null,
+    "dailyStreams": 1581243
+  },
+  "sonic-youth": {
+    "spotifyId": "5UqTO8smerMvxHYA5xsXb6",
+    "name": "Sonic Youth",
+    "monthlyListeners": null,
+    "dailyStreams": 187280
+  },
+  "dinosaur-jr": {
+    "spotifyId": "267VY6GX5LyU5c9M85ECZQ",
+    "name": "Dinosaur Jr.",
+    "monthlyListeners": null,
+    "dailyStreams": 96112
+  },
+  "joni-mitchell": {
+    "spotifyId": "5hW4L92KnC6dX9t7tYM4Ve",
+    "name": "Joni Mitchell",
+    "monthlyListeners": null,
+    "dailyStreams": 603661
+  },
+  "pavement": {
+    "spotifyId": "3inCNiUr4R6XQ3W43s9Aqi",
+    "name": "Pavement",
+    "monthlyListeners": null,
+    "dailyStreams": 258477
+  },
+  "erykah-badu": {
+    "spotifyId": "7IfculRW2WXyzNQ8djX8WX",
+    "name": "Erykah Badu",
+    "monthlyListeners": null,
+    "dailyStreams": 883774
+  },
+  "odesza": {
+    "spotifyId": "21mKp7DqtSNHhCAU2ugvUw",
+    "name": "ODESZA",
+    "monthlyListeners": null,
+    "dailyStreams": 755303
+  },
+  "rush": {
+    "spotifyId": "2Hkut4rAAyrQxRdof7FVJq",
+    "name": "Rush",
+    "monthlyListeners": null,
+    "dailyStreams": 694816
+  },
+  "the-replacements": {
+    "spotifyId": "4WPY0N74T3KUja57xMQTZ3",
+    "name": "The Replacements",
+    "monthlyListeners": null,
+    "dailyStreams": 92448
+  },
+  "the-supremes": {
+    "spotifyId": "57bUPid8xztkieZfS7OlEV",
+    "name": "The Supremes",
+    "monthlyListeners": null,
+    "dailyStreams": 335459
+  },
+  "jack-white": {
+    "spotifyId": "4FZ3j1oH43e7cukCALsCwf",
+    "name": "Jack White",
+    "monthlyListeners": null,
+    "dailyStreams": 206076
+  },
+  "old-dominion": {
+    "spotifyId": "6y8XlgIV8BLlIg1tT1R10i",
+    "name": "Old Dominion",
+    "monthlyListeners": null,
+    "dailyStreams": 722442
+  },
+  "porter-robinson": {
+    "spotifyId": "3dz0NnIZhtKKeXZxLOxCam",
+    "name": "Porter Robinson",
+    "monthlyListeners": null,
+    "dailyStreams": 334410
+  },
+  "a-day-to-remember": {
+    "spotifyId": "4NiJW4q9ichVqL1aUsgGAN",
+    "name": "A Day To Remember",
+    "monthlyListeners": null,
+    "dailyStreams": 1092624
+  },
+  "peter-gabriel": {
+    "spotifyId": "7C4sUpWGlTy7IANjruj02I",
+    "name": "Peter Gabriel",
+    "monthlyListeners": null,
+    "dailyStreams": 540133
+  },
+  "dashboard-confessional": {
+    "spotifyId": "4ERtgeBbWRkFzIz6LaFCeY",
+    "name": "Dashboard Confessional",
+    "monthlyListeners": null,
+    "dailyStreams": 193764
+  },
+  "d-angelo": {
+    "spotifyId": "336vr2M3Va0FjyvB55lJEd",
+    "name": "D'Angelo",
+    "monthlyListeners": null,
+    "dailyStreams": 417549
+  },
+  "james-taylor": {
+    "spotifyId": "0vn7UBvSQECKJm2817Yf1P",
+    "name": "James Taylor",
+    "monthlyListeners": null,
+    "dailyStreams": 823095
+  },
+  "taking-back-sunday": {
+    "spotifyId": "24XtlMhEMNdi822vi0MhY1",
+    "name": "Taking Back Sunday",
+    "monthlyListeners": null,
+    "dailyStreams": 425985
+  },
+  "maxwell": {
+    "spotifyId": "2AOt5htsbtyaHd5Eq3kl3j",
+    "name": "Maxwell",
+    "monthlyListeners": null,
+    "dailyStreams": 250512
+  },
+  "bad-religion": {
+    "spotifyId": "2yJwXpWAQOOl5XFzbCxLs9",
+    "name": "Bad Religion",
+    "monthlyListeners": null,
+    "dailyStreams": 309782
+  },
+  "lcd-soundsystem": {
+    "spotifyId": "066X20Nz7iquqkkCW6Jxy6",
+    "name": "LCD Soundsystem",
+    "monthlyListeners": null,
+    "dailyStreams": 418207
+  },
+  "miles-davis": {
+    "spotifyId": "0kbYTNQb4Pb1rPbbaF0pT4",
+    "name": "Miles Davis",
+    "monthlyListeners": null,
+    "dailyStreams": 718350
+  },
+  "the-byrds": {
+    "spotifyId": "1PCZpxHJz7WAMF8EEq8bfc",
+    "name": "The Byrds",
+    "monthlyListeners": null,
+    "dailyStreams": 109739
+  },
+  "slayer": {
+    "spotifyId": "1IQ2e1buppatiN1bxUVkrk",
+    "name": "Slayer",
+    "monthlyListeners": null,
+    "dailyStreams": 687459
+  },
+  "nofx": {
+    "spotifyId": "4S2yOnmsWW97dT87yVoaSZ",
+    "name": "NOFX",
+    "monthlyListeners": null,
+    "dailyStreams": 304285
+  },
+  "itzy": {
+    "spotifyId": "2KC9Qb60EaY0kW4eH68vr3",
+    "name": "ITZY",
+    "monthlyListeners": null,
+    "dailyStreams": 960354
+  },
+  "peter-tosh": {
+    "spotifyId": "0oea1hwGMfUxZbLxJc1XUN",
+    "name": "Peter Tosh",
+    "monthlyListeners": null,
+    "dailyStreams": 295414
+  },
+  "john-coltrane": {
+    "spotifyId": "2hGh5VOeeqimQFxqXvfCUf",
+    "name": "John Coltrane",
+    "monthlyListeners": null,
+    "dailyStreams": 827472
+  },
+  "john-williams": {
+    "spotifyId": "3dRfiJ2650SZu6GbydcHNb",
+    "name": "John Williams",
+    "monthlyListeners": null,
+    "dailyStreams": 1851310
+  },
+  "crosby-stills-nash-young": {
+    "spotifyId": "1CYsQCypByMVgnv17qsSbQ",
+    "name": "Crosby, Stills, Nash & Young",
+    "monthlyListeners": null,
+    "dailyStreams": 530338
+  },
+  "anthrax": {
+    "spotifyId": "3JysSUOyfVs1UQ0UaESheP",
+    "name": "Anthrax",
+    "monthlyListeners": null,
+    "dailyStreams": 197985
+  },
+  "rancid": {
+    "spotifyId": "6xTk3EK5T9UzudENVvu9YB",
+    "name": "Rancid",
+    "monthlyListeners": null,
+    "dailyStreams": 249313
+  },
+  "reba-mcentire": {
+    "spotifyId": "02rd0anEWfMtF7iMku9uor",
+    "name": "Reba McEntire",
+    "monthlyListeners": null,
+    "dailyStreams": 409313
+  },
+  "g-i-dle": {
+    "spotifyId": "2AfmfGFbe0A0WsTYm0SDTx",
+    "name": "i-dle",
+    "monthlyListeners": null,
+    "dailyStreams": 1194948
+  },
+  "jimmy-cliff": {
+    "spotifyId": "3rJ3m1tM6vUgiWLjfV8sRf",
+    "name": "Jimmy Cliff",
+    "monthlyListeners": null,
+    "dailyStreams": 290382
+  },
+  "the-band": {
+    "spotifyId": "4vpDg7Y7fU982Ds30zawDA",
+    "name": "The Band",
+    "monthlyListeners": null,
+    "dailyStreams": 366758
+  },
+  "lamb-of-god": {
+    "spotifyId": "3JFsVIxOn7STeilPICkkB2",
+    "name": "Lamb of God",
+    "monthlyListeners": null,
+    "dailyStreams": 527496
+  },
+  "dead-kennedys": {
+    "spotifyId": "30U8fYtiNpeA5KH6H87QUV",
+    "name": "Dead Kennedys",
+    "monthlyListeners": null,
+    "dailyStreams": 146528
+  },
+  "brad-paisley": {
+    "spotifyId": "13YmWQJFwgZrd4bf5IjMY4",
+    "name": "Brad Paisley",
+    "monthlyListeners": null,
+    "dailyStreams": 707351
+  },
+  "toots-and-the-maytals": {
+    "spotifyId": "6ZFv3wQwwWPiVDWhv0mjQK",
+    "name": "Toots & The Maytals",
+    "monthlyListeners": null,
+    "dailyStreams": 184478
+  },
+  "ella-fitzgerald": {
+    "spotifyId": "5V0MlUE1Bft0mbLlND7FJz",
+    "name": "Ella Fitzgerald",
+    "monthlyListeners": null,
+    "dailyStreams": 721399
+  },
+  "max-richter": {
+    "spotifyId": "2VZNmg4vCnew4Pavo8zDdW",
+    "name": "Max Richter",
+    "monthlyListeners": null,
+    "dailyStreams": 994726
+  },
+  "mylene-farmer": {
+    "spotifyId": "0e04xgVBPU6mE2QkSHlufD",
+    "name": "Mylène Farmer",
+    "monthlyListeners": null,
+    "dailyStreams": 197466
+  },
+  "mastodon": {
+    "spotifyId": "1Dvfqq39HxvCJ3GvfeIFuT",
+    "name": "Mastodon",
+    "monthlyListeners": null,
+    "dailyStreams": 209392
+  },
+  "black-flag": {
+    "spotifyId": "5Mhs3Eu8lU6sRCtRYsmABV",
+    "name": "Black Flag",
+    "monthlyListeners": null,
+    "dailyStreams": 0
+  },
+  "duke-ellington": {
+    "spotifyId": "4F7Q5NV6h5TSwCainz8S5A",
+    "name": "Duke Ellington",
+    "monthlyListeners": null,
+    "dailyStreams": 211903
+  },
+  "yiruma": {
+    "spotifyId": "0fauHpmSHwodVYIjTqOGHz",
+    "name": "Yiruma",
+    "monthlyListeners": null,
+    "dailyStreams": 492983
+  },
+  "johnny-hallyday": {
+    "spotifyId": "2HALYSe657tNJ1iKVXP2xA",
+    "name": "Johnny Hallyday",
+    "monthlyListeners": null,
+    "dailyStreams": 288444
+  },
+  "gojira": {
+    "spotifyId": "0GDGKpJFhVpcjIGF8N6Ewt",
+    "name": "Gojira",
+    "monthlyListeners": null,
+    "dailyStreams": 678370
+  },
+  "misfits": {
+    "spotifyId": "1cXi8ALPQCBHZbf0EgP4Ey",
+    "name": "Misfits",
+    "monthlyListeners": null,
+    "dailyStreams": 1139012
+  },
+  "girls-generation": {
+    "spotifyId": "0Sadg1vgvaPqGTOjxu0N6c",
+    "name": "Girls' Generation",
+    "monthlyListeners": null,
+    "dailyStreams": 604296
+  },
+  "christine-and-the-queens": {
+    "spotifyId": "04vj3iPUiVh5melWr0w3xT",
+    "name": "Christine and the Queens",
+    "monthlyListeners": null,
+    "dailyStreams": 148678
+  },
+  "thin-lizzy": {
+    "spotifyId": "6biWAmrHyiMkX49LkycGqQ",
+    "name": "Thin Lizzy",
+    "monthlyListeners": null,
+    "dailyStreams": 315575
+  },
+  "social-distortion": {
+    "spotifyId": "16nn7kCHPWIB6uK09GQCNI",
+    "name": "Social Distortion",
+    "monthlyListeners": null,
+    "dailyStreams": 340970
+  },
+  "machine-gun-kelly": {
+    "spotifyId": "6TIYQ3jFPwQSRmorSezPxX",
+    "name": "mgk",
+    "monthlyListeners": null,
+    "dailyStreams": 3856723
+  },
+  "caetano-veloso": {
+    "spotifyId": "7HGNYPmbDrMkylWqeFCOIQ",
+    "name": "Caetano Veloso",
+    "monthlyListeners": null,
+    "dailyStreams": 804400
+  },
+  "2ne1": {
+    "spotifyId": "1l0mKo96Jh9HVYONcRl3Yp",
+    "name": "2NE1",
+    "monthlyListeners": null,
+    "dailyStreams": 279747
+  },
+  "billie-holiday": {
+    "spotifyId": "1YzCsTRb22dQkh9lghPIrp",
+    "name": "Billie Holiday",
+    "monthlyListeners": null,
+    "dailyStreams": 502244
+  },
+  "lang-lang": {
+    "spotifyId": "1YZhNFBxkEB5UKTgMDvot4",
+    "name": "Lang Lang",
+    "monthlyListeners": null,
+    "dailyStreams": 369342
+  },
+  "bad-company": {
+    "spotifyId": "5AEG63ajney2BoDXi0Vb84",
+    "name": "Bad Company",
+    "monthlyListeners": null,
+    "dailyStreams": 399399
+  },
+  "iggy-pop": {
+    "spotifyId": "33EUXrFKGjpUSGacqEHhU4",
+    "name": "Iggy Pop",
+    "monthlyListeners": null,
+    "dailyStreams": 541369
+  },
+  "gilberto-gil": {
+    "spotifyId": "7oEkUINVIj1Nr3Wnj8tzqr",
+    "name": "Gilberto Gil",
+    "monthlyListeners": null,
+    "dailyStreams": 800721
+  },
+  "nct-127": {
+    "spotifyId": "7f4ignuCJhLXfZ9giKT7rH",
+    "name": "NCT 127",
+    "monthlyListeners": null,
+    "dailyStreams": 433680
+  },
+  "beenie-man": {
+    "spotifyId": "4L3GTE04bW5N7azA9QPhjA",
+    "name": "Beenie Man",
+    "monthlyListeners": null,
+    "dailyStreams": 391272
+  },
+  "dean-martin": {
+    "spotifyId": "49e4v89VmlDcFCMyDv9wQ9",
+    "name": "Dean Martin",
+    "monthlyListeners": null,
+    "dailyStreams": 820303
+  },
+  "lindsey-stirling": {
+    "spotifyId": "378dH6EszOLFShpRzAQkVM",
+    "name": "Lindsey Stirling",
+    "monthlyListeners": null,
+    "dailyStreams": 447437
+  },
+  "jethro-tull": {
+    "spotifyId": "6w6z8m4WXX7Tub4Rb6Lu7R",
+    "name": "Jethro Tull",
+    "monthlyListeners": null,
+    "dailyStreams": 215232
+  },
+  "the-stooges": {
+    "spotifyId": "4BFMTELQyWJU1SwqcXMBm3",
+    "name": "The Stooges",
+    "monthlyListeners": null,
+    "dailyStreams": 90707
+  },
+  "boygenius": {
+    "spotifyId": "1hLiboQ98IQWhpKeP9vRFw",
+    "name": "boygenius",
+    "monthlyListeners": null,
+    "dailyStreams": 564313
+  },
+  "rezz": {
+    "spotifyId": "4aKdmOXdUKX07HVd3sGgzw",
+    "name": "Rezz",
+    "monthlyListeners": null,
+    "dailyStreams": 151091
+  },
+  "monsta-x": {
+    "spotifyId": "4TnGh5PKbSjpYqpIdlW5nz",
+    "name": "MONSTA X",
+    "monthlyListeners": null,
+    "dailyStreams": 301552
+  },
+  "chronixx": {
+    "spotifyId": "2oZcMYiKpjaA2Et5mU3RPP",
+    "name": "Chronixx",
+    "monthlyListeners": null,
+    "dailyStreams": 371540
+  },
+  "tony-bennett": {
+    "spotifyId": "2lolQgalUvZDfp5vvVtTYV",
+    "name": "Tony Bennett",
+    "monthlyListeners": null,
+    "dailyStreams": 240573
+  },
+  "king-crimson": {
+    "spotifyId": "7M1FPw29m5FbicYzS2xdpi",
+    "name": "King Crimson",
+    "monthlyListeners": null,
+    "dailyStreams": 203338
+  },
+  "siouxsie-and-the-banshees": {
+    "spotifyId": "1n65zfwYIj5kKEtNgxUlWb",
+    "name": "Siouxsie and the Banshees",
+    "monthlyListeners": null,
+    "dailyStreams": 248761
+  },
+  "lucy-dacus": {
+    "spotifyId": "07D1Bjaof0NFlU32KXiqUP",
+    "name": "Lucy Dacus",
+    "monthlyListeners": null,
+    "dailyStreams": 700617
+  },
+  "pendulum": {
+    "spotifyId": "7MqnCTCAX6SsIYYdJCQj9B",
+    "name": "Pendulum",
+    "monthlyListeners": null,
+    "dailyStreams": 435426
+  },
+  "black-sherif": {
+    "spotifyId": "2LiqbH7OhqP0yuaG8VL1wJ",
+    "name": "Black Sherif",
+    "monthlyListeners": null,
+    "dailyStreams": 711658
+  },
+  "ateez": {
+    "spotifyId": "68KmkJeZGfwe1OUaivBa2L",
+    "name": "ATEEZ",
+    "monthlyListeners": null,
+    "dailyStreams": 1962152
+  },
+  "koffee": {
+    "spotifyId": "1gWjcmBsveEYMxOZ0VRi32",
+    "name": "Original Koffee",
+    "monthlyListeners": null,
+    "dailyStreams": 247682
+  },
+  "herbie-hancock": {
+    "spotifyId": "2ZvrvbQNrHKwjT7qfGFFUW",
+    "name": "Herbie Hancock",
+    "monthlyListeners": null,
+    "dailyStreams": 180741
+  },
+  "the-moody-blues": {
+    "spotifyId": "5BcZ22XONcRoLhTbZRuME1",
+    "name": "The Moody Blues",
+    "monthlyListeners": null,
+    "dailyStreams": 217660
+  },
+  "bauhaus": {
+    "spotifyId": "5N5tQ9Dx1h8Od7aRmGj7Fi",
+    "name": "Bauhaus",
+    "monthlyListeners": null,
+    "dailyStreams": 123261
+  },
+  "julien-baker": {
+    "spotifyId": "12zbUHbPHL5DGuJtiUfsip",
+    "name": "Julien Baker",
+    "monthlyListeners": null,
+    "dailyStreams": 556976
+  },
+  "chase-status": {
+    "spotifyId": "3jNkaOXasoc7RsxdchvEVq",
+    "name": "Chase & Status",
+    "monthlyListeners": null,
+    "dailyStreams": 826911
+  },
+  "the-carpenters": {
+    "spotifyId": "1eEfMU2AhEo7XnKgL7c304",
+    "name": "Carpenters",
+    "monthlyListeners": null,
+    "dailyStreams": 967758
+  },
+  "bullet-for-my-valentine": {
+    "spotifyId": "7iWiAD5LLKyiox2grgfmUT",
+    "name": "Bullet For My Valentine",
+    "monthlyListeners": null,
+    "dailyStreams": 833760
+  },
+  "echo-the-bunnymen": {
+    "spotifyId": "0fgYKF9Avljex0L9Wt5b8Z",
+    "name": "Echo & the Bunnymen",
+    "monthlyListeners": null,
+    "dailyStreams": 230612
+  },
+  "waxahatchee": {
+    "spotifyId": "5IWCU0V9evBlW4gIeGY4zF",
+    "name": "Waxahatchee",
+    "monthlyListeners": null,
+    "dailyStreams": 59012
+  },
+  "jungkook": {
+    "spotifyId": "6HaGTQPmzraVmaVxvz6EUc",
+    "name": "Jung Kook",
+    "monthlyListeners": 16877708
   }
 }
