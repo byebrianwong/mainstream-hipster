@@ -2348,5 +2348,505 @@
     "imdbId": "tt0084787",
     "name": "The Thing",
     "numVotes": 527057
+  },
+  "the-twilight-zone": {
+    "imdbId": "tt0052520",
+    "name": "The Twilight Zone",
+    "numVotes": 108879
+  },
+  "buffy-the-vampire-slayer": {
+    "imdbId": "tt0118276",
+    "name": "Buffy the Vampire Slayer",
+    "numVotes": 174625
+  },
+  "peaky-blinders": {
+    "imdbId": "tt2442560",
+    "name": "Peaky Blinders",
+    "numVotes": 778613
+  },
+  "the-good-place": {
+    "imdbId": "tt4955642",
+    "name": "The Good Place",
+    "numVotes": 221218
+  },
+  "doctor-who": {
+    "imdbId": "tt0056751",
+    "name": "Doctor Who",
+    "numVotes": 41389
+  },
+  "sherlock": {
+    "imdbId": "tt1475582",
+    "name": "Sherlock",
+    "numVotes": 1089726
+  },
+  "attack-on-titan": {
+    "imdbId": "tt2560140",
+    "name": "Attack on Titan",
+    "numVotes": 719741
+  },
+  "adventure-time": {
+    "imdbId": "tt1305826",
+    "name": "Adventure Time",
+    "numVotes": 133517
+  },
+  "the-inbetweeners": {
+    "imdbId": "tt1220617",
+    "name": "The Inbetweeners",
+    "numVotes": 101000
+  },
+  "the-great-british-bake-off": {
+    "imdbId": "tt1877368",
+    "name": "The Great British Bake Off",
+    "numVotes": 15709
+  },
+  "lupin": {
+    "imdbId": "tt2531336",
+    "name": "Lupin",
+    "numVotes": 158964
+  },
+  "star-trek-the-original-series": {
+    "imdbId": "tt0060028",
+    "name": "Star Trek: The Original Series",
+    "numVotes": 100969
+  },
+  "er": {
+    "imdbId": "tt0108757",
+    "name": "ER",
+    "numVotes": 78512
+  },
+  "ozark": {
+    "imdbId": "tt5071412",
+    "name": "Ozark",
+    "numVotes": 392987
+  },
+  "community": {
+    "imdbId": "tt1439629",
+    "name": "Community",
+    "numVotes": 311304
+  },
+  "battlestar-galactica": {
+    "imdbId": "tt0407362",
+    "name": "Battlestar Galactica",
+    "numVotes": 187104
+  },
+  "money-heist": {
+    "imdbId": "tt6468322",
+    "name": "Money Heist",
+    "numVotes": 609146
+  },
+  "fullmetal-alchemist-brotherhood": {
+    "imdbId": "tt1355642",
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "numVotes": 249743
+  },
+  "gravity-falls": {
+    "imdbId": "tt1865718",
+    "name": "Gravity Falls",
+    "numVotes": 179178
+  },
+  "the-it-crowd": {
+    "imdbId": "tt0487831",
+    "name": "The IT Crowd",
+    "numVotes": 176326
+  },
+  "queer-eye": {
+    "imdbId": "tt7259746",
+    "name": "Queer Eye",
+    "numVotes": 22432
+  },
+  "crash-landing-on-you": {
+    "imdbId": "tt10850932",
+    "name": "Crash Landing on You",
+    "numVotes": 58853
+  },
+  "i-love-lucy": {
+    "imdbId": "tt0043208",
+    "name": "I Love Lucy",
+    "numVotes": 30941
+  },
+  "sex-and-the-city": {
+    "imdbId": "tt0159206",
+    "name": "Sex and the City",
+    "numVotes": 160492
+  },
+  "the-last-of-us": {
+    "imdbId": "tt3581920",
+    "name": "The Last of Us",
+    "numVotes": 738716
+  },
+  "30-rock": {
+    "imdbId": "tt0496424",
+    "name": "30 Rock",
+    "numVotes": 138540
+  },
+  "star-trek-the-next-generation": {
+    "imdbId": "tt0092455",
+    "name": "Star Trek: The Next Generation",
+    "numVotes": 150002
+  },
+  "luther": {
+    "imdbId": "tt1474684",
+    "name": "Luther",
+    "numVotes": 163895
+  },
+  "demon-slayer": {
+    "imdbId": "tt9335498",
+    "name": "Demon Slayer",
+    "numVotes": 227201
+  },
+  "steven-universe": {
+    "imdbId": "tt3061046",
+    "name": "Steven Universe",
+    "numVotes": 45151
+  },
+  "fawlty-towers": {
+    "imdbId": "tt0072500",
+    "name": "Fawlty Towers",
+    "numVotes": 111505
+  },
+  "keeping-up-with-the-kardashians": {
+    "imdbId": "tt1086761",
+    "name": "Keeping Up with the Kardashians",
+    "numVotes": 32427
+  },
+  "sex-education": {
+    "imdbId": "tt7767422",
+    "name": "Sex Education",
+    "numVotes": 398599
+  },
+  "m-a-s-h": {
+    "imdbId": "tt0068098",
+    "name": "M*A*S*H",
+    "numVotes": 69374
+  },
+  "the-fresh-prince-of-bel-air": {
+    "imdbId": "tt0098800",
+    "name": "The Fresh Prince of Bel-Air",
+    "numVotes": 153101
+  },
+  "house-of-the-dragon": {
+    "imdbId": "tt11198330",
+    "name": "House of the Dragon",
+    "numVotes": 528416
+  },
+  "veep": {
+    "imdbId": "tt1759761",
+    "name": "Veep",
+    "numVotes": 71758
+  },
+  "the-expanse": {
+    "imdbId": "tt3230854",
+    "name": "The Expanse",
+    "numVotes": 192267
+  },
+  "killing-eve": {
+    "imdbId": "tt7016936",
+    "name": "Killing Eve",
+    "numVotes": 153943
+  },
+  "jujutsu-kaisen": {
+    "imdbId": "tt12343534",
+    "name": "Jujutsu Kaisen",
+    "numVotes": 208982
+  },
+  "the-powerpuff-girls": {
+    "imdbId": "tt0175058",
+    "name": "The Powerpuff Girls",
+    "numVotes": 52684
+  },
+  "blackadder": {
+    "imdbId": "tt0084988",
+    "name": "Blackadder",
+    "numVotes": 43802
+  },
+  "planet-earth": {
+    "imdbId": "tt0795176",
+    "name": "Planet Earth",
+    "numVotes": 235411
+  },
+  "riverdale": {
+    "imdbId": "tt5420376",
+    "name": "Riverdale",
+    "numVotes": 165788
+  },
+  "cheers": {
+    "imdbId": "tt0083399",
+    "name": "Cheers",
+    "numVotes": 68167
+  },
+  "scrubs": {
+    "imdbId": "tt0285403",
+    "name": "Scrubs",
+    "numVotes": 286100
+  },
+  "the-marvelous-mrs-maisel": {
+    "imdbId": "tt5788792",
+    "name": "The Marvelous Mrs. Maisel",
+    "numVotes": 158427
+  },
+  "arrested-development": {
+    "imdbId": "tt0367279",
+    "name": "Arrested Development",
+    "numVotes": 344052
+  },
+  "firefly": {
+    "imdbId": "tt0303461",
+    "name": "Firefly",
+    "numVotes": 302191
+  },
+  "line-of-duty": {
+    "imdbId": "tt2303687",
+    "name": "Line of Duty",
+    "numVotes": 80895
+  },
+  "my-hero-academia": {
+    "imdbId": "tt5626028",
+    "name": "My Hero Academia",
+    "numVotes": 121098
+  },
+  "phineas-and-ferb": {
+    "imdbId": "tt0852863",
+    "name": "Phineas and Ferb",
+    "numVotes": 67967
+  },
+  "derry-girls": {
+    "imdbId": "tt7120662",
+    "name": "Derry Girls",
+    "numVotes": 77706
+  },
+  "top-chef": {
+    "imdbId": "tt0765425",
+    "name": "Top Chef",
+    "numVotes": 7628
+  },
+  "13-reasons-why": {
+    "imdbId": "tt1837492",
+    "name": "13 Reasons Why",
+    "numVotes": 340053
+  },
+  "the-golden-girls": {
+    "imdbId": "tt0088526",
+    "name": "The Golden Girls",
+    "numVotes": 52957
+  },
+  "everybody-loves-raymond": {
+    "imdbId": "tt0115167",
+    "name": "Everybody Loves Raymond",
+    "numVotes": 83185
+  },
+  "narcos": {
+    "imdbId": "tt2707408",
+    "name": "Narcos",
+    "numVotes": 528761
+  },
+  "schitt-s-creek": {
+    "imdbId": "tt3526078",
+    "name": "Schitt's Creek",
+    "numVotes": 173970
+  },
+  "loki": {
+    "imdbId": "tt9140554",
+    "name": "Loki",
+    "numVotes": 473724
+  },
+  "broadchurch": {
+    "imdbId": "tt2249364",
+    "name": "Broadchurch",
+    "numVotes": 142284
+  },
+  "one-piece": {
+    "imdbId": "tt0388629",
+    "name": "One Piece",
+    "numVotes": 355184
+  },
+  "regular-show": {
+    "imdbId": "tt1710308",
+    "name": "Regular Show",
+    "numVotes": 74653
+  },
+  "skins": {
+    "imdbId": "tt0840196",
+    "name": "Skins",
+    "numVotes": 100673
+  },
+  "love-island": {
+    "imdbId": "tt4770018",
+    "name": "Love Island",
+    "numVotes": 5496
+  },
+  "outer-banks": {
+    "imdbId": "tt10293938",
+    "name": "Outer Banks",
+    "numVotes": 107555
+  },
+  "all-in-the-family": {
+    "imdbId": "tt0066626",
+    "name": "All in the Family",
+    "numVotes": 21036
+  },
+  "will-grace": {
+    "imdbId": "tt0157246",
+    "name": "Will & Grace",
+    "numVotes": 64241
+  },
+  "house-of-cards": {
+    "imdbId": "tt1856010",
+    "name": "House of Cards",
+    "numVotes": 559874
+  },
+  "ted-lasso": {
+    "imdbId": "tt10986410",
+    "name": "Ted Lasso",
+    "numVotes": 444918
+  },
+  "fringe": {
+    "imdbId": "tt1119644",
+    "name": "Fringe",
+    "numVotes": 270607
+  },
+  "ripley": {
+    "imdbId": "tt11016042",
+    "name": "Ripley",
+    "numVotes": 68333
+  },
+  "hunter-hunter": {
+    "imdbId": "tt2098220",
+    "name": "Hunter × Hunter",
+    "numVotes": 195951
+  },
+  "ed-edd-n-eddy": {
+    "imdbId": "tt0184111",
+    "name": "Ed, Edd n Eddy",
+    "numVotes": 43356
+  },
+  "black-books": {
+    "imdbId": "tt0262150",
+    "name": "Black Books",
+    "numVotes": 64455
+  },
+  "masterchef": {
+    "imdbId": "tt0805418",
+    "name": "MasterChef",
+    "numVotes": 1156
+  },
+  "glee": {
+    "imdbId": "tt1327801",
+    "name": "Glee",
+    "numVotes": 161584
+  },
+  "columbo": {
+    "imdbId": "tt1466074",
+    "name": "Columbo",
+    "numVotes": 47733
+  },
+  "that-70s-show": {
+    "imdbId": "tt0165598",
+    "name": "That '70s Show",
+    "numVotes": 198827
+  },
+  "the-queen-s-gambit": {
+    "imdbId": "tt10048342",
+    "name": "The Queen's Gambit",
+    "numVotes": 665219
+  },
+  "silicon-valley": {
+    "imdbId": "tt2575988",
+    "name": "Silicon Valley",
+    "numVotes": 182366
+  },
+  "foundation": {
+    "imdbId": "tt0804484",
+    "name": "Foundation",
+    "numVotes": 126622
+  },
+  "the-sinner": {
+    "imdbId": "tt6048596",
+    "name": "The Sinner",
+    "numVotes": 152453
+  },
+  "one-punch-man": {
+    "imdbId": "tt4508902",
+    "name": "One-Punch Man",
+    "numVotes": 225643
+  },
+  "courage-the-cowardly-dog": {
+    "imdbId": "tt0220880",
+    "name": "Courage the Cowardly Dog",
+    "numVotes": 57526
+  },
+  "monty-python-s-flying-circus": {
+    "imdbId": "tt0063929",
+    "name": "Monty Python's Flying Circus",
+    "numVotes": 87346
+  },
+  "shark-tank": {
+    "imdbId": "tt1442550",
+    "name": "Shark Tank",
+    "numVotes": 11652
+  },
+  "pretty-little-liars": {
+    "imdbId": "tt1578873",
+    "name": "Pretty Little Liars",
+    "numVotes": 188745
+  },
+  "happy-days": {
+    "imdbId": "tt0070992",
+    "name": "Happy Days",
+    "numVotes": 23135
+  },
+  "full-house": {
+    "imdbId": "tt0092359",
+    "name": "Full House",
+    "numVotes": 67182
+  },
+  "vikings": {
+    "imdbId": "tt2306299",
+    "name": "Vikings",
+    "numVotes": 642717
+  },
+  "what-we-do-in-the-shadows": {
+    "imdbId": "tt7908628",
+    "name": "What We Do in the Shadows",
+    "numVotes": 127002
+  },
+  "the-100": {
+    "imdbId": "tt2661044",
+    "name": "The 100",
+    "numVotes": 304447
+  },
+  "bodyguard": {
+    "imdbId": "tt7493974",
+    "name": "Bodyguard",
+    "numVotes": 170793
+  },
+  "dragon-ball-z": {
+    "imdbId": "tt0121220",
+    "name": "Dragon Ball Z",
+    "numVotes": 103780
+  },
+  "scooby-doo-where-are-you": {
+    "imdbId": "tt0063950",
+    "name": "Scooby-Doo, Where Are You!",
+    "numVotes": 47532
+  },
+  "big-brother": {
+    "imdbId": "tt0251497",
+    "name": "Big Brother",
+    "numVotes": 12044
+  },
+  "borgen": {
+    "imdbId": "tt1526318",
+    "name": "Borgen",
+    "numVotes": 32587
+  },
+  "miami-vice": {
+    "imdbId": "tt0086759",
+    "name": "Miami Vice",
+    "numVotes": 34059
+  },
+  "smallville": {
+    "imdbId": "tt0279600",
+    "name": "Smallville",
+    "numVotes": 153719
   }
 }
