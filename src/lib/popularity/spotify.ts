@@ -33,3 +33,12 @@ export const spotifySource: SourceFetcher = async (item: Item) => {
     return Math.round(entry.dailyStreams * DAILY_TO_MONTHLY);
   return null;
 };
+
+/**
+ * The Spotify artist ID we already scraped for this item, if any. Used to embed
+ * a "listen to a top song" player on the reveal screen — the same baked-in JSON,
+ * no extra Spotify call or auth.
+ */
+export function spotifyArtistId(itemId: string): string | undefined {
+  return LISTENERS[itemId]?.spotifyId ?? undefined;
+}
