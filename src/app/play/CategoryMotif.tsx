@@ -19,10 +19,56 @@ const EQ_HEIGHTS = [
   54, 96, 40, 120, 70, 104, 48, 116, 62, 88, 44, 110, 76, 98, 52, 124, 66, 92,
   46, 112, 72, 100, 58, 118, 50, 84,
 ];
+// Deterministic note glyphs + staff bands (no Math.random — SSR/client must match).
+const NOTES = ["♪", "♫", "♬", "♩", "♪", "♫", "♭", "♬", "♩", "♪", "♫", "♬", "♪", "♫"];
+const STAVES = [
+  { top: "15%", rot: -3 },
+  { top: "39%", rot: 2 },
+  { top: "63%", rot: -2 },
+];
 function Music({ tint }: MotifProps) {
+  // Bright Spotify green — pops against the muted olive-green wash (and in dark
+  // mode) where the mid-spectrum `tint` would blend in. Ties to the EQ bars.
+  const accent = "#1DB954";
   return (
-    <>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] flex items-end justify-center gap-1.5 px-6 pb-6 opacity-85">
+    <div className="pointer-events-none absolute inset-0 overflow-hidden">
+      {/* full-bleed sheet-music staves crossing the page (5-line bands) */}
+      {STAVES.map((s, i) => (
+        <div
+          key={i}
+          className="absolute left-[-6%] h-11 w-[112%]"
+          style={{
+            top: s.top,
+            transform: `rotate(${s.rot}deg)`,
+            backgroundImage: `repeating-linear-gradient(0deg, ${accent} 0 2px, transparent 2px 11px)`,
+            opacity: 0.32,
+            WebkitMaskImage: "linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)",
+            maskImage: "linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)",
+          }}
+        />
+      ))}
+
+      {/* musical notes drifting up out of the equalizer, across the width */}
+      {NOTES.map((n, i) => (
+        <span
+          key={i}
+          className="press-note absolute bottom-8 select-none font-bold"
+          style={{
+            left: `${4 + i * 6.8}%`,
+            color: accent,
+            fontSize: `${26 + (i % 4) * 12}px`,
+            opacity: 0.7,
+            textShadow: `0 0 12px ${accent}66`,
+            animationDelay: `${i * 0.5}s`,
+            animationDuration: `${6 + (i % 4) * 0.9}s`,
+          }}
+        >
+          {n}
+        </span>
+      ))}
+
+      {/* equalizer bars along the bottom */}
+      <div className="absolute inset-x-0 bottom-0 z-[1] flex items-end justify-center gap-1.5 px-6 pb-6 opacity-85">
         {EQ_HEIGHTS.map((h, i) => (
           <span
             key={i}
@@ -39,7 +85,9 @@ function Music({ tint }: MotifProps) {
           />
         ))}
       </div>
-      <div className="pointer-events-none absolute -bottom-20 -right-20 opacity-30">
+
+      {/* spinning vinyl record tucked in the corner */}
+      <div className="absolute -bottom-20 -right-20 opacity-30">
         <div
           className="press-spin h-56 w-56 rounded-full"
           style={{
@@ -47,7 +95,7 @@ function Music({ tint }: MotifProps) {
           }}
         />
       </div>
-    </>
+    </div>
   );
 }
 
