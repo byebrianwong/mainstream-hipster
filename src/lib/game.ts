@@ -2,6 +2,7 @@ import type { Category, Item, RoundResult, ScoredItem } from "./types";
 import { itemsByCategory } from "./items";
 import { CATEGORY_WEIGHTS } from "./popularity/types";
 import { fetchSignals, blendRanks } from "./popularity/blend";
+import { spotifyArtistId } from "./popularity/spotify";
 
 export function pickRandom<T>(arr: T[], n: number): T[] {
   const copy = [...arr];
@@ -48,6 +49,9 @@ export async function buildRound(
 
   return final.map((item) => ({
     ...item,
+    // Carry the scraped Spotify artist ID through so the reveal can embed a
+    // playable top song for music items (works for mixed rounds too).
+    spotifyId: item.spotifyId ?? spotifyArtistId(item.id),
     signals: signals.get(item.id) ?? {},
     rank: finalRanks.get(item.id) ?? 0.5,
   }));

@@ -61,6 +61,41 @@ function SignalBadges({ item }: { item: ScoredItem }) {
   );
 }
 
+/**
+ * Inline Spotify player for a music item's top song. Uses Spotify's public
+ * embed iframe keyed by the artist ID we already scraped — it streams a
+ * 30-second preview of the artist's most popular track with no login or API
+ * key, so the player just works for anyone who opens the reveal.
+ */
+function SpotifyTopSong({
+  id,
+  name,
+  delay = 0,
+}: {
+  id: string;
+  name: string;
+  delay?: number;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 6 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, delay }}
+    >
+      <iframe
+        title={`Play a top song by ${name} on Spotify`}
+        src={`https://open.spotify.com/embed/artist/${id}?utm_source=mainstream-hipster`}
+        width="100%"
+        height={152}
+        loading="lazy"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        className="block w-full rounded-xl"
+        style={{ border: 0 }}
+      />
+    </motion.div>
+  );
+}
+
 export default function Reveal({
   result,
   items,
@@ -173,56 +208,65 @@ export default function Reveal({
                   key={item.id}
                   layout
                   transition={{ type: "spring", damping: 30, stiffness: 220 }}
-                  className="flex items-center gap-4 rounded-2xl border border-[color:var(--border)] bg-[color:var(--card)] p-4"
+                  className="flex flex-col gap-3 rounded-2xl border border-[color:var(--border)] bg-[color:var(--card)] p-4"
                 >
-                  {(() => {
-                    const badgePos = phase === "guess" ? idx : correctIdx;
-                    const badgeColor = sample(ramp, n > 1 ? badgePos / (n - 1) : 0);
-                    return (
-                      <span
-                        className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-sm font-semibold"
-                        style={{ background: `${badgeColor}26`, color: badgeColor }}
-                      >
-                        {badgePos + 1}
-                      </span>
-                    );
-                  })()}
-                  <span className="text-2xl" aria-hidden>{item.emoji ?? "•"}</span>
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate font-medium">{item.name}</p>
-                    <SignalBadges item={item} />
-                  </div>
-                  <AnimatePresence>
-                    {phase === "settled" && (
-                      <motion.span
-                        initial={{ opacity: 0, scale: 0.6 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.25, delay: idx * 0.05 }}
-                        className={clsx(
-                          "group relative cursor-help rounded-full px-2 py-1 text-xs font-medium tabular-nums",
-                          absDelta === 0
-                            ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300"
-                            : absDelta === 1
-                              ? "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300"
-                              : "bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300",
-                        )}
-                        tabIndex={0}
-                        aria-label={tooltip}
-                      >
-                        {absDelta === 0
-                          ? "✓"
-                          : signedDelta > 0
-                            ? `+${absDelta}`
-                            : `−${absDelta}`}
+                  <div className="flex items-center gap-4">
+                    {(() => {
+                      const badgePos = phase === "guess" ? idx : correctIdx;
+                      const badgeColor = sample(ramp, n > 1 ? badgePos / (n - 1) : 0);
+                      return (
                         <span
-                          role="tooltip"
-                          className="pointer-events-none invisible absolute bottom-full right-0 z-50 mb-2 w-max max-w-xs rounded-md bg-[color:var(--foreground)] px-2.5 py-1.5 text-xs font-medium normal-case tracking-normal text-[color:var(--background)] opacity-0 shadow-lg transition-opacity duration-100 group-hover:visible group-hover:opacity-100 group-focus:visible group-focus:opacity-100"
+                          className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-sm font-semibold"
+                          style={{ background: `${badgeColor}26`, color: badgeColor }}
                         >
-                          {tooltip}
+                          {badgePos + 1}
                         </span>
-                      </motion.span>
-                    )}
-                  </AnimatePresence>
+                      );
+                    })()}
+                    <span className="text-2xl" aria-hidden>{item.emoji ?? "•"}</span>
+                    <div className="min-w-0 flex-1">
+                      <p className="truncate font-medium">{item.name}</p>
+                      <SignalBadges item={item} />
+                    </div>
+                    <AnimatePresence>
+                      {phase === "settled" && (
+                        <motion.span
+                          initial={{ opacity: 0, scale: 0.6 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.25, delay: idx * 0.05 }}
+                          className={clsx(
+                            "group relative cursor-help rounded-full px-2 py-1 text-xs font-medium tabular-nums",
+                            absDelta === 0
+                              ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300"
+                              : absDelta === 1
+                                ? "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300"
+                                : "bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300",
+                          )}
+                          tabIndex={0}
+                          aria-label={tooltip}
+                        >
+                          {absDelta === 0
+                            ? "✓"
+                            : signedDelta > 0
+                              ? `+${absDelta}`
+                              : `−${absDelta}`}
+                          <span
+                            role="tooltip"
+                            className="pointer-events-none invisible absolute bottom-full right-0 z-50 mb-2 w-max max-w-xs rounded-md bg-[color:var(--foreground)] px-2.5 py-1.5 text-xs font-medium normal-case tracking-normal text-[color:var(--background)] opacity-0 shadow-lg transition-opacity duration-100 group-hover:visible group-hover:opacity-100 group-focus:visible group-focus:opacity-100"
+                          >
+                            {tooltip}
+                          </span>
+                        </motion.span>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                  {phase === "settled" && item.spotifyId && (
+                    <SpotifyTopSong
+                      id={item.spotifyId}
+                      name={item.name}
+                      delay={0.15 + idx * 0.05}
+                    />
+                  )}
                 </motion.li>
               );
             })}
