@@ -167,6 +167,15 @@
 @keyframes press-spin { to { transform: rotate(360deg); } }
 .press-spin { animation: press-spin 6s linear infinite; }
 
+/* music — notes drift up out of the equalizer, swaying as they fade */
+@keyframes press-note {
+  0% { transform: translateY(0) rotate(-10deg); opacity: 0; }
+  15% { opacity: 0.6; }
+  80% { opacity: 0.5; }
+  100% { transform: translateY(-78vh) rotate(10deg); opacity: 0; }
+}
+.press-note { animation: press-note 7s ease-in-out infinite; }
+
 /* books — a page flips over */
 @keyframes press-flip {
   0% { transform: rotateY(0deg); opacity: 0.85; }
@@ -208,6 +217,7 @@
   .press-read,
   .press-paw,
   .press-spin,
+  .press-note,
   .press-flip,
   .press-wisp,
   .press-projector {
