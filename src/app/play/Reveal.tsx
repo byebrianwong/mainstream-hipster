@@ -280,8 +280,14 @@ export default function Reveal({
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35 }}
-            className="flex flex-col gap-3 sm:flex-row"
+            className="flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between"
           >
+            <a
+              href="/"
+              className="rounded-full border border-[color:var(--border)] px-6 py-3 text-center text-base font-medium transition hover:border-[color:var(--foreground)]"
+            >
+              Change category
+            </a>
             <button
               onClick={onReplay}
               className="rounded-full px-6 py-3 text-base font-bold uppercase tracking-wide shadow-xl transition hover:scale-105"
@@ -289,12 +295,6 @@ export default function Reveal({
             >
               New round
             </button>
-            <a
-              href="/"
-              className="rounded-full border border-[color:var(--border)] px-6 py-3 text-center text-base font-medium transition hover:border-[color:var(--foreground)]"
-            >
-              Change category
-            </a>
           </motion.div>
         )}
       </AnimatePresence>
