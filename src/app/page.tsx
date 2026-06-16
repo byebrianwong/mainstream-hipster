@@ -4,6 +4,9 @@ import { stopsFor, type CategoryKey } from "@/lib/categoryTheme";
 import { gradientCss } from "@/lib/spectrum";
 
 export default function Home() {
+  const music = CATEGORIES.find((cat) => cat.id === "music");
+  const rest = CATEGORIES.filter((cat) => cat.id !== "music");
+
   return (
     <div className="flex flex-1 flex-col items-center px-6 py-16 sm:py-24">
       <main className="w-full max-w-3xl">
@@ -27,8 +30,45 @@ export default function Home() {
           <h2 className="mb-4 text-sm font-medium uppercase tracking-wider text-[color:var(--muted)]">
             Pick a category
           </h2>
+
+          {/* Music is the most fleshed-out deck — feature it above the rest. */}
+          {music && (
+            <Link
+              href={`/play?category=${music.id}`}
+              className="group mb-4 block overflow-hidden rounded-2xl border border-[color:var(--border)] bg-[color:var(--card)] transition hover:-translate-y-0.5 hover:border-[color:var(--accent)] hover:shadow-[0_12px_32px_-12px_rgba(0,0,0,0.2)]"
+            >
+              {/* per-category spectrum swatch (mainstream → hipster) */}
+              <div
+                className="h-2.5 w-full"
+                style={{ backgroundImage: gradientCss(stopsFor(music.id as CategoryKey), 90) }}
+              />
+              <div className="flex items-center gap-4 px-5 py-6">
+                <span className="text-4xl sm:text-5xl" aria-hidden>
+                  {music.emoji}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-xl font-semibold sm:text-2xl">
+                      {music.label}
+                    </span>
+                    <span className="rounded-full bg-[color:var(--accent-soft)] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-[color:var(--accent)]">
+                      Most complete
+                    </span>
+                  </div>
+                  <p className="mt-1 text-sm text-[color:var(--muted)]">
+                    Hundreds of artists with real Spotify + Wikipedia data — the
+                    fullest deck to rank.
+                  </p>
+                </div>
+                <span className="self-center text-xl text-[color:var(--muted)] transition group-hover:translate-x-0.5 group-hover:text-[color:var(--accent)]">
+                  →
+                </span>
+              </div>
+            </Link>
+          )}
+
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-            {CATEGORIES.map((cat) => (
+            {rest.map((cat) => (
               <Link
                 key={cat.id}
                 href={`/play?category=${cat.id}`}
