@@ -84,6 +84,11 @@
     "name": "Avatar (2009 film)",
     "numVotes": 1499305
   },
+  "avatar-the-way-of-water": {
+    "imdbId": "tt1630029",
+    "name": "Avatar: The Way of Water",
+    "numVotes": 629130
+  },
   "pulp-fiction": {
     "imdbId": "tt0110912",
     "name": "Pulp Fiction",
@@ -1864,6 +1869,11 @@
     "name": "Inside Out",
     "numVotes": 917122
   },
+  "inside-out-2": {
+    "imdbId": "tt22022452",
+    "name": "Inside Out 2",
+    "numVotes": 252994
+  },
   "train-to-busan": {
     "imdbId": "tt5700672",
     "name": "Train to Busan",
@@ -2038,6 +2048,16 @@
     "imdbId": "tt2948356",
     "name": "Zootopia",
     "numVotes": 638100
+  },
+  "zootopia-2": {
+    "imdbId": "tt26443597",
+    "name": "Zootopia 2",
+    "numVotes": 139929
+  },
+  "ne-zha-2": {
+    "imdbId": "tt34956443",
+    "name": "Ne Zha 2",
+    "numVotes": 24741
   },
   "the-ring": {
     "imdbId": "tt0298130",
