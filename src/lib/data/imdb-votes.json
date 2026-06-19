@@ -2868,5 +2868,345 @@
     "imdbId": "tt0279600",
     "name": "Smallville",
     "numVotes": 153719
+  },
+  "jurassic-world": {
+    "imdbId": "tt0369610",
+    "name": "Jurassic World",
+    "numVotes": 731213
+  },
+  "the-lion-king-2019": {
+    "imdbId": "tt6105098",
+    "name": "The Lion King (2019 film)",
+    "numVotes": 292521
+  },
+  "furious-7": {
+    "imdbId": "tt2820852",
+    "name": "Furious 7",
+    "numVotes": 440589
+  },
+  "avatar-fire-and-ash": {
+    "imdbId": "tt1757678",
+    "name": "Avatar: Fire and Ash",
+    "numVotes": 174928
+  },
+  "frozen-ii": {
+    "imdbId": "tt4520988",
+    "name": "Frozen 2",
+    "numVotes": 220076
+  },
+  "avengers-age-of-ultron": {
+    "imdbId": "tt2395427",
+    "name": "Avengers: Age of Ultron",
+    "numVotes": 1004194
+  },
+  "the-super-mario-bros-movie": {
+    "imdbId": "tt6718170",
+    "name": "The Super Mario Bros. Movie",
+    "numVotes": 297352
+  },
+  "harry-potter-deathly-hallows-2": {
+    "imdbId": "tt1201607",
+    "name": "Harry Potter and the Deathly Hallows – Part 2",
+    "numVotes": 1049471
+  },
+  "deadpool-and-wolverine": {
+    "imdbId": "tt6263850",
+    "name": "Deadpool & Wolverine",
+    "numVotes": 573048
+  },
+  "star-wars-the-last-jedi": {
+    "imdbId": "tt2527336",
+    "name": "Star Wars: The Last Jedi",
+    "numVotes": 720968
+  },
+  "jurassic-world-fallen-kingdom": {
+    "imdbId": "tt4881806",
+    "name": "Jurassic World: Fallen Kingdom",
+    "numVotes": 382755
+  },
+  "beauty-and-the-beast-2017": {
+    "imdbId": "tt2771200",
+    "name": "Beauty and the Beast (2017 film)",
+    "numVotes": 359620
+  },
+  "incredibles-2": {
+    "imdbId": "tt3606756",
+    "name": "Incredibles 2",
+    "numVotes": 372140
+  },
+  "the-fate-of-the-furious": {
+    "imdbId": "tt4630562",
+    "name": "The Fate of the Furious",
+    "numVotes": 275114
+  },
+  "iron-man-3": {
+    "imdbId": "tt1300854",
+    "name": "Iron Man 3",
+    "numVotes": 968764
+  },
+  "minions": {
+    "imdbId": "tt2293640",
+    "name": "Minions (film)",
+    "numVotes": 285714
+  },
+  "aquaman": {
+    "imdbId": "tt1477834",
+    "name": "Aquaman (film)",
+    "numVotes": 554574
+  },
+  "spider-man-far-from-home": {
+    "imdbId": "tt6320628",
+    "name": "Spider-Man: Far From Home",
+    "numVotes": 642885
+  },
+  "captain-marvel": {
+    "imdbId": "tt4154664",
+    "name": "Captain Marvel (film)",
+    "numVotes": 660907
+  },
+  "transformers-dark-of-the-moon": {
+    "imdbId": "tt1399103",
+    "name": "Transformers: Dark of the Moon",
+    "numVotes": 456921
+  },
+  "transformers-age-of-extinction": {
+    "imdbId": "tt2109248",
+    "name": "Transformers: Age of Extinction",
+    "numVotes": 350667
+  },
+  "the-dark-knight-rises": {
+    "imdbId": "tt1345836",
+    "name": "The Dark Knight Rises",
+    "numVotes": 2000769
+  },
+  "star-wars-the-rise-of-skywalker": {
+    "imdbId": "tt2527338",
+    "name": "Star Wars: The Rise of Skywalker",
+    "numVotes": 544638
+  },
+  "toy-story-4": {
+    "imdbId": "tt1979376",
+    "name": "Toy Story 4",
+    "numVotes": 317119
+  },
+  "pirates-dead-mans-chest": {
+    "imdbId": "tt0383574",
+    "name": "Pirates of the Caribbean: Dead Man's Chest",
+    "numVotes": 828472
+  },
+  "moana-2": {
+    "imdbId": "tt13622970",
+    "name": "Moana 2",
+    "numVotes": 126630
+  },
+  "aladdin-2019": {
+    "imdbId": "tt6139732",
+    "name": "Aladdin (2019 film)",
+    "numVotes": 315779
+  },
+  "pirates-on-stranger-tides": {
+    "imdbId": "tt1298650",
+    "name": "Pirates of the Caribbean: On Stranger Tides",
+    "numVotes": 608764
+  },
+  "star-wars-the-phantom-menace": {
+    "imdbId": "tt0120915",
+    "name": "Star Wars: Episode I – The Phantom Menace",
+    "numVotes": 930274
+  },
+  "lilo-and-stitch-2025": {
+    "imdbId": "tt11655566",
+    "name": "Lilo & Stitch (2025 film)",
+    "numVotes": 95846
+  },
+  "despicable-me-3": {
+    "imdbId": "tt3469046",
+    "name": "Despicable Me 3",
+    "numVotes": 182205
+  },
+  "finding-dory": {
+    "imdbId": "tt2277860",
+    "name": "Finding Dory",
+    "numVotes": 335254
+  },
+  "alice-in-wonderland-2010": {
+    "imdbId": "tt1014759",
+    "name": "Alice in Wonderland (2010 film)",
+    "numVotes": 468833
+  },
+  "the-hobbit-an-unexpected-journey": {
+    "imdbId": "tt0903624",
+    "name": "The Hobbit: An Unexpected Journey",
+    "numVotes": 929807
+  },
+  "the-super-mario-galaxy-movie": {
+    "imdbId": "tt28650488",
+    "name": "The Super Mario Galaxy Movie",
+    "numVotes": 59931
+  },
+  "jurassic-world-dominion": {
+    "imdbId": "tt8041270",
+    "name": "Jurassic World Dominion",
+    "numVotes": 247320
+  },
+  "despicable-me-4": {
+    "imdbId": "tt7510222",
+    "name": "Despicable Me 4",
+    "numVotes": 80914
+  },
+  "despicable-me-2": {
+    "imdbId": "tt1690953",
+    "name": "Despicable Me 2",
+    "numVotes": 460950
+  },
+  "the-jungle-book-2016": {
+    "imdbId": "tt3040964",
+    "name": "The Jungle Book (2016 film)",
+    "numVotes": 306218
+  },
+  "the-hobbit-battle-of-the-five-armies": {
+    "imdbId": "tt2310332",
+    "name": "The Hobbit: The Battle of the Five Armies",
+    "numVotes": 619474
+  },
+  "jumanji-welcome-to-the-jungle": {
+    "imdbId": "tt2283362",
+    "name": "Jumanji: Welcome to the Jungle",
+    "numVotes": 505122
+  },
+  "pirates-at-worlds-end": {
+    "imdbId": "tt0449088",
+    "name": "Pirates of the Caribbean: At World's End",
+    "numVotes": 746085
+  },
+  "harry-potter-deathly-hallows-1": {
+    "imdbId": "tt0926084",
+    "name": "Harry Potter and the Deathly Hallows – Part 1",
+    "numVotes": 666625
+  },
+  "a-minecraft-movie": {
+    "imdbId": "tt3566834",
+    "name": "A Minecraft Movie",
+    "numVotes": 161514
+  },
+  "the-hobbit-desolation-of-smaug": {
+    "imdbId": "tt1170358",
+    "name": "The Hobbit: The Desolation of Smaug",
+    "numVotes": 755361
+  },
+  "doctor-strange-multiverse-of-madness": {
+    "imdbId": "tt9419884",
+    "name": "Doctor Strange in the Multiverse of Madness",
+    "numVotes": 547337
+  },
+  "harry-potter-order-of-the-phoenix": {
+    "imdbId": "tt0373889",
+    "name": "Harry Potter and the Order of the Phoenix (film)",
+    "numVotes": 702638
+  },
+  "harry-potter-half-blood-prince": {
+    "imdbId": "tt0417741",
+    "name": "Harry Potter and the Half-Blood Prince (film)",
+    "numVotes": 662677
+  },
+  "minions-the-rise-of-gru": {
+    "imdbId": "tt5113044",
+    "name": "Minions: The Rise of Gru",
+    "numVotes": 106299
+  },
+  "michael-film": {
+    "imdbId": "tt11378946",
+    "name": "Michael (2026 film)",
+    "numVotes": 128284
+  },
+  "shrek-2": {
+    "imdbId": "tt0298148",
+    "name": "Shrek 2",
+    "numVotes": 557292
+  },
+  "bohemian-rhapsody": {
+    "imdbId": "tt1727824",
+    "name": "Bohemian Rhapsody (film)",
+    "numVotes": 648747
+  },
+  "star-wars-revenge-of-the-sith": {
+    "imdbId": "tt0121766",
+    "name": "Star Wars: Episode III – Revenge of the Sith",
+    "numVotes": 925440
+  },
+  "the-battle-at-lake-changjin": {
+    "imdbId": "tt13462900",
+    "name": "The Battle at Lake Changjin",
+    "numVotes": 4868
+  },
+  "harry-potter-goblet-of-fire": {
+    "imdbId": "tt0330373",
+    "name": "Harry Potter and the Goblet of Fire (film)",
+    "numVotes": 755690
+  },
+  "spider-man-3": {
+    "imdbId": "tt0413300",
+    "name": "Spider-Man 3",
+    "numVotes": 702420
+  },
+  "ice-age-dawn-of-the-dinosaurs": {
+    "imdbId": "tt1080016",
+    "name": "Ice Age: Dawn of the Dinosaurs",
+    "numVotes": 286674
+  },
+  "harry-potter-chamber-of-secrets": {
+    "imdbId": "tt0295297",
+    "name": "Harry Potter and the Chamber of Secrets (film)",
+    "numVotes": 768069
+  },
+  "spider-man-homecoming": {
+    "imdbId": "tt2250912",
+    "name": "Spider-Man: Homecoming",
+    "numVotes": 801337
+  },
+  "spectre": {
+    "imdbId": "tt2379713",
+    "name": "Spectre (2015 film)",
+    "numVotes": 497744
+  },
+  "ice-age-continental-drift": {
+    "imdbId": "tt1667889",
+    "name": "Ice Age: Continental Drift",
+    "numVotes": 244105
+  },
+  "the-secret-life-of-pets": {
+    "imdbId": "tt2709768",
+    "name": "The Secret Life of Pets",
+    "numVotes": 236633
+  },
+  "batman-v-superman": {
+    "imdbId": "tt2975590",
+    "name": "Batman v Superman: Dawn of Justice",
+    "numVotes": 792905
+  },
+  "wolf-warrior-2": {
+    "imdbId": "tt7131870",
+    "name": "Wolf Warrior 2",
+    "numVotes": 9621
+  },
+  "jurassic-world-rebirth": {
+    "imdbId": "tt31036941",
+    "name": "Jurassic World Rebirth",
+    "numVotes": 199123
+  },
+  "twilight-breaking-dawn-2": {
+    "imdbId": "tt1673434",
+    "name": "The Twilight Saga: Breaking Dawn – Part 2",
+    "numVotes": 283014
+  },
+  "hunger-games-catching-fire": {
+    "imdbId": "tt1951264",
+    "name": "The Hunger Games: Catching Fire",
+    "numVotes": 775879
+  },
+  "black-panther-wakanda-forever": {
+    "imdbId": "tt9114286",
+    "name": "Black Panther: Wakanda Forever",
+    "numVotes": 385612
   }
 }
