@@ -131,53 +131,74 @@ export default function Reveal({
     <div className="rounded-3xl border border-white/20 bg-[color:var(--background)]/85 p-5 backdrop-blur-md sm:p-7">
       <div className="mb-8 grid gap-2 sm:grid-cols-[1fr_auto] sm:items-end sm:gap-6">
         <div className="min-w-0">
-          <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--muted)]">
-            <AnimatePresence mode="wait" initial={false}>
-              <motion.span
-                key={phase === "guess" ? "guess" : "actual"}
-                initial={{ opacity: 0, y: 4 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -4 }}
-                transition={{ duration: 0.25 }}
-                className="inline-block"
-              >
-                {phase === "guess"
-                  ? "Your guess"
-                  : "Actual ranking — mainstream to hipster"}
-              </motion.span>
-            </AnimatePresence>
-          </p>
-          <AnimatePresence>
-            {phase !== "guess" && (
-              <motion.h2
-                initial={{ opacity: 0, y: 6 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.35, delay: 0.05 }}
-                className="mt-1 text-2xl font-semibold leading-tight tracking-tight sm:text-3xl"
-              >
-                <span className={v.tone}>{v.label}</span>
-              </motion.h2>
-            )}
-          </AnimatePresence>
-        </div>
-        <AnimatePresence>
-          {phase !== "guess" && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4 }}
-              className="text-right"
+          {/* Both labels share one grid cell, so the eyebrow always reserves
+              the height of the longer "Actual ranking" text. The guess→actual
+              swap then can't change the header height, and the answer list
+              below never shifts. We cross-fade the two by opacity. */}
+          <p className="grid text-xs uppercase tracking-[0.2em] text-[color:var(--muted)]">
+            <motion.span
+              initial={false}
+              animate={{ opacity: phase === "guess" ? 1 : 0, y: phase === "guess" ? 0 : -4 }}
+              transition={{ duration: 0.25 }}
+              aria-hidden={phase !== "guess"}
+              className="col-start-1 row-start-1"
             >
-              <div className="text-4xl font-semibold tabular-nums sm:text-5xl">
-                {Math.round(result.score * 100)}
-                <span className="text-xl text-[color:var(--muted)]">%</span>
-              </div>
-              <p className="text-xs text-[color:var(--muted)]">
-                {result.pairsCorrect}/{result.pairsTotal} pairs correct
-              </p>
-            </motion.div>
-          )}
-        </AnimatePresence>
+              Your guess
+            </motion.span>
+            <motion.span
+              initial={false}
+              animate={{ opacity: phase === "guess" ? 0 : 1, y: phase === "guess" ? 4 : 0 }}
+              transition={{ duration: 0.25 }}
+              aria-hidden={phase === "guess"}
+              className="col-start-1 row-start-1"
+            >
+              Actual ranking — mainstream to hipster
+            </motion.span>
+          </p>
+          {/* The verdict's slot is always reserved (see header note above) so the
+              answer list never shifts. During the guess phase we fill that slot
+              with a neutral "Scoring…" placeholder that cross-fades into the real
+              verdict on reveal, so the reserved space never reads as empty. Both
+              share one grid cell, so the taller of the two sets the height. */}
+          <div className="mt-1 grid">
+            <motion.span
+              initial={false}
+              animate={{ opacity: phase === "guess" ? 1 : 0 }}
+              transition={{ duration: 0.25 }}
+              aria-hidden={phase !== "guess"}
+              className="col-start-1 row-start-1 text-2xl font-semibold leading-tight tracking-tight text-[color:var(--muted)] sm:text-3xl"
+            >
+              Scoring…
+            </motion.span>
+            <motion.h2
+              initial={false}
+              animate={{ opacity: phase === "guess" ? 0 : 1, y: phase === "guess" ? 6 : 0 }}
+              transition={{ duration: 0.35, delay: phase === "guess" ? 0 : 0.05 }}
+              aria-hidden={phase === "guess"}
+              className="col-start-1 row-start-1 text-2xl font-semibold leading-tight tracking-tight sm:text-3xl"
+            >
+              <span className={v.tone}>{v.label}</span>
+            </motion.h2>
+          </div>
+        </div>
+        {/* Likewise always mounted: in the guess phase it's invisible but still
+            occupies the right-hand grid column, so the header height — and the
+            answer list's y-position — is identical across all three phases. */}
+        <motion.div
+          initial={false}
+          animate={{ opacity: phase === "guess" ? 0 : 1, scale: phase === "guess" ? 0.9 : 1 }}
+          transition={{ duration: 0.4 }}
+          aria-hidden={phase === "guess"}
+          className="text-right"
+        >
+          <div className="text-4xl font-semibold tabular-nums sm:text-5xl">
+            {Math.round(result.score * 100)}
+            <span className="text-xl text-[color:var(--muted)]">%</span>
+          </div>
+          <p className="text-xs text-[color:var(--muted)]">
+            {result.pairsCorrect}/{result.pairsTotal} pairs correct
+          </p>
+        </motion.div>
       </div>
 
       <div className="mb-10">
