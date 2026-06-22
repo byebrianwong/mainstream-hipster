@@ -3373,5 +3373,200 @@
     "imdbId": "tt32820897",
     "name": "Demon Slayer: Kimetsu no Yaiba – The Movie: Infinity Castle",
     "numVotes": 73429
+  },
+  "the-amazing-spider-man-2": {
+    "imdbId": "tt1872181",
+    "name": "The Amazing Spider-Man 2",
+    "numVotes": 593110
+  },
+  "twilight-new-moon": {
+    "imdbId": "tt1259571",
+    "name": "The Twilight Saga: New Moon",
+    "numVotes": 323258
+  },
+  "mission-impossible-rogue-nation": {
+    "imdbId": "tt2381249",
+    "name": "Mission: Impossible – Rogue Nation",
+    "numVotes": 447027
+  },
+  "dawn-of-the-planet-of-the-apes": {
+    "imdbId": "tt2103281",
+    "name": "Dawn of the Planet of the Apes",
+    "numVotes": 512374
+  },
+  "transformers": {
+    "imdbId": "tt0418279",
+    "name": "Transformers (film)",
+    "numVotes": 720648
+  },
+  "mamma-mia": {
+    "imdbId": "tt0795421",
+    "name": "Mamma Mia! (film)",
+    "numVotes": 307407
+  },
+  "fast-x": {
+    "imdbId": "tt5433140",
+    "name": "Fast X",
+    "numVotes": 147013
+  },
+  "the-wandering-earth": {
+    "imdbId": "tt7605074",
+    "name": "The Wandering Earth",
+    "numVotes": 39568
+  },
+  "mission-impossible-ghost-protocol": {
+    "imdbId": "tt1229238",
+    "name": "Mission: Impossible – Ghost Protocol",
+    "numVotes": 566408
+  },
+  "detective-chinatown-3": {
+    "imdbId": "tt10370822",
+    "name": "Detective Chinatown 3",
+    "numVotes": 3110
+  },
+  "project-hail-mary": {
+    "imdbId": "tt12042730",
+    "name": "Project Hail Mary (film)",
+    "numVotes": 364238
+  },
+  "the-devil-wears-prada-2": {
+    "imdbId": "tt33612209",
+    "name": "The Devil Wears Prada 2",
+    "numVotes": 59101
+  },
+  "big-hero-6": {
+    "imdbId": "tt2245084",
+    "name": "Big Hero 6 (film)",
+    "numVotes": 555521
+  },
+  "full-river-red": {
+    "imdbId": "tt21148018",
+    "name": "Full River Red",
+    "numVotes": 4034
+  },
+  "man-of-steel": {
+    "imdbId": "tt0770828",
+    "name": "Man of Steel (film)",
+    "numVotes": 868819
+  },
+  "ice-age-the-meltdown": {
+    "imdbId": "tt0438097",
+    "name": "Ice Age: The Meltdown",
+    "numVotes": 319146
+  },
+  "kung-fu-panda-2": {
+    "imdbId": "tt1302011",
+    "name": "Kung Fu Panda 2",
+    "numVotes": 358943
+  },
+  "hunger-games-mockingjay-2": {
+    "imdbId": "tt1951266",
+    "name": "The Hunger Games: Mockingjay – Part 2",
+    "numVotes": 416051
+  },
+  "justice-league": {
+    "imdbId": "tt0974015",
+    "name": "Justice League (film)",
+    "numVotes": 505838
+  },
+  "pegasus-3": {
+    "imdbId": "tt38035835",
+    "name": "Pegasus 3 (film)",
+    "numVotes": 913
+  },
+  "fantastic-beasts-crimes-of-grindelwald": {
+    "imdbId": "tt4123430",
+    "name": "Fantastic Beasts: The Crimes of Grindelwald",
+    "numVotes": 332379
+  },
+  "men-in-black-3": {
+    "imdbId": "tt1409024",
+    "name": "Men in Black 3",
+    "numVotes": 412881
+  },
+  "star-wars-attack-of-the-clones": {
+    "imdbId": "tt0121765",
+    "name": "Star Wars: Episode II – Attack of the Clones",
+    "numVotes": 824080
+  },
+  "thor-the-dark-world": {
+    "imdbId": "tt1981115",
+    "name": "Thor: The Dark World",
+    "numVotes": 779950
+  },
+  "moana": {
+    "imdbId": "tt3521164",
+    "name": "Moana (2016 film)",
+    "numVotes": 443080
+  },
+  "how-to-train-your-dragon-2025": {
+    "imdbId": "tt26743210",
+    "name": "How to Train Your Dragon (2025 film)",
+    "numVotes": 136043
+  },
+  "wonka": {
+    "imdbId": "tt6166392",
+    "name": "Wonka (film)",
+    "numVotes": 194460
+  },
+  "sing": {
+    "imdbId": "tt3470600",
+    "name": "Sing (2016 American film)",
+    "numVotes": 213859
+  },
+  "f1-the-movie": {
+    "imdbId": "tt16311594",
+    "name": "F1 (film)",
+    "numVotes": 368706
+  },
+  "kung-fu-panda": {
+    "imdbId": "tt0441773",
+    "name": "Kung Fu Panda (film)",
+    "numVotes": 582715
+  },
+  "the-martian": {
+    "imdbId": "tt3659388",
+    "name": "The Martian (film)",
+    "numVotes": 1016639
+  },
+  "hancock": {
+    "imdbId": "tt0448157",
+    "name": "Hancock (film)",
+    "numVotes": 540299
+  },
+  "the-battle-at-lake-changjin-ii": {
+    "imdbId": "tt16194408",
+    "name": "The Battle at Lake Changjin II",
+    "numVotes": 1749
+  },
+  "fast-five": {
+    "imdbId": "tt1596343",
+    "name": "Fast Five",
+    "numVotes": 434269
+  },
+  "iron-man-2": {
+    "imdbId": "tt1228705",
+    "name": "Iron Man 2",
+    "numVotes": 941054
+  },
+  "ant-man-and-the-wasp": {
+    "imdbId": "tt5095030",
+    "name": "Ant-Man and the Wasp",
+    "numVotes": 497228
+  },
+  "how-to-train-your-dragon-2": {
+    "imdbId": "tt1646971",
+    "name": "How to Train Your Dragon 2",
+    "numVotes": 403230
+  },
+  "superman-2025": {
+    "imdbId": "tt5950044",
+    "name": "Superman (2025 film)",
+    "numVotes": 420082
+  },
+  "the-hunger-games-film": {
+    "imdbId": "tt1392170",
+    "name": "The Hunger Games (film)",
+    "numVotes": 1084840
   }
 }

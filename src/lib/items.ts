@@ -3,7 +3,7 @@ import type { Category, Item } from "./types";
 // Curated bank. `wiki` is the exact Wikipedia article title (URL-encoded by the API client).
 // Underscores are fine; the REST API accepts them.
 // Every slug has been verified to return >0 pageviews from the Wikimedia API.
-// Split into two sub-arrays: a single literal this large trips TypeScript's
+// Split into sub-arrays: a single literal this large trips TypeScript's
 // union-complexity limit (TS2590). Each chunk is typed Item[]; ITEMS is their
 // concatenation, so every consumer still sees one Item[].
 const MUSIC: Item[] = [
@@ -1420,6 +1420,51 @@ const REST: Item[] = [
   { id: "ne-zha", name: "Ne Zha (2019 film)", wiki: "Ne_Zha_(2019_film)", category: "movies", emoji: "🔥" },
   { id: "mufasa-the-lion-king", name: "Mufasa: The Lion King", wiki: "Mufasa:_The_Lion_King", category: "movies", emoji: "🦁" },
   { id: "demon-slayer-infinity-castle", name: "Demon Slayer: Kimetsu no Yaiba – The Movie: Infinity Castle", wiki: "Demon_Slayer:_Kimetsu_no_Yaiba_%E2%80%93_The_Movie:_Infinity_Castle", category: "movies", emoji: "⚔️" },
+  // box-office top 200 — high-grossing films (ranks 151–200 not already listed)
+  { id: "the-amazing-spider-man-2", name: "The Amazing Spider-Man 2", wiki: "The_Amazing_Spider-Man_2", category: "movies", emoji: "🕸️" },
+  { id: "twilight-new-moon", name: "The Twilight Saga: New Moon", wiki: "The_Twilight_Saga:_New_Moon", category: "movies", emoji: "🧛" },
+  { id: "mission-impossible-rogue-nation", name: "Mission: Impossible – Rogue Nation", wiki: "Mission:_Impossible_%E2%80%93_Rogue_Nation", category: "movies", emoji: "🕴️" },
+  { id: "dawn-of-the-planet-of-the-apes", name: "Dawn of the Planet of the Apes", wiki: "Dawn_of_the_Planet_of_the_Apes", category: "movies", emoji: "🐵" },
+  { id: "transformers", name: "Transformers (film)", wiki: "Transformers_(film)", category: "movies", emoji: "🤖" },
+  { id: "mamma-mia", name: "Mamma Mia! (film)", wiki: "Mamma_Mia!_(film)", category: "movies", emoji: "💃" },
+  { id: "fast-x", name: "Fast X", wiki: "Fast_X", category: "movies", emoji: "🏎️" },
+  { id: "the-wandering-earth", name: "The Wandering Earth", wiki: "The_Wandering_Earth", category: "movies", emoji: "🌍" },
+  { id: "mission-impossible-ghost-protocol", name: "Mission: Impossible – Ghost Protocol", wiki: "Mission:_Impossible_%E2%80%93_Ghost_Protocol", category: "movies", emoji: "🕴️" },
+  { id: "detective-chinatown-3", name: "Detective Chinatown 3", wiki: "Detective_Chinatown_3", category: "movies", emoji: "🕵️" },
+  { id: "project-hail-mary", name: "Project Hail Mary (film)", wiki: "Project_Hail_Mary_(film)", category: "movies", emoji: "🚀" },
+  { id: "the-devil-wears-prada-2", name: "The Devil Wears Prada 2", wiki: "The_Devil_Wears_Prada_2", category: "movies", emoji: "👠" },
+  { id: "big-hero-6", name: "Big Hero 6 (film)", wiki: "Big_Hero_6_(film)", category: "movies", emoji: "🤖" },
+  { id: "full-river-red", name: "Full River Red", wiki: "Full_River_Red", category: "movies", emoji: "🏯" },
+  { id: "man-of-steel", name: "Man of Steel (film)", wiki: "Man_of_Steel_(film)", category: "movies", emoji: "🦸" },
+  { id: "ice-age-the-meltdown", name: "Ice Age: The Meltdown", wiki: "Ice_Age:_The_Meltdown", category: "movies", emoji: "🦣" },
+  { id: "kung-fu-panda-2", name: "Kung Fu Panda 2", wiki: "Kung_Fu_Panda_2", category: "movies", emoji: "🐼" },
+  { id: "hunger-games-mockingjay-2", name: "The Hunger Games: Mockingjay – Part 2", wiki: "The_Hunger_Games:_Mockingjay_%E2%80%93_Part_2", category: "movies", emoji: "🏹" },
+  { id: "justice-league", name: "Justice League (film)", wiki: "Justice_League_(film)", category: "movies", emoji: "🦸" },
+  { id: "pegasus-3", name: "Pegasus 3 (film)", wiki: "Pegasus_3_(film)", category: "movies", emoji: "🏎️" },
+  { id: "fantastic-beasts-crimes-of-grindelwald", name: "Fantastic Beasts: The Crimes of Grindelwald", wiki: "Fantastic_Beasts:_The_Crimes_of_Grindelwald", category: "movies", emoji: "🐾" },
+  { id: "men-in-black-3", name: "Men in Black 3", wiki: "Men_in_Black_3", category: "movies", emoji: "🕶️" },
+  { id: "star-wars-attack-of-the-clones", name: "Star Wars: Episode II – Attack of the Clones", wiki: "Star_Wars:_Episode_II_%E2%80%93_Attack_of_the_Clones", category: "movies", emoji: "⚔️" },
+  { id: "thor-the-dark-world", name: "Thor: The Dark World", wiki: "Thor:_The_Dark_World", category: "movies", emoji: "⚡" },
+  { id: "moana", name: "Moana (2016 film)", wiki: "Moana_(2016_film)", category: "movies", emoji: "🌊" },
+  { id: "how-to-train-your-dragon-2025", name: "How to Train Your Dragon (2025 film)", wiki: "How_to_Train_Your_Dragon_(2025_film)", category: "movies", emoji: "🐉" },
+  { id: "wonka", name: "Wonka (film)", wiki: "Wonka_(film)", category: "movies", emoji: "🍫" },
+  { id: "sing", name: "Sing (2016 American film)", wiki: "Sing_(2016_American_film)", category: "movies", emoji: "🎤" },
+  { id: "f1-the-movie", name: "F1 (film)", wiki: "F1_(film)", category: "movies", emoji: "🏁" },
+  { id: "kung-fu-panda", name: "Kung Fu Panda (film)", wiki: "Kung_Fu_Panda_(film)", category: "movies", emoji: "🐼" },
+  { id: "the-martian", name: "The Martian (film)", wiki: "The_Martian_(film)", category: "movies", emoji: "👨‍🚀" },
+  { id: "hancock", name: "Hancock (film)", wiki: "Hancock_(film)", category: "movies", emoji: "🦸" },
+  { id: "the-battle-at-lake-changjin-ii", name: "The Battle at Lake Changjin II", wiki: "The_Battle_at_Lake_Changjin_II", category: "movies", emoji: "❄️" },
+  { id: "fast-five", name: "Fast Five", wiki: "Fast_Five", category: "movies", emoji: "🏎️" },
+  { id: "iron-man-2", name: "Iron Man 2", wiki: "Iron_Man_2", category: "movies", emoji: "🔴" },
+  { id: "ant-man-and-the-wasp", name: "Ant-Man and the Wasp", wiki: "Ant-Man_and_the_Wasp", category: "movies", emoji: "🐜" },
+  { id: "how-to-train-your-dragon-2", name: "How to Train Your Dragon 2", wiki: "How_to_Train_Your_Dragon_2", category: "movies", emoji: "🐉" },
+  { id: "superman-2025", name: "Superman (2025 film)", wiki: "Superman_(2025_film)", category: "movies", emoji: "🦸" },
+  { id: "the-hunger-games-film", name: "The Hunger Games (film)", wiki: "The_Hunger_Games_(film)", category: "movies", emoji: "🏹" },
+];
+
+// tv onward lives in a third chunk so neither array trips the TS2590
+// union-complexity limit (see MUSIC/REST above).
+const REST2: Item[] = [
   // --- tv ---
   { id: "friends", name: "Friends", wiki: "Friends", category: "tv", emoji: "📺" },
   { id: "the-office", name: "The Office (American TV series)", wiki: "The_Office_(American_TV_series)", category: "tv", emoji: "📎" },
@@ -1941,7 +1986,7 @@ const REST: Item[] = [
   { id: "mantis-shrimp", name: "Mantis shrimp", wiki: "Mantis_shrimp", category: "animals", emoji: "🦐" },
 ];
 
-export const ITEMS: Item[] = [...MUSIC, ...REST];
+export const ITEMS: Item[] = [...MUSIC, ...REST, ...REST2];
 
 export function itemsByCategory(category: Category | "mixed"): Item[] {
   if (category === "mixed") return ITEMS;
