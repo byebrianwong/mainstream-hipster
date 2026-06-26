@@ -1460,6 +1460,28 @@ const REST: Item[] = [
   { id: "how-to-train-your-dragon-2", name: "How to Train Your Dragon 2", wiki: "How_to_Train_Your_Dragon_2", category: "movies", emoji: "🐉" },
   { id: "superman-2025", name: "Superman (2025 film)", wiki: "Superman_(2025_film)", category: "movies", emoji: "🦸" },
   { id: "the-hunger-games-film", name: "The Hunger Games (film)", wiki: "The_Hunger_Games_(film)", category: "movies", emoji: "🏹" },
+  // box-office top 225 — high-grossing films (ranks 201–225 not already listed)
+  { id: "the-lost-world-jurassic-park", name: "The Lost World: Jurassic Park", wiki: "The_Lost_World:_Jurassic_Park", category: "movies", emoji: "🦖" },
+  { id: "the-wandering-earth-ii", name: "The Wandering Earth 2", wiki: "The_Wandering_Earth_2", category: "movies", emoji: "🌍" },
+  { id: "the-passion-of-the-christ", name: "The Passion of the Christ", wiki: "The_Passion_of_the_Christ", category: "movies", emoji: "✝️" },
+  { id: "life-of-pi-film", name: "Life of Pi (film)", wiki: "Life_of_Pi_(film)", category: "movies", emoji: "🐯" },
+  { id: "ready-player-one", name: "Ready Player One (film)", wiki: "Ready_Player_One_(film)", category: "movies", emoji: "🎮" },
+  { id: "tangled", name: "Tangled", wiki: "Tangled", category: "movies", emoji: "👸" },
+  { id: "transformers-the-last-knight", name: "Transformers: The Last Knight", wiki: "Transformers:_The_Last_Knight", category: "movies", emoji: "🤖" },
+  { id: "madagascar-escape-2-africa", name: "Madagascar: Escape 2 Africa", wiki: "Madagascar:_Escape_2_Africa", category: "movies", emoji: "🦓" },
+  { id: "war-of-the-worlds", name: "War of the Worlds (2005 film)", wiki: "War_of_the_Worlds_(2005_film)", category: "movies", emoji: "👽" },
+  { id: "mission-impossible-the-final-reckoning", name: "Mission: Impossible – The Final Reckoning", wiki: "Mission:_Impossible_%E2%80%93_The_Final_Reckoning", category: "movies", emoji: "🕴️" },
+  { id: "quantum-of-solace", name: "Quantum of Solace", wiki: "Quantum_of_Solace", category: "movies", emoji: "🕴️" },
+  { id: "the-croods", name: "The Croods", wiki: "The_Croods", category: "movies", emoji: "🦴" },
+  { id: "the-hangover-part-ii", name: "The Hangover Part II", wiki: "The_Hangover_Part_II", category: "movies", emoji: "🍸" },
+  { id: "i-am-legend", name: "I Am Legend (film)", wiki: "I_Am_Legend_(film)", category: "movies", emoji: "🧟" },
+  { id: "operation-red-sea", name: "Operation Red Sea", wiki: "Operation_Red_Sea", category: "movies", emoji: "🚢" },
+  { id: "night-at-the-museum", name: "Night at the Museum", wiki: "Night_at_the_Museum", category: "movies", emoji: "🏛️" },
+  { id: "godzilla-x-kong", name: "Godzilla x Kong: The New Empire", wiki: "Godzilla_x_Kong:_The_New_Empire", category: "movies", emoji: "🦖" },
+  { id: "mission-impossible-dead-reckoning", name: "Mission: Impossible – Dead Reckoning Part One", wiki: "Mission:_Impossible_%E2%80%93_Dead_Reckoning_Part_One", category: "movies", emoji: "🕴️" },
+  { id: "fifty-shades-of-grey-film", name: "Fifty Shades of Grey (film)", wiki: "Fifty_Shades_of_Grey_(film)", category: "movies", emoji: "🔗" },
+  { id: "the-little-mermaid-2023", name: "The Little Mermaid (2023 film)", wiki: "The_Little_Mermaid_(2023_film)", category: "movies", emoji: "🧜‍♀️" },
+  { id: "kong-skull-island", name: "Kong: Skull Island", wiki: "Kong:_Skull_Island", category: "movies", emoji: "🦍" },
 ];
 
 // tv onward lives in a third chunk so neither array trips the TS2590
