@@ -3568,5 +3568,110 @@
     "imdbId": "tt1392170",
     "name": "The Hunger Games (film)",
     "numVotes": 1084840
+  },
+  "the-lost-world-jurassic-park": {
+    "imdbId": "tt0119567",
+    "name": "The Lost World: Jurassic Park",
+    "numVotes": 478689
+  },
+  "the-wandering-earth-ii": {
+    "imdbId": "tt13539646",
+    "name": "The Wandering Earth 2",
+    "numVotes": 16506
+  },
+  "the-passion-of-the-christ": {
+    "imdbId": "tt0335345",
+    "name": "The Passion of the Christ",
+    "numVotes": 275028
+  },
+  "life-of-pi-film": {
+    "imdbId": "tt0454876",
+    "name": "Life of Pi (film)",
+    "numVotes": 701752
+  },
+  "ready-player-one": {
+    "imdbId": "tt1677720",
+    "name": "Ready Player One (film)",
+    "numVotes": 544616
+  },
+  "tangled": {
+    "imdbId": "tt0398286",
+    "name": "Tangled",
+    "numVotes": 547602
+  },
+  "transformers-the-last-knight": {
+    "imdbId": "tt3371366",
+    "name": "Transformers: The Last Knight",
+    "numVotes": 187048
+  },
+  "madagascar-escape-2-africa": {
+    "imdbId": "tt0479952",
+    "name": "Madagascar: Escape 2 Africa",
+    "numVotes": 272203
+  },
+  "war-of-the-worlds": {
+    "imdbId": "tt0407304",
+    "name": "War of the Worlds (2005 film)",
+    "numVotes": 509117
+  },
+  "mission-impossible-the-final-reckoning": {
+    "imdbId": "tt9603208",
+    "name": "Mission: Impossible – The Final Reckoning",
+    "numVotes": 233989
+  },
+  "quantum-of-solace": {
+    "imdbId": "tt0830515",
+    "name": "Quantum of Solace",
+    "numVotes": 499353
+  },
+  "the-croods": {
+    "imdbId": "tt0481499",
+    "name": "The Croods",
+    "numVotes": 252612
+  },
+  "the-hangover-part-ii": {
+    "imdbId": "tt1411697",
+    "name": "The Hangover Part II",
+    "numVotes": 579913
+  },
+  "i-am-legend": {
+    "imdbId": "tt0480249",
+    "name": "I Am Legend (film)",
+    "numVotes": 880407
+  },
+  "operation-red-sea": {
+    "imdbId": "tt6878882",
+    "name": "Operation Red Sea",
+    "numVotes": 8652
+  },
+  "night-at-the-museum": {
+    "imdbId": "tt0477347",
+    "name": "Night at the Museum",
+    "numVotes": 411376
+  },
+  "godzilla-x-kong": {
+    "imdbId": "tt14539740",
+    "name": "Godzilla x Kong: The New Empire",
+    "numVotes": 136494
+  },
+  "mission-impossible-dead-reckoning": {
+    "imdbId": "tt9603212",
+    "name": "Mission: Impossible – Dead Reckoning Part One",
+    "numVotes": 329044
+  },
+  "fifty-shades-of-grey-film": {
+    "imdbId": "tt2322441",
+    "name": "Fifty Shades of Grey (film)",
+    "numVotes": 357282
+  },
+  "the-little-mermaid-2023": {
+    "imdbId": "tt5971474",
+    "name": "The Little Mermaid (2023 film)",
+    "numVotes": 178971
+  },
+  "kong-skull-island": {
+    "imdbId": "tt3731562",
+    "name": "Kong: Skull Island",
+    "numVotes": 375815
   }
 }
