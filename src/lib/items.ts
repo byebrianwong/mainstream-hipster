@@ -887,6 +887,33 @@ const MUSIC: Item[] = [
   { id: "doechii", name: "Doechii", wiki: "Doechii", category: "music", emoji: "🎤" },
   { id: "vishal-mishra", name: "Vishal Mishra", wiki: "Vishal_Mishra_(composer)", category: "music", emoji: "🎤" },
   { id: "sunidhi-chauhan", name: "Sunidhi Chauhan", wiki: "Sunidhi_Chauhan", category: "music", emoji: "🎤" },
+
+  // --- Spotify ranks 294–335 backfill (25) ---
+  { id: "zayn", name: "ZAYN", wiki: "Zayn_Malik", category: "music", emoji: "🎤" },
+  { id: "chinmayi", name: "Chinmayi", wiki: "Chinmayi_Sripada", category: "music", emoji: "🎤" },
+  { id: "nengo-flow", name: "Ñengo Flow", wiki: "%C3%91engo_Flow", category: "music", emoji: "🎤" },
+  { id: "jack-harlow", name: "Jack Harlow", wiki: "Jack_Harlow", category: "music", emoji: "🎤" },
+  { id: "evanescence", name: "Evanescence", wiki: "Evanescence", category: "music", emoji: "🎸" },
+  { id: "luis-fonsi", name: "Luis Fonsi", wiki: "Luis_Fonsi", category: "music", emoji: "🎤" },
+  { id: "benny-blanco", name: "benny blanco", wiki: "Benny_Blanco", category: "music", emoji: "🎧" },
+  { id: "earth-wind-and-fire", name: "Earth, Wind & Fire", wiki: "Earth,_Wind_%26_Fire", category: "music", emoji: "🎸" },
+  { id: "shankar-ehsaan-loy", name: "Shankar-Ehsaan-Loy", wiki: "Shankar%E2%80%93Ehsaan%E2%80%93Loy", category: "music", emoji: "🎸" },
+  { id: "florence-the-machine", name: "Florence + The Machine", wiki: "Florence_and_the_Machine", category: "music", emoji: "🎸" },
+  { id: "el-bogueto", name: "El Bogueto", wiki: "El_Bogueto", category: "music", emoji: "🎤" },
+  { id: "aventura", name: "Aventura", wiki: "Aventura_(band)", category: "music", emoji: "🎸" },
+  { id: "prince-royce", name: "Prince Royce", wiki: "Prince_Royce", category: "music", emoji: "🎤" },
+  { id: "dj-khaled", name: "DJ Khaled", wiki: "DJ_Khaled", category: "music", emoji: "🎧" },
+  { id: "manoj-muntashir", name: "Manoj Muntashir", wiki: "Manoj_Muntashir", category: "music", emoji: "🎤" },
+  { id: "himesh-reshammiya", name: "Himesh Reshammiya", wiki: "Himesh_Reshammiya", category: "music", emoji: "🎤" },
+  { id: "nelly", name: "Nelly", wiki: "Nelly", category: "music", emoji: "🎤" },
+  { id: "t-pain", name: "T-Pain", wiki: "T-Pain", category: "music", emoji: "🎤" },
+  { id: "tyga", name: "Tyga", wiki: "Tyga", category: "music", emoji: "🎤" },
+  { id: "tears-for-fears", name: "Tears For Fears", wiki: "Tears_for_Fears", category: "music", emoji: "🎸" },
+  { id: "lord-huron", name: "Lord Huron", wiki: "Lord_Huron", category: "music", emoji: "🎸" },
+  { id: "train", name: "Train", wiki: "Train_(band)", category: "music", emoji: "🎸" },
+  { id: "oscar-maydon", name: "Oscar Maydon", wiki: "%C3%93scar_Maydon", category: "music", emoji: "🎤" },
+  { id: "trippie-redd", name: "Trippie Redd", wiki: "Trippie_Redd", category: "music", emoji: "🎤" },
+  { id: "yandel", name: "Yandel", wiki: "Yandel", category: "music", emoji: "🎤" },
 ];
 
 const REST: Item[] = [
