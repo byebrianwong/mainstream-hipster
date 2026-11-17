@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence, LayoutGroup } from "motion/react";
 import type { RoundResult, ScoredItem } from "@/lib/types";
 import { SOURCE_LABEL, SIGNAL_DISPLAY_ORDER } from "@/lib/popularity/types";
@@ -61,37 +61,137 @@ function SignalBadges({ item }: { item: ScoredItem }) {
   );
 }
 
+/** Minimal shape of Spotify's IFrame API — only the pieces we call. */
+type SpotifyController = {
+  addListener: (event: string, cb: () => void) => void;
+  play: () => void;
+  destroy: () => void;
+};
+type SpotifyIFrameApi = {
+  createController: (
+    element: HTMLElement,
+    options: { uri: string; width?: string | number; height?: string | number },
+    callback: (controller: SpotifyController) => void,
+  ) => void;
+};
+
+declare global {
+  interface Window {
+    onSpotifyIframeApiReady?: (api: SpotifyIFrameApi) => void;
+    __spotifyIframeApi?: SpotifyIFrameApi;
+  }
+}
+
+/**
+ * Load Spotify's IFrame API script once per page and resolve with the API
+ * object. The plain embed iframe can't be told to start, so the one player we
+ * want to autoplay is built through this API, which exposes a `play()` call.
+ */
+let spotifyApiPromise: Promise<SpotifyIFrameApi> | null = null;
+function loadSpotifyIframeApi(): Promise<SpotifyIFrameApi> {
+  if (spotifyApiPromise) return spotifyApiPromise;
+  spotifyApiPromise = new Promise((resolve) => {
+    if (window.__spotifyIframeApi) {
+      resolve(window.__spotifyIframeApi);
+      return;
+    }
+    const prev = window.onSpotifyIframeApiReady;
+    window.onSpotifyIframeApiReady = (api) => {
+      window.__spotifyIframeApi = api;
+      prev?.(api);
+      resolve(api);
+    };
+    const script = document.createElement("script");
+    script.src = "https://open.spotify.com/embed/iframe-api/v1";
+    script.async = true;
+    document.body.appendChild(script);
+  });
+  return spotifyApiPromise;
+}
+
 /**
  * Inline Spotify player for a music item's top song. Uses Spotify's public
- * embed iframe keyed by the artist ID we already scraped — it streams a
- * 30-second preview of the artist's most popular track with no login or API
- * key, so the player just works for anyone who opens the reveal.
+ * embed keyed by the artist ID we already scraped — it streams a 30-second
+ * preview of the artist's most popular track with no login or API key, so the
+ * player just works for anyone who opens the reveal.
+ *
+ * When `autoPlay` is set (the #1 artist), we build the player through Spotify's
+ * IFrame API and call `play()` as soon as it's ready, so the top song starts on
+ * its own. Everyone else keeps the lighter plain embed iframe. The browser's
+ * autoplay policy may still block sound; if it does the embed just sits paused
+ * and the listener can press play — there's no error either way.
  */
 function SpotifyTopSong({
   id,
   name,
   delay = 0,
+  autoPlay = false,
 }: {
   id: string;
   name: string;
   delay?: number;
+  autoPlay?: boolean;
 }) {
+  const hostRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!autoPlay) return;
+    const host = hostRef.current;
+    if (!host) return;
+
+    let controller: SpotifyController | undefined;
+    let cancelled = false;
+
+    // Spotify replaces the node we hand it with its own iframe. Give it a
+    // throwaway child we create imperatively, so React keeps managing `host`
+    // and never the node Spotify swaps out — otherwise unmount races React's
+    // own DOM cleanup and throws.
+    const target = document.createElement("div");
+    host.appendChild(target);
+
+    loadSpotifyIframeApi().then((api) => {
+      if (cancelled) return;
+      api.createController(
+        target,
+        { uri: `spotify:artist:${id}`, width: "100%", height: 152 },
+        (ctrl) => {
+          controller = ctrl;
+          ctrl.addListener("ready", () => ctrl.play());
+        },
+      );
+    });
+
+    return () => {
+      cancelled = true;
+      controller?.destroy();
+      host.replaceChildren();
+    };
+  }, [autoPlay, id]);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 6 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay }}
     >
-      <iframe
-        title={`Play a top song by ${name} on Spotify`}
-        src={`https://open.spotify.com/embed/artist/${id}?utm_source=mainstream-hipster`}
-        width="100%"
-        height={152}
-        loading="lazy"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        className="block w-full rounded-xl"
-        style={{ border: 0 }}
-      />
+      {autoPlay ? (
+        <div
+          ref={hostRef}
+          aria-label={`Playing a top song by ${name} on Spotify`}
+          className="block w-full overflow-hidden rounded-xl [&>iframe]:block [&>iframe]:w-full [&>iframe]:rounded-xl"
+        />
+      ) : (
+        <iframe
+          title={`Play a top song by ${name} on Spotify`}
+          src={`https://open.spotify.com/embed/artist/${id}?utm_source=mainstream-hipster`}
+          width="100%"
+          height={152}
+          loading="lazy"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          className="block w-full rounded-xl"
+          style={{ border: 0 }}
+        />
+      )}
     </motion.div>
   );
 }
@@ -286,6 +386,11 @@ export default function Reveal({
                       id={item.spotifyId}
                       name={item.name}
                       delay={0.15 + idx * 0.05}
+                      // Autoplay the #1 (most mainstream) artist's top song.
+                      // `idx` is the position in the actual ranking here, so
+                      // idx 0 is the top spot. Skipped in story/test mode
+                      // (pinnedPhase) to keep snapshots deterministic.
+                      autoPlay={idx === 0 && !pinnedPhase}
                     />
                   )}
                 </motion.li>
