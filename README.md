@@ -18,6 +18,7 @@ src/
   lib/
     items.ts            # Curated item bank — names + Wikipedia article slugs
     game.ts             # Round generation + Kendall-tau pair scoring
+    drawWeights.ts      # Light popularity weighting for which items get drawn
     types.ts
     popularity/         # Pluggable popularity sources + weighted blending
       wikipedia.ts spotify.ts lastfm.ts tmdb.ts imdb.ts openlibrary.ts
@@ -34,6 +35,20 @@ src/
 ## How scoring works
 
 Concordant-pair fraction (a Kendall-tau variant, normalized to 0–1). For *n* items there are *C(n,2)* pairs; you get credit for every pair you ordered correctly relative to the actual popularity ranking. So in a 4-item round, perfect is 6/6 = 100%; swapping two adjacent items is 5/6 ≈ 83%.
+
+## How rounds are drawn
+
+Items are drawn mostly at random, with a light tilt toward well-known music artists so a round isn't full of names nobody recognizes (see [src/lib/drawWeights.ts](src/lib/drawWeights.ts)). Artists are ranked by Spotify monthly listeners within the item bank, and each rank tier gets a relative weight:
+
+| Rank | Weight |
+| --- | --- |
+| 1–100 | 2.0 |
+| 101–200 | 1.6 |
+| 201–300 | 1.3 |
+| 301–500 | 1.1 |
+| 501+ | 1.0 |
+
+In a 4-artist round this raises the average number of top-200 artists from about 1.0 to 1.4, and cuts rounds with no top-200 artist from about 32% to 17%. Weights are rescaled to average 1, so mixed rounds keep the same share of music.
 
 ## Popularity sources
 
@@ -56,7 +71,7 @@ node --experimental-strip-types scripts/scrape-imdb-data.mjs        # → data/i
 node --experimental-strip-types scripts/scrape-openlibrary-data.mjs # → data/openlibrary-counts.json
 ```
 
-Music's Spotify numbers come from `scripts/scrape-spotify-data.mjs` (kworb). Last.fm and TMDb are live API calls gated on `LASTFM_API_KEY` / `TMDB_API_KEY` (see [.env.example](.env.example)); a source with no data for an item simply drops out and the remaining weights renormalize.
+Music's Spotify numbers are exact monthly listeners read from each artist's public Spotify page (no API key). Refresh them with `node scripts/refresh-spotify-listeners.mjs`. Last.fm and TMDb are live API calls gated on `LASTFM_API_KEY` / `TMDB_API_KEY` (see [.env.example](.env.example)); a source with no data for an item simply drops out and the remaining weights renormalize.
 
 ## Adding items
 
@@ -66,7 +81,14 @@ Edit [src/lib/items.ts](src/lib/items.ts). Each item needs:
 { id: "unique-slug", name: "Display Name", wiki: "Wikipedia_Article_Title", category: "music" }
 ```
 
-The `wiki` field is the article's URL slug. Underscores are fine. URL-encode non-ASCII (`Phở` → `Pho` because the article redirects, but `Nattō` → `Natt%C5%8D`). Quick check: the slug works if `https://en.wikipedia.org/wiki/<slug>` loads.
+The `wiki` field is the article's URL slug. Underscores are fine. URL-encode non-ASCII (`Phở` → `Pho` because the article redirects, but `Nattō` → `Natt%C5%8D`). Quick check: the slug works if `https://en.wikipedia.org/wiki/<slug>` loads without a "Redirected from" note under the title.
+
+### Adding music artists
+
+- Don't extend the Spotify chart backfill past rank ~300. Below that the chart is mostly regional acts that most players won't recognize.
+- An artist should have at least 50K English Wikipedia pageviews a year **or** at least 15M Spotify monthly listeners. Check with `node scripts/audit-music-recognizability.mjs`, which lists artists below both lines.
+- Use the canonical article title for `wiki`, not a redirect or disambiguation page. The pageviews API counts only the exact title, so `Slipknot` (a redirect to the knot) would score a few thousand views instead of millions.
+- Add a `spotify-listeners.json` entry with the artist's Spotify ID, then run `node scripts/refresh-spotify-listeners.mjs <item-id>`.
 
 ## Multiplayer
 
