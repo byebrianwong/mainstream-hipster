@@ -3,6 +3,7 @@ import { itemsByCategory } from "./items";
 import { CATEGORY_WEIGHTS } from "./popularity/types";
 import { fetchSignals, blendRanks } from "./popularity/blend";
 import { spotifyArtistId } from "./popularity/spotify";
+import { drawWeight } from "./drawWeights";
 
 export function pickRandom<T>(arr: T[], n: number): T[] {
   const copy = [...arr];
@@ -11,6 +12,19 @@ export function pickRandom<T>(arr: T[], n: number): T[] {
     [copy[i], copy[j]] = [copy[j], copy[i]];
   }
   return copy.slice(0, n);
+}
+
+/**
+ * Draw `n` distinct items, each draw proportional to `weight` among the items
+ * not yet drawn (Efraimidis–Spirakis: sort by u^(1/w), keep the top n).
+ * With equal weights this is the same as pickRandom.
+ */
+export function pickWeighted<T>(arr: T[], n: number, weight: (x: T) => number): T[] {
+  return arr
+    .map((x) => ({ x, key: Math.random() ** (1 / Math.max(weight(x), 1e-9)) }))
+    .sort((a, b) => b.key - a.key)
+    .slice(0, n)
+    .map(({ x }) => x);
 }
 
 /**
@@ -31,8 +45,9 @@ export async function buildRound(
     category === "mixed" ? { wikipedia: 1 } : CATEGORY_WEIGHTS[category];
 
   // Slightly oversample so we can drop signal-less items without re-fetching.
+  // Popular artists are lightly favored; see drawWeights.ts.
   const oversample = Math.min(size + 2, pool.length);
-  const picks = pickRandom(pool, oversample);
+  const picks = pickWeighted(pool, oversample, drawWeight);
 
   const signals = await fetchSignals(picks, weights);
 
@@ -44,7 +59,9 @@ export async function buildRound(
 
   // Trim to round size, then re-rank within just the final set — gives ranks
   // a clean 0..1 spread for `size` items rather than gaps from oversample.
-  const final = usable.slice(0, size);
+  // pickWeighted returns heavier (more popular) items first, so shuffle the
+  // final set: the response order must not hint at the answer.
+  const final = pickRandom(usable.slice(0, size), size);
   const finalRanks = blendRanks(final, signals, weights);
 
   return final.map((item) => ({
